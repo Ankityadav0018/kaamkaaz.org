@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Kaamkaaz Privacy Policy - Learn how we collect, use, and protect your data">
+  <meta name="author" content="Ankit">
+  
+  <title>Privacy Policy - Kaamkaaz</title>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheet -->
+  <link rel="icon" type="image/png" href="assets/logo.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- NAVIGATION -->
+<nav>
+  <div class="container">
+    <div class="logo">
+      <img src="assets/logo.png" alt="Kaamkaaz Logo" class="logo-img">
+      Kaamkaaz
+      <span class="logo-hindi">कामकाज</span>
+    </div>
+    <div class="menu-toggle" onclick="toggleMobileMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html" data-en="Home" data-hi="होम">Home</a></li>
+      <li><a href="about.html" data-en="About" data-hi="हमारे बारे में">About</a></li>
+      <li><a href="faq.html" data-en="FAQ" data-hi="पूछे जाने वाले प्रश्न">FAQ</a></li>
+      <li><a href="community-guidelines.html" data-en="Community Guidelines" data-hi="सामुदायिक दिशानिर्देश">Community Guidelines</a></li>
+      <li class="dropdown">
+        <a href="#" class="dropbtn" data-en="Legal ▾" data-hi="कानूनी ▾">Legal ▾</a>
+        <div class="dropdown-content">
+          <a href="privacy-policy.html" class="active" data-en="Privacy Policy" data-hi="गोपनीयता नीति">Privacy Policy</a>
+          <a href="terms-of-service.html" data-en="Terms of Service" data-hi="सेवा की शर्तें">Terms of Service</a>
+          <a href="cookie-policy.html" data-en="Cookie Policy" data-hi="कुकी नीति">Cookie Policy</a>
+          <a href="data-deletion.html" data-en="Data Deletion" data-hi="डेटा हटाना">Data Deletion</a>
+          <a href="refund-policy.html" data-en="Refund Policy" data-hi="धनवापसी नीति">Refund Policy</a>
+        </div>
+      </li>
+      <li><a href="languages.html" data-en="Languages" data-hi="भाषाएँ">Languages</a></li>
+      <li><a href="press.html" data-en="Press" data-hi="प्रेस">Press</a></li>
+      <li><a href="contact.html" data-en="Contact" data-hi="संपर्क">Contact</a></li>
+      <li><button onclick="toggleLanguage()" class="lang-toggle-btn" aria-label="Toggle language">अ | A</button></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- ═══════════════════════════════════════════════════════════════
+     LEGAL HEADER
+     ═══════════════════════════════════════════════════════════════ -->
+<div class="legal-header">
+  <div class="container">
+    <h1>Privacy Policy</h1>
+    <p class="last-updated">Last Updated: May 2026</p>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════════════
+     LEGAL CONTENT
+     ═══════════════════════════════════════════════════════════════ -->
+<section style="padding-top: 2rem; padding-bottom: 4rem;">
+  <div class="legal-content">
+    
+    <!-- Table of Contents -->
+    <div class="toc">
+      <h3>📑 Table of Contents</h3>
+      <ul>
+        <li><a href="#introduction">1. Introduction and Scope</a></li>
+        <li><a href="#data-collection">2. Data We Collect</a></li>
+        <li><a href="#personal-data">3. Personal Information</a></li>
+        <li><a href="#kyc-data">4. KYC & Identity Verification Data</a></li>
+        <li><a href="#location-data">5. Location Data</a></li>
+        <li><a href="#media-data">6. Media & Camera Access</a></li>
+        <li><a href="#usage-data">7. Usage Data</a></li>
+        <li><a href="#why-collect">8. Why We Collect Data</a></li>
+        <li><a href="#third-party">9. Third-Party Services</a></li>
+        <li><a href="#data-sharing">10. Data Sharing Policy</a></li>
+        <li><a href="#retention">11. Data Retention & Deletion</a></li>
+        <li><a href="#children">12. Children's Privacy</a></li>
+        <li><a href="#user-rights">13. Your Rights</a></li>
+        <li><a href="#security">14. Data Security</a></li>
+        <li><a href="#governing-law">15. Governing Law</a></li>
+        <li><a href="#contact">16. Contact Us</a></li>
+      </ul>
+    </div>
+
+    <!-- Content Sections -->
+    <div class="legal-section" id="introduction">
+      <h2>1. Introduction and Scope</h2>
+      <p>Welcome to Kaamkaaz (कामकाज). This Privacy Policy explains how we collect, use, protect, and manage your personal information when you use our mobile application ("App") and related services.</p>
+      <p>Kaamkaaz is a hyperlocal daily wage job marketplace connecting blue-collar workers with local recruiters in rural and semi-urban India. This policy applies to both Worker and Recruiter users of the Kaamkaaz platform.</p>
+      <p>By downloading, installing, and using Kaamkaaz, you agree to the practices described in this Privacy Policy. If you do not agree, please do not use the App.</p>
+    </div>
+
+    <div class="legal-section" id="data-collection">
+      <h2>2. Data We Collect</h2>
+      <p>We collect different types of information depending on how you use Kaamkaaz:</p>
+      
+      <h3>Personal Information You Provide</h3>
+      <ul>
+        <li>Full Name</li>
+        <li>Phone Number (primary contact)</li>
+        <li>Email Address</li>
+        <li>Date of Birth (for worker age verification)</li>
+        <li>Gender (optional)</li>
+        <li>Address / Residential Location (for worker context)</li>
+        <li>Bank Account Details (only for payment, if applicable)</li>
+      </ul>
+
+      <h3>Identity & KYC Verification Data (Workers Only)</h3>
+      <ul>
+        <li>Aadhaar Number (for identity verification)</li>
+        <li>Aadhaar-linked Name and Address</li>
+        <li>Live Selfie (for face verification)</li>
+        <li>Driving License Number (optional, for additional verification)</li>
+        <li>Driving License Scan (optional)</li>
+        <li>Scanned copies of KYC documents</li>
+      </ul>
+
+      <h3>Location Data</h3>
+      <ul>
+        <li>Real-time GPS coordinates (latitude and longitude)</li>
+        <li>Location history while using the App</li>
+        <li>Nearby job search radius (15-30km)</li>
+      </ul>
+
+      <h3>Media & Camera Access</h3>
+      <ul>
+        <li>Profile Photo (from camera or gallery)</li>
+        <li>KYC Document Scans (Aadhaar, Driving License photos)</li>
+        <li>Work Portfolio Photos (for workers to showcase skills)</li>
+        <li>Work Portfolio Videos (for workers to showcase completed projects)</li>
+      </ul>
+
+      <h3>Usage & Activity Data</h3>
+      <ul>
+        <li>App usage patterns (features accessed, time spent)</li>
+        <li>Job applications submitted by workers</li>
+        <li>Job postings created by recruiters</li>
+        <li>Chat messages between workers and recruiters</li>
+        <li>In-app search history</li>
+        <li>Device information (device model, OS version, unique device ID)</li>
+        <li>IP Address</li>
+        <li>Cookies and analytics data</li>
+      </ul>
+    </div>
+
+    <div class="legal-section" id="personal-data">
+      <h2>3. Personal Information</h2>
+      <p>Basic personal information (name, phone, email) is collected during account registration to:</p>
+      <ul>
+        <li>Create and maintain your user account</li>
+        <li>Enable login and authentication via Supabase</li>
+        <li>Allow recruiters to contact you about jobs</li>
+        <li>Send important account notifications and updates</li>
+        <li>Process job applications and matches</li>
+        <li>Enable password recovery</li>
+        <li>Verify your identity</li>
+      </ul>
+    </div>
+
+    <div class="legal-section" id="kyc-data">
+      <h2>4. KYC & Identity Verification Data</h2>
+      <p>For Workers, we collect KYC information to build trust between workers and recruiters:</p>
+      
+      <h3>What KYC Data We Collect:</h3>
+      <ul>
+        <li><span class="highlight">Aadhaar Number</span> - Primary government ID for identity verification</li>
+        <li><span class="highlight">Live Selfie</span> - Facial recognition and liveness check</li>
+        <li><span class="highlight">Driving License (Optional)</span> - Additional identity proof</li>
+      </ul>
+
+      <h3>How We Use KYC Data:</h3>
+      <ul>
+        <li>Verify your real identity and prevent fake profiles</li>
+        <li>Build trust for recruiters hiring daily wage workers</li>
+        <li>Reduce fraud and protect both parties</li>
+        <li>Enable employer confidence in worker reliability</li>
+      </ul>
+
+      <h3>How We Store KYC Data:</h3>
+      <ul>
+        <li>All KYC documents (Aadhaar scans, selfies, licenses) are stored on <span class="highlight">Cloudinary</span></li>
+        <li>Documents are encrypted and access-restricted</li>
+        <li>Only admin and authorized staff can view documents for verification</li>
+        <li>Workers can see their own KYC documents anytime</li>
+        <li>Recruiters see only a "Verified" badge, not the actual documents</li>
+      </ul>
+
+      <h3>Important: Recruiters Do NOT See Your Raw KYC Data</h3>
+      <p>Recruiters only see that you are "KYC Verified" or "Pending Verification". They do NOT get access to your Aadhaar number, documents, or selfies. This is for your privacy and security.</p>
+    </div>
+
+    <div class="legal-section" id="location-data">
+      <h2>5. Location Data</h2>
+      <p>Kaamkaaz uses GPS to show you jobs within 15-30km of your location. This is the core feature for hyperlocal job matching.</p>
+      
+      <h3>How Location Data is Used:</h3>
+      <ul>
+        <li>Show nearby job listings (within your set radius)</li>
+        <li>Help recruiters find workers in their area</li>
+        <li>Calculate distance from job site to your location</li>
+        <li>Provide accurate commute estimates</li>
+      </ul>
+
+      <h3>Important: We Do NOT Store Location Continuously</h3>
+      <ul>
+        <li>Location is used ONLY when the App is actively open</li>
+        <li>We do NOT track your movements when the App is closed</li>
+        <li>We do NOT maintain a continuous location history</li>
+        <li>GPS is requested only when you browse jobs</li>
+        <li>You can turn off location anytime in your phone settings</li>
+      </ul>
+
+      <h3>Location Accuracy:</h3>
+      <ul>
+        <li>Location accuracy is approximate (within 100-500 meters typically)</li>
+        <li>Recruiters see your approximate location, not your exact home address</li>
+      </ul>
+    </div>
+
+    <div class="legal-section" id="media-data">
+      <h2>6. Media & Camera Access</h2>
+      <p>Kaamkaaz requests camera and media access for specific features:</p>
+      
+      <h3>Camera Access for:</h3>
+      <ul>
+        <li><span class="highlight">Profile Photo</span> - Capture your profile picture for your account</li>
+        <li><span class="highlight">KYC Verification</span> - Take live selfie for identity verification</li>
+        <li><span class="highlight">KYC Documents</span> - Scan and upload Aadhaar, Driving License</li>
+        <li><span class="highlight">Work Portfolio</span> - Upload photos of completed work to showcase skills</li>
+      </ul>
+
+      <h3>Media Library Access for:</h3>
+      <ul>
+        <li>Upload existing photos from your gallery</li>
+        <li>Upload videos of work projects</li>
+        <li>Select profile pictures</li>
+      </ul>
+
+      <h3>Data Storage:</h3>
+      <ul>
+        <li>All photos and videos are uploaded to <span class="highlight">Cloudinary</span></li>
+        <li>Cloudinary is a trusted, encrypted cloud storage provider</li>
+        <li>Media is private to your account (unless you choose to share in portfolio)</li>
+        <li>You control what appears in your public portfolio</li>
+      </ul>
+
+      <h3>Permissions:</h3>
+      <p>When first using these features, the App will request camera and media permissions. You can grant or deny these permissions. If denied, you can still use other app features but cannot upload photos/videos.</p>
+    </div>
+
+    <div class="legal-section" id="usage-data">
+      <h2>7. Usage Data</h2>
+      <p>We automatically collect information about how you use Kaamkaaz:</p>
+      
+      <h3>App Activity Tracking:</h3>
+      <ul>
+        <li>Features you access (job search, chat, profile, etc.)</li>
+        <li>Time spent in the App</li>
+        <li>Jobs you view and apply for</li>
+        <li>Search filters you use</li>
+        <li>Recruitment posts you create (for recruiters)</li>
+      </ul>
+
+      <h3>Chat & Communication Data:</h3>
+      <ul>
+        <li>All in-app chat messages between workers and recruiters</li>
+        <li>Chat timestamps and duration</li>
+        <li>File transfers in chat</li>
+      </ul>
+
+      <h3>Technical Data:</h3>
+      <ul>
+        <li>Device model and manufacturer (e.g., Samsung, OnePlus)</li>
+        <li>Android OS version</li>
+        <li>Unique device identifier (UDID)</li>
+        <li>IP Address and network connection type</li>
+        <li>App version number</li>
+        <li>Crash reports and error logs</li>
+      </ul>
+
+      <h3>Analytics:</h3>
+      <ul>
+        <li>Firebase Analytics data (user behavior, event tracking)</li>
+        <li>Anonymous aggregated usage statistics</li>
+      </ul>
+    </div>
+
+    <div class="legal-section" id="why-collect">
+      <h2>8. Why We Collect Data</h2>
+      <p>We collect and use your data for the following specific purposes:</p>
+      
+      <h3>To Provide the Service:</h3>
+      <ul>
+        <li>Creating and managing your user account</li>
+        <li>Matching workers with jobs using GPS and filters</li>
+        <li>Processing job applications</li>
+        <li>Enabling communication between workers and recruiters</li>
+        <li>Storing your profile, portfolio, and KYC documents</li>
+      </ul>
+
+      <h3>To Ensure Safety & Security:</h3>
+      <ul>
+        <li>Verifying user identities via KYC</li>
+        <li>Preventing fraud and fake profiles</li>
+        <li>Detecting suspicious activity</li>
+        <li>Protecting user accounts from unauthorized access</li>
+        <li>Compliance with Indian laws (IT Act 2000, DPDP Act 2023)</li>
+      </ul>
+
+      <h3>To Improve the Platform:</h3>
+      <ul>
+        <li>Understanding user behavior and preferences</li>
+        <li>Fixing bugs and improving app stability</li>
+        <li>Developing new features based on user feedback</li>
+        <li>Optimizing job matching algorithms</li>
+      </ul>
+
+      <h3>To Communicate with You:</h3>
+      <ul>
+        <li>Sending job updates and notifications</li>
+        <li>Notifying you of new applications (for recruiters)</li>
+        <li>Push notifications for messages</li>
+        <li>Account security alerts</li>
+        <li>Important app updates and policy changes</li>
+      </ul>
+
+      <h3>For Legal Compliance:</h3>
+      <ul>
+        <li>Complying with government requests (with proper legal process)</li>
+        <li>Enforcing our Terms of Service</li>
+        <li>Protecting user rights and safety</li>
+        <li>Maintaining legal records for disputes</li>
+      </ul>
+    </div>
+
+    <div class="legal-section" id="third-party">
+      <h2>9. Third-Party Services</h2>
+      <p>Kaamkaaz uses trusted third-party services to operate the platform. These providers have access to your data only as necessary to provide their services:</p>
+      
+      <h3>Authentication: Supabase</h3>
+      <ul>
+        <li><strong>What data:</strong> Phone number, email, encrypted password</li>
+        <li><strong>Purpose:</strong> Secure user login and authentication</li>
+        <li><strong>Privacy:</strong> <a href="https://supabase.com/privacy" target="_blank">Supabase Privacy Policy</a></li>
+      </ul>
+
+      <h3>Database: MongoDB</h3>
+      <ul>
+        <li><strong>What data:</strong> User profiles, job listings, application history, messages</li>
+        <li><strong>Purpose:</strong> Storing and managing app data</li>
+        <li><strong>Privacy:</strong> <a href="https://www.mongodb.com/legal/privacy-policy" target="_blank">MongoDB Privacy Policy</a></li>
+      </ul>
+
+      <h3>Cloud Storage: Cloudinary</h3>
+      <ul>
+        <li><strong>What data:</strong> KYC documents, profile photos, work portfolio images/videos</li>
+        <li><strong>Purpose:</strong> Secure cloud storage with encryption</li>
+        <li><strong>Privacy:</strong> <a href="https://cloudinary.com/privacy" target="_blank">Cloudinary Privacy Policy</a></li>
+      </ul>
+
+      <h3>Push Notifications: Firebase</h3>
+      <ul>
+        <li><strong>What data:</strong> Device token, notification preferences</li>
+        <li><strong>Purpose:</strong> Sending real-time job alerts and messages</li>
+        <li><strong>Privacy:</strong> <a href="https://firebase.google.com/support/privacy" target="_blank">Firebase Privacy Policy</a></li>
+      </ul>
+
+      <h3>Real-Time Chat: Socket.io</h3>
+      <ul>
+        <li><strong>What data:</strong> Chat messages, timestamps, user status</li>
+        <li><strong>Purpose:</strong> Enabling instant in-app messaging</li>
+        <li><strong>Privacy:</strong> <a href="https://socket.io/" target="_blank">Socket.io Documentation</a></li>
+      </ul>
+
+      <h3>Location Services: Google Play Services</h3>
+      <ul>
+        <li><strong>What data:</strong> GPS coordinates (when app is in use)</li>
+        <li><strong>Purpose:</strong> Providing location-based job search</li>
+        <li><strong>Privacy:</strong> <a href="https://policies.google.com/privacy" target="_blank">Google Privacy Policy</a></li>
+      </ul>
+
+      <h3>Important Note:</h3>
+      <p>All third-party providers comply with data protection regulations and have security agreements with Kaamkaaz. We only share the minimum data necessary for them to provide their service.</p>
+    </div>
+
+    <div class="legal-section" id="data-sharing">
+      <h2>10. Data Sharing Policy</h2>
+      
+      <h3>We DO NOT Sell Your Data</h3>
+      <p><span class="highlight">Kaamkaaz NEVER sells, rents, or trades your personal information for money or marketing purposes.</span></p>
+
+      <h3>Data Shared Between Workers and Recruiters:</h3>
+      <p>To function as a job marketplace, we share limited information between users:</p>
+      <ul>
+        <li><strong>Workers see about Recruiters:</strong> Company name, job details, location, contact info</li>
+        <li><strong>Recruiters see about Workers:</strong> Name, phone number (if you consent), profile, KYC verification status (not the documents), portfolio, ratings/reviews</li>
+        <li><strong>NOT shared:</strong> Aadhaar number, actual KYC documents, email (unless you provide it), home address</li>
+      </ul>
+
+      <h3>Data Shared with Service Providers:</h3>
+      <p>We share data with third-party services only as necessary:</p>
+      <ul>
+        <li>Supabase receives: Phone, email, password (encrypted)</li>
+        <li>MongoDB receives: Profile data, job history, messages (for storage)</li>
+        <li>Cloudinary receives: Photos and documents (for storage)</li>
+        <li>Firebase receives: Push notification data only</li>
+        <li>Google: GPS data only when location services are active</li>
+      </ul>
+
+      <h3>Data Shared by Court Order:</h3>
+      <p>Kaamkaaz may disclose your information if required by law, court order, or government request. We will:</p>
+      <ul>
+        <li>Comply with valid legal requests</li>
+        <li>Notify you when possible (unless legally prohibited)</li>
+        <li>Provide only the minimum data requested</li>
+      </ul>
+
+      <h3>Data Shared for Safety:</h3>
+      <p>We may share information if we reasonably believe it's necessary to:</p>
+      <ul>
+        <li>Prevent fraud or security breaches</li>
+        <li>Protect user safety</li>
+        <li>Enforce our Terms of Service</li>
+        <li>Comply with law and regulation</li>
+      </ul>
+
+      <h3>No Sharing with Marketing/Advertisers:</h3>
+      <p>We do NOT share your information with external marketers, advertisers, or data brokers.</p>
+    </div>
+
+    <div class="legal-section" id="retention">
+      <h2>11. Data Retention & Deletion</h2>
+      
+      <h3>How Long We Keep Your Data:</h3>
+      <ul>
+        <li><strong>Active Accounts:</strong> Data is retained as long as your account is active</li>
+        <li><strong>After Account Deletion:</strong> Most data is deleted within 30 days</li>
+        <li><strong>Chat History:</strong> Deleted when you delete your account</li>
+        <li><strong>KYC Documents:</strong> Deleted when you request account deletion</li>
+        <li><strong>Job Listings:</strong> Deleted when you delete your account</li>
+      </ul>
+
+      <h3>Data We May Retain Longer:</h3>
+      <ul>
+        <li><strong>Legal Requirements:</strong> Transaction records, dispute logs (as required by Indian law)</li>
+        <li><strong>Fraud Prevention:</strong> Fraud-related data for security (anonymized)</li>
+        <li><strong>Aggregated Analytics:</strong> Anonymous usage statistics (cannot identify you)</li>
+      </ul>
+
+      <h3>Your Right to Delete:</h3>
+      <p>You can request account and data deletion anytime via:</p>
+      <ul>
+        <li>In-app: Profile → Edit Profile → Delete My Account</li>
+        <li>Email: ankityo9079@gmail.com with subject "Data Deletion Request - [Your Phone Number]"</li>
+        <li>See our <a href="data-deletion.html">Data Deletion Policy</a> for full details</li>
+      </ul>
+
+      <h3>Deletion Timeline:</h3>
+      <ul>
+        <li>Deletion requests are processed within 30 days</li>
+        <li>You'll receive email confirmation after deletion</li>
+        <li>Some data may take longer to remove from backups</li>
+      </ul>
+    </div>
+
+    <div class="legal-section" id="children">
+      <h2>12. Children's Privacy</h2>
+      
+      <h3>Age Requirements:</h3>
+      <ul>
+        <li><strong>Workers:</strong> 16 years or older (with guardian consent if under 18)</li>
+        <li><strong>Recruiters:</strong> 18 years or older</li>
+      </ul>
+
+      <h3>Our Policy on Children Under 13:</h3>
+      <p>Kaamkaaz is NOT intended for children under 13 years old. We do not knowingly collect information from children under 13.</p>
+
+      <h3>For Minors (13-17):</h3>
+      <ul>
+        <li>Workers aged 16-17 can use the app with parental/guardian consent</li>
+        <li>Parents/guardians are responsible for monitoring their use</li>
+        <li>We recommend parents discuss internet safety with their children</li>
+      </ul>
+
+      <h3>If We Learn of Underage Users:</h3>
+      <p>If we discover a user is under the minimum age, we will delete their account and all associated data.</p>
+    </div>
+
+    <div class="legal-section" id="user-rights">
+      <h2>13. Your Rights</h2>
+      <p>Under Indian law (IT Act 2000, DPDP Act 2023), you have the right to:</p>
+      
+      <h3>Right to Access:</h3>
+      <ul>
+        <li>Request all your personal data we hold</li>
+        <li>View your data in the app anytime</li>
+        <li>Email us to request a complete data export</li>
+      </ul>
+
+      <h3>Right to Correction:</h3>
+      <ul>
+        <li>Update your profile information anytime</li>
+        <li>Correct errors in your data</li>
+        <li>Update photos, documents, or portfolio</li>
+      </ul>
+
+      <h3>Right to Deletion:</h3>
+      <ul>
+        <li>Delete your account and all associated data</li>
+        <li>Request removal of specific information</li>
+        <li>See <a href="data-deletion.html">Data Deletion Policy</a> for details</li>
+      </ul>
+
+      <h3>Right to Portability:</h3>
+      <ul>
+        <li>Request your data in a portable format</li>
+        <li>Transfer your data to another service</li>
+        <li>Email ankityo9079@gmail.com with specific request</li>
+      </ul>
+
+      <h3>Right to Object:</h3>
+      <ul>
+        <li>Object to certain data processing</li>
+        <li>Opt-out of marketing communications</li>
+        <li>Control notification preferences in app settings</li>
+      </ul>
+
+      <h3>How to Exercise Your Rights:</h3>
+      <ol>
+        <li>Go to Profile → Settings → Privacy & Data</li>
+        <li>Or email: ankityo9079@gmail.com</li>
+        <li>Include your phone number and what you're requesting</li>
+        <li>We'll respond within 30 days</li>
+      </ol>
+    </div>
+
+    <div class="legal-section" id="security">
+      <h2>14. Data Security</h2>
+      
+      <h3>Security Measures We Use:</h3>
+      <ul>
+        <li><strong>Encryption:</strong> Data in transit uses HTTPS/SSL encryption</li>
+        <li><strong>Secure Storage:</strong> Passwords are hashed, not stored in plain text</li>
+        <li><strong>Access Control:</strong> Only authorized staff can access sensitive data</li>
+        <li><strong>Cloudinary Encryption:</strong> All media on Cloudinary is encrypted</li>
+        <li><strong>MongoDB Security:</strong> Database access is restricted and monitored</li>
+        <li><strong>Regular Backups:</strong> Data is backed up for disaster recovery</li>
+      </ul>
+
+      <h3>Important Notes:</h3>
+      <ul>
+        <li>While we use industry-standard security, no system is 100% secure</li>
+        <li>You are responsible for keeping your password confidential</li>
+        <li>Do not share your login credentials with anyone</li>
+        <li>Use a strong, unique password</li>
+        <li>Log out on shared devices</li>
+      </ul>
+
+      <h3>Data Breach Policy:</h3>
+      <p>If we detect a data breach:</p>
+      <ul>
+        <li>We will investigate immediately</li>
+        <li>We will notify affected users as required by law</li>
+        <li>We will take corrective action to prevent recurrence</li>
+      </ul>
+    </div>
+
+    <div class="legal-section" id="governing-law">
+      <h2>15. Governing Law</h2>
+      
+      <h3>Applicable Laws:</h3>
+      <p>This Privacy Policy is governed by the laws of India, including:</p>
+      <ul>
+        <li><strong>Information Technology Act, 2000</strong> - Digital data protection and privacy</li>
+        <li><strong>Digital Personal Data Protection Act, 2023 (DPDP)</strong> - Personal data protection framework</li>
+        <li><strong>Indian Penal Code (IPC)</strong> - Criminal privacy violations</li>
+        <li><strong>Aadhaar Act, 2016</strong> - Regulation of Aadhaar data usage</li>
+      </ul>
+
+      <h3>Jurisdiction:</h3>
+      <p>Any legal disputes regarding this Privacy Policy will be subject to the jurisdiction of courts in India.</p>
+
+      <h3>Policy Updates:</h3>
+      <p>Kaamkaaz may update this Privacy Policy at any time. Changes will be posted here with an updated "Last Updated" date. Your continued use of the App after changes means you accept the updated policy.</p>
+    </div>
+
+    <div class="legal-section" id="contact">
+      <h2>16. Contact Us</h2>
+      
+      <h3>Questions About This Privacy Policy?</h3>
+      <p>If you have questions, concerns, or requests regarding this Privacy Policy, please contact:</p>
+      
+      <div style="background-color: #f3f4f6; padding: 1.5rem; border-radius: 8px; margin-top: 1.5rem;">
+        <p><strong>📧 Email:</strong> <a href="mailto:ankityo9079@gmail.com">ankityo9079@gmail.com</a></p>
+        <p><strong>Subject Line:</strong> "Privacy Inquiry" or "Data Request"</p>
+        <p><strong>Developer:</strong> Ankit (Individual Developer)</p>
+        <p><strong>App Domain:</strong> kaamkaaz.org</p>
+      </div>
+
+      <h3>Data Protection Officer:</h3>
+      <p>For privacy concerns related to DPDP Act compliance, please email us with "Data Protection" in the subject line.</p>
+
+      <h3>Response Time:</h3>
+      <p>We will respond to all privacy inquiries within 30 days.</p>
+
+      <h3>Grievance Redressal:</h3>
+      <p>If you believe your privacy rights have been violated, you can:</p>
+      <ul>
+        <li>Contact us directly at ankityo9079@gmail.com</li>
+        <li>File a complaint with the National Cyber Coordination Centre (NCCC) if necessary</li>
+        <li>Pursue legal action under Indian law</li>
+      </ul>
+    </div>
+
+    <hr style="margin: 3rem 0; border: none; border-top: 2px solid #E5E7EB;">
+
+    <p style="text-align: center; font-size: 0.9rem; color: #6B7280; margin-top: 2rem;">
+      <strong>Last Updated:</strong> May 2026<br>
+      <strong>Effective Date:</strong> May 2026<br>
+      This Privacy Policy is the complete and sole agreement regarding privacy of your information.
+    </p>
+
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-content-3col">
+      <div class="footer-col">
+        <h3>Kaamkaaz <span class="logo-hindi">कामकाज</span></h3>
+        <p data-en="Connecting daily wage workers with hyperlocal jobs in rural and semi-urban India." data-hi="ग्रामीण और अर्ध-शहरी भारत में दैनिक वेतन भोगी श्रमिकों को स्थानीय नौकरियों से जोड़ना।">
+          Connecting daily wage workers with hyperlocal jobs in rural and semi-urban India.
+        </p>
+        <p style="margin-top: 1rem; font-size: 0.85rem;" data-en="© 2025 Kaamkaaz. All rights reserved." data-hi="© 2025 कामकाज। सर्वाधिकार सुरक्षित।">
+          © 2025 Kaamkaaz. All rights reserved.
+        </p>
+        <p style="font-size: 0.85rem;" data-en="Made with ❤️ for India's workforce" data-hi="भारत के कार्यबल के लिए ❤️ के साथ बनाया गया">
+          Made with ❤️ for India's workforce
+        </p>
+      </div>
+      <div class="footer-col">
+        <h4 data-en="Quick Links" data-hi="त्वरित लिंक" style="margin-bottom: 1rem;">Quick Links</h4>
+        <ul>
+          <li><a href="index.html" data-en="Home" data-hi="होम">Home</a></li>
+          <li><a href="about.html" data-en="About Us" data-hi="हमारे बारे में">About Us</a></li>
+          <li><a href="faq.html" data-en="FAQ" data-hi="पूछे जाने वाले प्रश्न">FAQ</a></li>
+          <li><a href="community-guidelines.html" data-en="Community Guidelines" data-hi="सामुदायिक दिशानिर्देश">Community Guidelines</a></li>
+          <li><a href="languages.html" data-en="Languages" data-hi="भाषाएँ">Languages</a></li>
+          <li><a href="press.html" data-en="Press" data-hi="प्रेस">Press</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4 data-en="Legal & Contact" data-hi="कानूनी और संपर्क" style="margin-bottom: 1rem;">Legal & Contact</h4>
+        <ul>
+          <li><a href="privacy-policy.html" data-en="Privacy Policy" data-hi="गोपनीयता नीति">Privacy Policy</a></li>
+          <li><a href="terms-of-service.html" data-en="Terms of Service" data-hi="सेवा की शर्तें">Terms of Service</a></li>
+          <li><a href="cookie-policy.html" data-en="Cookie Policy" data-hi="कुकी नीति">Cookie Policy</a></li>
+          <li><a href="data-deletion.html" data-en="Data Deletion" data-hi="डेटा हटाना">Data Deletion</a></li>
+          <li><a href="refund-policy.html" data-en="Refund Policy" data-hi="धनवापसी नीति">Refund Policy</a></li>
+          <li><a href="contact.html" data-en="Contact Us" data-hi="संपर्क करें">Contact Us</a></li>
+        </ul>
+        <p style="margin-top: 1rem; font-size: 0.85rem;" data-en="Grievance Officer: Ankit" data-hi="शिकायत अधिकारी: अंकित">
+          Grievance Officer: Ankit
+        </p>
+        <p style="font-size: 0.85rem;">
+          Email: <a href="mailto:ankityo9079@gmail.com">ankityo9079@gmail.com</a>
+        </p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p data-en="Governed by Information Technology Act 2000 & Digital Personal Data Protection Act 2023 | India" data-hi="सूचना प्रौद्योगिकी अधिनियम 2000 और डिजिटल व्यक्तिगत डेटा संरक्षण अधिनियम 2023 द्वारा संचालित | भारत">
+        Governed by Information Technology Act 2000 & Digital Personal Data Protection Act 2023 | India
+      </p>
+    </div>
+  </div>
+</footer>
+
+<!-- Floating Language Toggle Button -->
+<button onclick="toggleLanguage()" class="floating-lang-toggle" data-en="हिन्दी" data-hi="English" aria-label="Toggle language">हिन्दी</button>
+
+<!-- TRANSLATION & MOBILE INTERACTION SCRIPTS -->
+<script>
+function toggleLanguage() {
+  const currentLang = localStorage.getItem('kaamkaazLang') || 'en';
+  const newLang = currentLang === 'en' ? 'hi' : 'en';
+  localStorage.setItem('kaamkaazLang', newLang);
+  applyLanguage(newLang);
+}
+
+function applyLanguage(lang) {
+  document.querySelectorAll('[data-en]').forEach(el => {
+    if (lang === 'hi' && el.hasAttribute('data-hi')) {
+      if (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA') {
+        el.placeholder = el.getAttribute('data-hi');
+      } else {
+        el.textContent = el.getAttribute('data-hi');
+      }
+    } else if (lang === 'en') {
+      if (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA') {
+        el.placeholder = el.getAttribute('data-en');
+      } else {
+        el.textContent = el.getAttribute('data-en');
+      }
+    }
+  });
+  
+  const btn = document.querySelector('.lang-toggle-btn');
+  if (btn) {
+    btn.textContent = lang === 'en' ? 'अ | Hindi' : 'A | English';
+  }
+}
+
+function toggleMobileMenu() {
+  const navLinks = document.querySelector('.nav-links');
+  const menuToggle = document.querySelector('.menu-toggle');
+  if (navLinks && menuToggle) {
+    navLinks.classList.toggle('active');
+    menuToggle.classList.toggle('active');
+  }
+}
+
+window.addEventListener('resize', () => {
+  if (window.innerWidth > 768) {
+    const navLinks = document.querySelector('.nav-links');
+    const menuToggle = document.querySelector('.menu-toggle');
+    if (navLinks) navLinks.classList.remove('active');
+    if (menuToggle) menuToggle.classList.remove('active');
+  }
+});
+
+window.addEventListener('DOMContentLoaded', () => {
+  const savedLang = localStorage.getItem('kaamkaazLang') || 'en';
+  applyLanguage(savedLang);
+
+  const dropbtn = document.querySelector('.dropbtn');
+  if (dropbtn) {
+    dropbtn.addEventListener('click', function(e) {
+      if (window.innerWidth <= 768) {
+        e.preventDefault();
+        this.parentElement.classList.toggle('active');
+      }
+    });
+  }
+});
+</script>
+</body>
+</html>

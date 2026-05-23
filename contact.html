@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Contact Kaamkaaz - Get in touch with our team for support, feedback, or inquiries about daily wage jobs">
+  <meta name="author" content="Ankit">
+
+  <title>Contact Us - Kaamkaaz</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700&display=swap"
+    rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="icon" type="image/png" href="assets/logo.png">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .lang-toggle {
+      background-color: var(--primary-blue);
+      color: var(--white);
+      border: none;
+      padding: 0.5rem 0.75rem;
+      border-radius: var(--radius-md);
+      font-weight: 600;
+      cursor: pointer;
+      font-size: 0.9rem;
+      transition: var(--transition);
+      margin-left: 1rem;
+    }
+
+    .lang-toggle:hover {
+      background-color: #0E0099;
+    }
+
+    .form-group {
+      margin-bottom: 1.5rem;
+    }
+
+    .form-group label {
+      display: block;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+      color: var(--text-dark);
+    }
+
+    .form-group input,
+    .form-group textarea {
+      width: 100%;
+      padding: 0.75rem;
+      border: 1px solid var(--border-light);
+      border-radius: var(--radius-md);
+      font-family: var(--font-body);
+      font-size: 1rem;
+      transition: var(--transition);
+    }
+
+    .form-group input:focus,
+    .form-group textarea:focus {
+      outline: none;
+      border-color: var(--primary-blue);
+      box-shadow: 0 0 0 3px rgba(26, 86, 219, 0.1);
+    }
+
+    .form-group textarea {
+      resize: vertical;
+      min-height: 120px;
+    }
+
+    .form-container {
+      background-color: var(--white);
+      padding: 2rem;
+      border-radius: var(--radius-lg);
+      box-shadow: var(--shadow-md);
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+
+    .contact-card {
+      background-color: var(--white);
+      padding: 1.5rem;
+      border-radius: var(--radius-lg);
+      box-shadow: var(--shadow-md);
+      transition: var(--transition);
+    }
+
+    .contact-card:hover {
+      box-shadow: var(--shadow-lg);
+      transform: translateY(-4px);
+    }
+
+    .contact-card h3 {
+      color: var(--primary-blue);
+      margin-bottom: 1rem;
+    }
+
+    .grievance-section {
+      background-color: #eff6ff;
+      border-left: 4px solid var(--primary-blue);
+      padding: 2rem;
+      border-radius: var(--radius-lg);
+      margin: 2rem 0;
+    }
+
+    .grievance-section h3 {
+      color: var(--primary-blue);
+      margin-bottom: 1rem;
+    }
+
+    .grievance-item {
+      margin-bottom: 1rem;
+    }
+
+    .grievance-item strong {
+      color: var(--text-dark);
+      display: block;
+      margin-bottom: 0.25rem;
+    }
+
+    .grievance-item p {
+      color: var(--text-muted);
+      margin: 0;
+    }
+
+    @media (max-width: 768px) {
+      .contact-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- NAVIGATION -->
+  <nav>
+    <div class="container">
+      <div class="logo">
+        Kaamkaaz
+        <span class="logo-hindi">कामकाज</span>
+      </div>
+      <div class="menu-toggle" onclick="toggleMobileMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html" data-en="Home" data-hi="होम">Home</a></li>
+        <li><a href="about.html" data-en="About" data-hi="हमारे बारे में">About</a></li>
+        <li><a href="faq.html" data-en="FAQ" data-hi="पूछे जाने वाले प्रश्न">FAQ</a></li>
+        <li><a href="community-guidelines.html" data-en="Community Guidelines" data-hi="सामुदायिक दिशानिर्देश">Community
+            Guidelines</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropbtn" data-en="Legal ▾" data-hi="कानूनी ▾">Legal ▾</a>
+          <div class="dropdown-content">
+            <a href="privacy-policy.html" data-en="Privacy Policy" data-hi="गोपनीयता नीति">Privacy Policy</a>
+            <a href="terms-of-service.html" data-en="Terms of Service" data-hi="सेवा की शर्तें">Terms of Service</a>
+            <a href="cookie-policy.html" data-en="Cookie Policy" data-hi="कुकी नीति">Cookie Policy</a>
+            <a href="data-deletion.html" data-en="Data Deletion" data-hi="डेटा हटाना">Data Deletion</a>
+            <a href="refund-policy.html" data-en="Refund Policy" data-hi="धनवापसी नीति">Refund Policy</a>
+          </div>
+        </li>
+        <li><a href="languages.html" data-en="Languages" data-hi="भाषाएँ">Languages</a></li>
+        <li><a href="press.html" data-en="Press" data-hi="प्रेस">Press</a></li>
+        <li><a href="contact.html" class="active" data-en="Contact" data-hi="संपर्क">Contact</a></li>
+        <li><button onclick="toggleLanguage()" class="lang-toggle-btn" aria-label="Toggle language">अ | A</button></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ═══════════════════════════════════════════════════════════════
+     PAGE HEADER
+     ═══════════════════════════════════════════════════════════════ -->
+  <div class="legal-header">
+    <div class="container">
+      <h1 data-en="Contact Us" data-hi="हमसे संपर्क करें">Contact Us</h1>
+      <p class="last-updated" data-en="We'd love to hear from you" data-hi="हमें आपसे सुनना पसंद है">We'd love to hear
+        from you</p>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════════════════════
+     CONTACT FORM SECTION
+     ═══════════════════════════════════════════════════════════════ -->
+  <section style="padding-top: 2rem; padding-bottom: 4rem;">
+    <div class="container" style="max-width: 800px;">
+      <h2 data-en="Send us a Message" data-hi="हमें एक संदेश भेजें">Send us a Message</h2>
+      <p data-en="Fill out the form below and we'll get back to you within 2-3 business days."
+        data-hi="नीचे दिया गया फॉर्म भरें और हम 2-3 व्यावसायिक दिनों में आपसे संपर्क करेंगे।">Fill out the form below
+        and we'll get back to you within 2-3 business days.</p>
+
+      <form class="form-container" action="mailto:ankityo9079@gmail.com" method="POST" enctype="text/plain">
+        <div class="form-group">
+          <label for="name" data-en="Full Name" data-hi="पूरा नाम">Full Name</label>
+          <input type="text" id="name" name="Name" required>
+        </div>
+
+        <div class="form-group">
+          <label for="email" data-en="Email Address" data-hi="ईमेल पता">Email Address</label>
+          <input type="email" id="email" name="Email" required>
+        </div>
+
+        <div class="form-group">
+          <label for="phone" data-en="Phone Number" data-hi="फोन नंबर">Phone Number</label>
+          <input type="tel" id="phone" name="Phone">
+        </div>
+
+        <div class="form-group">
+          <label for="subject" data-en="Subject" data-hi="विषय">Subject</label>
+          <input type="text" id="subject" name="Subject" required>
+        </div>
+
+        <div class="form-group">
+          <label for="message" data-en="Message" data-hi="संदेश">Message</label>
+          <textarea id="message" name="Message" required></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-lg" style="width: 100%;" data-en="Send Message"
+          data-hi="संदेश भेजें">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════════════════
+     DIRECT CONTACT INFO
+     ═══════════════════════════════════════════════════════════════ -->
+  <section style="background-color: #f3f4f6; padding: 4rem 2rem;">
+    <div class="container">
+      <h2 data-en="Get in Touch" data-hi="हमसे जुड़ें">Get in Touch</h2>
+
+      <div class="contact-grid">
+        <div class="contact-card">
+          <h3>📧 Email</h3>
+          <p><a href="mailto:ankityo9079@gmail.com" style="font-weight: 600;">ankityo9079@gmail.com</a></p>
+          <p data-en="We typically respond within 2-3 business days."
+            data-hi="हम आमतौर पर 2-3 व्यावसायिक दिनों में जवाब देते हैं।">We typically respond within 2-3 business days.
+          </p>
+        </div>
+
+        <div class="contact-card">
+          <h3>🕒 Support Hours</h3>
+          <p><strong data-en="Monday to Saturday" data-hi="सोमवार से शनिवार">Monday to Saturday</strong></p>
+          <p data-en="10:00 AM – 6:00 PM IST" data-hi="सुबह 10:00 बजे – शाम 6:00 बजे IST">10:00 AM – 6:00 PM IST</p>
+        </div>
+
+        <div class="contact-card">
+          <h3>⏱️ Response Time</h3>
+          <p><strong data-en="Average Response" data-hi="औसत प्रतिक्रिया">Average Response</strong></p>
+          <p data-en="2-3 business days" data-hi="2-3 व्यावसायिक दिन">2-3 business days</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════════════════
+     GRIEVANCE OFFICER SECTION
+     ═══════════════════════════════════════════════════════════════ -->
+  <section style="padding: 4rem 2rem;">
+    <div class="container" style="max-width: 800px;">
+      <div class="grievance-section">
+        <h3 data-en="Grievance Officer" data-hi="शिकायत अधिकारी">Grievance Officer</h3>
+        <p data-en="As required under the Information Technology (Intermediary Guidelines and Digital Media Ethics Code) Rules, 2021 and the Digital Personal Data Protection Act, 2023:"
+          data-hi="सूचना प्रौद्योगिकी (मध्यस्थ दिशानिर्देश और डिजिटल मीडिया नैतिकता संहिता) नियम, 2021 और डिजिटल व्यक्तिगत डेटा संरक्षण अधिनियम, 2023 के तहत आवश्यक है:">
+          As required under the Information Technology (Intermediary Guidelines and Digital Media Ethics Code) Rules,
+          2021 and the Digital Personal Data Protection Act, 2023:</p>
+
+        <div style="margin-top: 2rem;">
+          <div class="grievance-item">
+            <strong data-en="Grievance Officer" data-hi="शिकायत अधिकारी">Grievance Officer</strong>
+            <p>Ankit</p>
+          </div>
+
+          <div class="grievance-item">
+            <strong data-en="Platform" data-hi="मंच">Platform</strong>
+            <p>Kaamkaaz (kaamkaaz.org)</p>
+          </div>
+
+          <div class="grievance-item">
+            <strong data-en="Email" data-hi="ईमेल">Email</strong>
+            <p><a href="mailto:ankityo9079@gmail.com">ankityo9079@gmail.com</a></p>
+          </div>
+
+          <div class="grievance-item">
+            <strong data-en="Address" data-hi="पता">Address</strong>
+            <p data-en="Rajasthan, India" data-hi="राजस्थान, भारत">Rajasthan, India</p>
+          </div>
+
+          <div class="grievance-item">
+            <strong data-en="Response Time" data-hi="प्रतिक्रिया समय">Response Time</strong>
+            <p data-en="Within 48 hours of receiving complaint" data-hi="शिकायत प्राप्त होने के 48 घंटे के भीतर">Within
+              48 hours of receiving complaint</p>
+          </div>
+
+          <div class="grievance-item">
+            <strong data-en="Resolution Time" data-hi="समाधान समय">Resolution Time</strong>
+            <p data-en="Within 30 days" data-hi="30 दिनों के भीतर">Within 30 days</p>
+          </div>
+        </div>
+
+        <p style="margin-top: 2rem; font-size: 0.95rem; color: var(--text-muted);"
+          data-en="For any grievances, violations, or complaints regarding Kaamkaaz, please contact the Grievance Officer with details."
+          data-hi="किसी भी शिकायत, उल्लंघन या अभिनिंदन के लिए, कृपया विवरण के साथ शिकायत अधिकारी से संपर्क करें।">For
+          any grievances, violations, or complaints regarding Kaamkaaz, please contact the Grievance Officer with
+          details.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="footer-content-3col">
+        <div class="footer-col">
+          <h3>Kaamkaaz <span class="logo-hindi">कामकाज</span></h3>
+          <p data-en="Connecting daily wage workers with hyperlocal jobs in rural and semi-urban India."
+            data-hi="ग्रामीण और अर्ध-शहरी भारत में दैनिक वेतन भोगी श्रमिकों को स्थानीय नौकरियों से जोड़ना।">
+            Connecting daily wage workers with hyperlocal jobs in rural and semi-urban India.
+          </p>
+          <p style="margin-top: 1rem; font-size: 0.85rem;" data-en="© 2025 Kaamkaaz. All rights reserved."
+            data-hi="© 2025 कामकाज। सर्वाधिकार सुरक्षित।">
+            © 2025 Kaamkaaz. All rights reserved.
+          </p>
+          <p style="font-size: 0.85rem;" data-en="Made with ❤️ for India's workforce"
+            data-hi="भारत के कार्यबल के लिए ❤️ के साथ बनाया गया">
+            Made with ❤️ for India's workforce
+          </p>
+        </div>
+        <div class="footer-col">
+          <h4 data-en="Quick Links" data-hi="त्वरित लिंक" style="margin-bottom: 1rem;">Quick Links</h4>
+          <ul>
+            <li><a href="index.html" data-en="Home" data-hi="होम">Home</a></li>
+            <li><a href="about.html" data-en="About Us" data-hi="हमारे बारे में">About Us</a></li>
+            <li><a href="faq.html" data-en="FAQ" data-hi="पूछे जाने वाले प्रश्न">FAQ</a></li>
+            <li><a href="community-guidelines.html" data-en="Community Guidelines"
+                data-hi="सामुदायिक दिशानिर्देश">Community Guidelines</a></li>
+            <li><a href="languages.html" data-en="Languages" data-hi="भाषाएँ">Languages</a></li>
+            <li><a href="press.html" data-en="Press" data-hi="प्रेस">Press</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4 data-en="Legal & Contact" data-hi="कानूनी और संपर्क" style="margin-bottom: 1rem;">Legal & Contact</h4>
+          <ul>
+            <li><a href="privacy-policy.html" data-en="Privacy Policy" data-hi="गोपनीयता नीति">Privacy Policy</a></li>
+            <li><a href="terms-of-service.html" data-en="Terms of Service" data-hi="सेवा की शर्तें">Terms of Service</a>
+            </li>
+            <li><a href="cookie-policy.html" data-en="Cookie Policy" data-hi="कुकी नीति">Cookie Policy</a></li>
+            <li><a href="data-deletion.html" data-en="Data Deletion" data-hi="डेटा हटाना">Data Deletion</a></li>
+            <li><a href="refund-policy.html" data-en="Refund Policy" data-hi="धनवापसी नीति">Refund Policy</a></li>
+            <li><a href="contact.html" data-en="Contact Us" data-hi="संपर्क करें">Contact Us</a></li>
+          </ul>
+          <p style="margin-top: 1rem; font-size: 0.85rem;" data-en="Grievance Officer: Ankit"
+            data-hi="शिकायत अधिकारी: अंकित">
+            Grievance Officer: Ankit
+          </p>
+          <p style="font-size: 0.85rem;">
+            Email: <a href="mailto:ankityo9079@gmail.com">ankityo9079@gmail.com</a>
+          </p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p data-en="Governed by Information Technology Act 2000 & Digital Personal Data Protection Act 2023 | India"
+          data-hi="सूचना प्रौद्योगिकी अधिनियम 2000 और डिजिटल व्यक्तिगत डेटा संरक्षण अधिनियम 2023 द्वारा संचालित | भारत">
+          Governed by Information Technology Act 2000 & Digital Personal Data Protection Act 2023 | India
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Language Toggle Button -->
+  <button onclick="toggleLanguage()" class="floating-lang-toggle" data-en="हिन्दी" data-hi="English"
+    aria-label="Toggle language">हिन्दी</button>
+
+  <!-- TRANSLATION & MOBILE INTERACTION SCRIPTS -->
+  <script>
+    function toggleLanguage() {
+      const currentLang = localStorage.getItem('kaamkaazLang') || 'en';
+      const newLang = currentLang === 'en' ? 'hi' : 'en';
+      localStorage.setItem('kaamkaazLang', newLang);
+      applyLanguage(newLang);
+    }
+
+    function applyLanguage(lang) {
+      document.querySelectorAll('[data-en]').forEach(el => {
+        if (lang === 'hi' && el.hasAttribute('data-hi')) {
+          if (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA') {
+            el.placeholder = el.getAttribute('data-hi');
+          } else {
+            el.textContent = el.getAttribute('data-hi');
+          }
+        } else if (lang === 'en') {
+          if (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA') {
+            el.placeholder = el.getAttribute('data-en');
+          } else {
+            el.textContent = el.getAttribute('data-en');
+          }
+        }
+      });
+
+      const btn = document.querySelector('.lang-toggle-btn');
+      if (btn) {
+        btn.textContent = lang === 'en' ? 'अ | Hindi' : 'A | English';
+      }
+    }
+
+    function toggleMobileMenu() {
+      const navLinks = document.querySelector('.nav-links');
+      const menuToggle = document.querySelector('.menu-toggle');
+      if (navLinks && menuToggle) {
+        navLinks.classList.toggle('active');
+        menuToggle.classList.toggle('active');
+      }
+    }
+
+    window.addEventListener('resize', () => {
+      if (window.innerWidth > 768) {
+        const navLinks = document.querySelector('.nav-links');
+        const menuToggle = document.querySelector('.menu-toggle');
+        if (navLinks) navLinks.classList.remove('active');
+        if (menuToggle) menuToggle.classList.remove('active');
+      }
+    });
+
+    window.addEventListener('DOMContentLoaded', () => {
+      const savedLang = localStorage.getItem('kaamkaazLang') || 'en';
+      applyLanguage(savedLang);
+
+      const dropbtn = document.querySelector('.dropbtn');
+      if (dropbtn) {
+        dropbtn.addEventListener('click', function (e) {
+          if (window.innerWidth <= 768) {
+            e.preventDefault();
+            this.parentElement.classList.toggle('active');
+          }
+        });
+      }
+    });
+  </script>
+</body>
+
+</html>

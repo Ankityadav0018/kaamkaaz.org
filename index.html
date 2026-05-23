@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Kaamkaaz - Hyperlocal Jobs for Daily Wage Workers in Rural and Semi-urban India. Find jobs within 15-30km using GPS. Download on Google Play.">
+  <meta name="keywords" content="daily wage jobs, blue collar jobs, hyperlocal jobs, rural jobs, India, job marketplace">
+  <meta name="author" content="Ankit">
+  <meta name="theme-color" content="#1400C6">
+  <title>Kaamkaaz - Hyperlocal Daily Wage Jobs in India</title>
+  <link rel="icon" type="image/png" href="assets/logo.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- NAVIGATION -->
+<nav>
+  <div class="container">
+    <div class="logo">
+      <img src="assets/logo.png" alt="Kaamkaaz Logo" class="logo-img">
+      Kaamkaaz
+      <span class="logo-hindi">कामकाज</span>
+    </div>
+    <div class="menu-toggle" onclick="toggleMobileMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html" class="active" data-en="Home" data-hi="होम">Home</a></li>
+      <li><a href="about.html" data-en="About" data-hi="हमारे बारे में">About</a></li>
+      <li><a href="faq.html" data-en="FAQ" data-hi="पूछे जाने वाले प्रश्न">FAQ</a></li>
+      <li><a href="community-guidelines.html" data-en="Community Guidelines" data-hi="सामुदायिक दिशानिर्देश">Community Guidelines</a></li>
+      <li class="dropdown">
+        <a href="#" class="dropbtn" data-en="Legal ▾" data-hi="कानूनी ▾">Legal ▾</a>
+        <div class="dropdown-content">
+          <a href="privacy-policy.html" data-en="Privacy Policy" data-hi="गोपनीयता नीति">Privacy Policy</a>
+          <a href="terms-of-service.html" data-en="Terms of Service" data-hi="सेवा की शर्तें">Terms of Service</a>
+          <a href="cookie-policy.html" data-en="Cookie Policy" data-hi="कुकी नीति">Cookie Policy</a>
+          <a href="data-deletion.html" data-en="Data Deletion" data-hi="डेटा हटाना">Data Deletion</a>
+          <a href="refund-policy.html" data-en="Refund Policy" data-hi="धनवापसी नीति">Refund Policy</a>
+        </div>
+      </li>
+      <li><a href="languages.html" data-en="Languages" data-hi="भाषाएँ">Languages</a></li>
+      <li><a href="press.html" data-en="Press" data-hi="प्रेस">Press</a></li>
+      <li><a href="contact.html" data-en="Contact" data-hi="संपर्क">Contact</a></li>
+      <li><button onclick="toggleLanguage()" class="lang-toggle-btn" aria-label="Toggle language">अ | A</button></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- HERO SECTION -->
+<section class="hero">
+  <div class="container">
+    <h1>Kaamkaaz</h1>
+    <div class="hindi-text">कामकाज</div>
+    <p class="tagline" data-en="Connecting Daily Wage Workers with Local Jobs" data-hi="दैनिक वेतन भोगी श्रमिकों को स्थानीय नौकरियों से जोड़ना">Connecting Daily Wage Workers with Local Jobs</p>
+    <p class="description" data-en="Find hyperlocal jobs within 15-30km from your location. One tap to apply. Get paid fairly without middlemen." data-hi="अपने स्थान से 15-30 किमी के भीतर स्थानीय नौकरियां खोजें। आवेदन करने के लिए एक टैप। बिना बिचौलियों के उचित भुगतान प्राप्त करें।">Find hyperlocal jobs within 15-30km from your location. One tap to apply. Get paid fairly without middlemen.</p>
+    <div class="hero-buttons">
+      <button class="btn btn-primary btn-lg" data-en="Coming Soon on Google Play" data-hi="गूगल प्ले पर जल्द ही उपलब्ध">Coming Soon on Google Play</button>
+      <a href="#features" class="btn btn-outline btn-lg" data-en="Learn More" data-hi="अधिक जानें">Learn More</a>
+    </div>
+  </div>
+</section>
+
+<!-- WORKERS SECTION -->
+<section id="workers" class="features-section" style="background-color: var(--white);">
+  <div class="container">
+    <div class="audience-section">
+      <div class="audience-header">
+        <h2 data-en="👷 I'm a Worker" data-hi="👷 मैं एक श्रमिक हूँ">👷 I'm a Worker</h2>
+        <span class="audience-badge" data-en="DAILY WAGE JOBS" data-hi="दैनिक वेतन नौकरियां">DAILY WAGE JOBS</span>
+      </div>
+      
+      <div class="grid grid-3">
+        <div class="card">
+          <div class="card-icon">📍</div>
+          <h3 data-en="Find Jobs Near You" data-hi="अपने पास काम खोजें">Find Jobs Near You</h3>
+          <p data-en="Discover daily wage jobs within 15-30km of your location using GPS. See job details, location, and pay before applying." data-hi="जीपीएस का उपयोग करके अपने स्थान के 15-30 किमी के भीतर दैनिक वेतन वाली नौकरियां खोजें। आवेदन करने से पहले काम का विवरण, स्थान और वेतन देखें।">Discover daily wage jobs within 15-30km of your location using GPS. See job details, location, and pay before applying.</p>
+        </div>
+        
+        <div class="card">
+          <div class="card-icon">✋</div>
+          <h3 data-en="Apply with One Tap" data-hi="एक टैप से आवेदन करें">Apply with One Tap</h3>
+          <p data-en="Apply for jobs instantly. No lengthy forms. Track your application status in real-time and receive job updates." data-hi="नौकरियों के लिए तुरंत आवेदन करें। कोई लंबा फॉर्म नहीं। वास्तविक समय में अपने आवेदन की स्थिति को ट्रैक करें और जॉब अपडेट प्राप्त करें।">Apply for jobs instantly. No lengthy forms. Track your application status in real-time and receive job updates.</p>
+        </div>
+        
+        <div class="card">
+          <div class="card-icon">🆔</div>
+          <h3 data-en="KYC Verification" data-hi="केवाईसी सत्यापन">KYC Verification</h3>
+          <p data-en="Complete simple KYC verification (Aadhaar, Selfie) to build trust with recruiters and get hired faster." data-hi="नियोक्ताओं के साथ विश्वास बनाने और तेजी से काम पर रखने के लिए सरल केवाईसी सत्यापन (आधार, सेल्फी) पूरा करें।">Complete simple KYC verification (Aadhaar, Selfie) to build trust with recruiters and get hired faster.</p>
+        </div>
+        
+        <div class="card">
+          <div class="card-icon">📸</div>
+          <h3 data-en="Portfolio & Skills" data-hi="पोर्टफोलियो और कौशल">Portfolio & Skills</h3>
+          <p data-en="Upload photos of your work. Showcase your skills and experience to recruiters. Get recognized for quality work." data-hi="अपने काम की तस्वीरें अपलोड करें। नियोक्ताओं को अपना कौशल और अनुभव दिखाएं। गुणवत्तापूर्ण कार्य के लिए पहचान प्राप्त करें।">Upload photos of your work. Showcase your skills and experience to recruiters. Get recognized for quality work.</p>
+        </div>
+        
+        <div class="card">
+          <div class="card-icon">💬</div>
+          <h3 data-en="Direct Communication" data-hi="सीधा संपर्क">Direct Communication</h3>
+          <p data-en="Chat, call, or WhatsApp directly with recruiters. Negotiate terms and confirm job details without middlemen." data-hi="नियोक्ताओं से सीधे चैट, कॉल या व्हाट्सएप करें। बिचौलियों के बिना शर्तों पर बातचीत करें और काम के विवरण की पुष्टि करें।">Chat, call, or WhatsApp directly with recruiters. Negotiate terms and confirm job details without middlemen.</p>
+        </div>
+        
+        <div class="card">
+          <div class="card-icon">🔋</div>
+          <h3 data-en="Lightweight App" data-hi="हल्का ऐप">Lightweight App</h3>
+          <p data-en="Uses minimal internet and battery power. Designed to run smoothly even on entry-level smartphones." data-hi="न्यूनतम इंटरनेट और बैटरी पावर का उपयोग करता है। बुनियादी स्मार्टफोन पर भी आसानी से चलने के लिए डिज़ाइन किया गया है।">Uses minimal internet and battery power. Designed to run smoothly even on entry-level smartphones.</p>
+        </div>
+      </div>
+
+      <div style="margin-top: 3rem; text-align: center;">
+        <h4 data-en="Supported Languages:" data-hi="समर्थित भाषाएँ:">Supported Languages:</h4>
+        <div style="display: inline-flex; gap: 1rem; justify-content: center; margin-top: 1rem; flex-wrap: wrap;">
+          <span class="language-badge active">Hindi / हिंदी (Active)</span>
+          <span class="language-badge active">English (Active)</span>
+          <span class="language-badge coming-soon" style="opacity: 0.6;">More Languages (Coming Soon)</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- RECRUITERS SECTION -->
+<section id="recruiters" style="background-color: var(--background); padding: 4rem 2rem;">
+  <div class="container">
+    <div class="audience-section">
+      <div class="audience-header">
+        <h2 data-en="🏢 I'm a Recruiter" data-hi="🏢 मैं एक नियोक्ता हूँ">🏢 I'm a Recruiter</h2>
+        <span class="audience-badge" data-en="POST JOBS" data-hi="नौकरी पोस्ट करें">POST JOBS</span>
+      </div>
+      
+      <div class="grid grid-3">
+        <div class="card">
+          <div class="card-icon">📌</div>
+          <h3 data-en="Post Jobs with GPS" data-hi="जीपीएस के साथ नौकरी डालें">Post Jobs with GPS</h3>
+          <p data-en="Post jobs with exact GPS location and site photos. Reach daily wage workers within your area instantly." data-hi="सटीक जीपीएस स्थान और साइट फोटो के साथ नौकरियां पोस्ट करें। अपने क्षेत्र के दैनिक वेतन भोगी श्रमिकों तक तुरंत पहुंचें।">Post jobs with exact GPS location and site photos. Reach daily wage workers within your area instantly.</p>
+        </div>
+        
+        <div class="card">
+          <div class="card-icon">👥</div>
+          <h3 data-en="Manage Applicants" data-hi="आवेदकों का प्रबंधन">Manage Applicants</h3>
+          <p data-en="Review worker profiles, KYC verification status, and portfolios. Make informed hiring decisions quickly." data-hi="श्रमिकों की प्रोफ़ाइल, केवाईसी सत्यापन स्थिति और पोर्टफोलियो की समीक्षा करें। तुरंत सही निर्णय लें।">Review worker profiles, KYC verification status, and portfolios. Make informed hiring decisions quickly.</p>
+        </div>
+        
+        <div class="card">
+          <div class="card-icon">⭐</div>
+          <h3 data-en="Trusted Workers" data-hi="विश्वसनीय श्रमिक">Trusted Workers</h3>
+          <p data-en="See ratings and reviews from previous employers. Rehire your trusted workers with confidence. Build a reliable team." data-hi="पिछले नियोक्ताओं की रेटिंग और समीक्षाएं देखें। आत्मविश्वास के साथ अपने विश्वसनीय श्रमिकों को दोबारा काम पर रखें। एक विश्वसनीय टीम बनाएं।">See ratings and reviews from previous employers. Rehire your trusted workers with confidence. Build a reliable team.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- APP SCREENSHOTS SECTION -->
+<section id="screenshots" style="background-color: var(--white); padding: 4rem 2rem;">
+  <div class="container">
+    <h2 class="text-center" data-en="App Screenshots" data-hi="ऐप स्क्रीनशॉट" style="color: var(--primary-blue); margin-bottom: 1rem;">App Screenshots</h2>
+    <p class="text-center text-muted" data-en="Explore the simple, powerful interface designed for easy daily job matches." data-hi="आसान दैनिक नौकरी मिलान के लिए डिज़ाइन किए गए सरल, शक्तिशाली इंटरफ़ेस का अन्वेषण करें।" style="margin-bottom: 3rem;">Explore the simple, powerful interface designed for easy daily job matches.</p>
+    
+    <div class="phone-mockup-container">
+      <!-- Screenshot 1: Login -->
+      <div class="phone-mockup">
+        <div class="phone-screen" style="padding: 0; overflow: hidden; background: #fff;">
+          <img src="assets/login.jpg" alt="Kaamkaaz Login Screen" style="width: 100%; height: 100%; object-fit: cover;">
+        </div>
+      </div>
+      
+      <!-- Screenshot 2: Search Profiles -->
+      <div class="phone-mockup">
+        <div class="phone-screen" style="padding: 0; overflow: hidden; background: #fff;">
+          <img src="assets/search-profiles.jpg" alt="Kaamkaaz Search Profiles Screen" style="width: 100%; height: 100%; object-fit: cover;">
+        </div>
+      </div>
+
+      <!-- Screenshot 3: My Applications -->
+      <div class="phone-mockup">
+        <div class="phone-screen" style="padding: 0; overflow: hidden; background: #fff;">
+          <img src="assets/my-applications.jpg" alt="Kaamkaaz My Applications Screen" style="width: 100%; height: 100%; object-fit: cover;">
+        </div>
+      </div>
+
+      <!-- Screenshot 4: My Jobs -->
+      <div class="phone-mockup">
+        <div class="phone-screen" style="padding: 0; overflow: hidden; background: #fff;">
+          <img src="assets/my-jobs.jpg" alt="Kaamkaaz My Jobs Screen" style="width: 100%; height: 100%; object-fit: cover;">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TECH ARCHITECTURE -->
+<section id="features" class="features-section" style="background-color: var(--background); padding: 4rem 2rem;">
+  <div class="container">
+    <h2 class="text-center" data-en="App Architecture & Stack" data-hi="ऐप आर्किटेक्चर और स्टैक" style="color: var(--primary-blue); margin-bottom: 3rem;">App Architecture & Stack</h2>
+    <div class="grid grid-4">
+      <div class="card">
+        <h4 data-en="Cloud Storage" data-hi="क्लाउड स्टोरेज">Cloud Storage</h4>
+        <p data-en="Cloudinary - Fast and secure media uploads for worker portfolios, photos, and KYC documents." data-hi="क्लाउडिनरी - कार्यकर्ता पोर्टफोलियो, फोटो और केवाईसी दस्तावेजों के लिए तेज और सुरक्षित मीडिया अपलोड।">Cloudinary - Fast and secure media uploads for worker portfolios, photos, and KYC documents.</p>
+      </div>
+
+      <div class="card">
+        <h4 data-en="Push Notifications" data-hi="पुश नोटिफिकेशन">Push Notifications</h4>
+        <p data-en="Firebase - Push notifications for job updates, recruiter messages, and real-time alerts." data-hi="फायरबेस - जॉब अपडेट, नियोक्ता संदेशों और वास्तविक समय के अलर्ट के लिए पुश नोटिफिकेशन।">Firebase - Push notifications for job updates, recruiter messages, and real-time alerts.</p>
+      </div>
+
+      <div class="card">
+        <h4 data-en="Real-Time Chat" data-hi="रीयल-टाइम चैट">Real-Time Chat</h4>
+        <p data-en="Socket.io - Instant messaging between workers and recruiters without delays." data-hi="सॉकेट.आईओ - बिना देरी के श्रमिकों और नियोक्ताओं के बीच त्वरित संदेश सेवा।">Socket.io - Instant messaging between workers and recruiters without delays.</p>
+      </div>
+
+      <div class="card">
+        <h4 data-en="Maps & Location" data-hi="मानचित्र और स्थान">Maps & Location</h4>
+        <p data-en="Google Play Services - GPS location tracking for hyperlocal job matching within 15-30km." data-hi="गूगल प्ले सर्विसेज - 15-30 किमी के भीतर स्थानीय नौकरी मिलान के लिए जीपीएस स्थान ट्रैकिंग।">Google Play Services - GPS location tracking for hyperlocal job matching within 15-30km.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA SECTION -->
+<section style="background: linear-gradient(135deg, var(--primary-blue) 0%, #0E0099 100%); color: white; text-align: center; padding: 4rem 2rem;">
+  <div class="container">
+    <h2 style="color: white; margin-bottom: 1rem;" data-en="Ready to Find or Post Jobs?" data-hi="नौकरी खोजने या पोस्ट करने के लिए तैयार हैं?">Ready to Find or Post Jobs?</h2>
+    <p style="color: rgba(255, 255, 255, 0.95); font-size: 1.1rem; margin-bottom: 2rem;" data-en="Download Kaamkaaz today and connect with opportunities or build your team." data-hi="आज ही कामकाज डाउनलोड करें और अवसरों से जुड़ें या अपनी टीम बनाएं।">Download Kaamkaaz today and connect with opportunities or build your team.</p>
+    <button class="btn btn-secondary btn-lg" data-en="Coming Soon on Google Play" data-hi="गूगल प्ले पर जल्द ही उपलब्ध">Coming Soon on Google Play</button>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-content-3col">
+      <div class="footer-col">
+        <h3>Kaamkaaz <span class="logo-hindi">कामकाज</span></h3>
+        <p data-en="Connecting daily wage workers with hyperlocal jobs in rural and semi-urban India." data-hi="ग्रामीण और अर्ध-शहरी भारत में दैनिक वेतन भोगी श्रमिकों को स्थानीय नौकरियों से जोड़ना।">
+          Connecting daily wage workers with hyperlocal jobs in rural and semi-urban India.
+        </p>
+        <p style="margin-top: 1rem; font-size: 0.85rem;" data-en="© 2025 Kaamkaaz. All rights reserved." data-hi="© 2025 कामकाज। सर्वाधिकार सुरक्षित।">
+          © 2025 Kaamkaaz. All rights reserved.
+        </p>
+        <p style="font-size: 0.85rem;" data-en="Made with ❤️ for India's workforce" data-hi="भारत के कार्यबल के लिए ❤️ के साथ बनाया गया">
+          Made with ❤️ for India's workforce
+        </p>
+      </div>
+      <div class="footer-col">
+        <h4 data-en="Quick Links" data-hi="त्वरित लिंक" style="margin-bottom: 1rem;">Quick Links</h4>
+        <ul>
+          <li><a href="index.html" data-en="Home" data-hi="होम">Home</a></li>
+          <li><a href="about.html" data-en="About Us" data-hi="हमारे बारे में">About Us</a></li>
+          <li><a href="faq.html" data-en="FAQ" data-hi="पूछे जाने वाले प्रश्न">FAQ</a></li>
+          <li><a href="community-guidelines.html" data-en="Community Guidelines" data-hi="सामुदायिक दिशानिर्देश">Community Guidelines</a></li>
+          <li><a href="languages.html" data-en="Languages" data-hi="भाषाएँ">Languages</a></li>
+          <li><a href="press.html" data-en="Press" data-hi="प्रेस">Press</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4 data-en="Legal & Contact" data-hi="कानूनी और संपर्क" style="margin-bottom: 1rem;">Legal & Contact</h4>
+        <ul>
+          <li><a href="privacy-policy.html" data-en="Privacy Policy" data-hi="गोपनीयता नीति">Privacy Policy</a></li>
+          <li><a href="terms-of-service.html" data-en="Terms of Service" data-hi="सेवा की शर्तें">Terms of Service</a></li>
+          <li><a href="cookie-policy.html" data-en="Cookie Policy" data-hi="कुकी नीति">Cookie Policy</a></li>
+          <li><a href="data-deletion.html" data-en="Data Deletion" data-hi="डेटा हटाना">Data Deletion</a></li>
+          <li><a href="refund-policy.html" data-en="Refund Policy" data-hi="धनवापसी नीति">Refund Policy</a></li>
+          <li><a href="contact.html" data-en="Contact Us" data-hi="संपर्क करें">Contact Us</a></li>
+        </ul>
+        <p style="margin-top: 1rem; font-size: 0.85rem;" data-en="Grievance Officer: Ankit" data-hi="शिकायत अधिकारी: अंकित">
+          Grievance Officer: Ankit
+        </p>
+        <p style="font-size: 0.85rem;">
+          Email: <a href="mailto:ankityo9079@gmail.com">ankityo9079@gmail.com</a>
+        </p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p data-en="Governed by Information Technology Act 2000 & Digital Personal Data Protection Act 2023 | India" data-hi="सूचना प्रौद्योगिकी अधिनियम 2000 और डिजिटल व्यक्तिगत डेटा संरक्षण अधिनियम 2023 द्वारा संचालित | भारत">
+        Governed by Information Technology Act 2000 & Digital Personal Data Protection Act 2023 | India
+      </p>
+    </div>
+  </div>
+</footer>
+
+<!-- Floating Language Toggle Button -->
+<button onclick="toggleLanguage()" class="floating-lang-toggle" data-en="हिन्दी" data-hi="English" aria-label="Toggle language">हिन्दी</button>
+
+<!-- TRANSLATION & MOBILE INTERACTION SCRIPTS -->
+<script>
+function toggleLanguage() {
+  const currentLang = localStorage.getItem('kaamkaazLang') || 'en';
+  const newLang = currentLang === 'en' ? 'hi' : 'en';
+  localStorage.setItem('kaamkaazLang', newLang);
+  applyLanguage(newLang);
+}
+
+function applyLanguage(lang) {
+  document.querySelectorAll('[data-en]').forEach(el => {
+    if (lang === 'hi' && el.hasAttribute('data-hi')) {
+      if (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA') {
+        el.placeholder = el.getAttribute('data-hi');
+      } else {
+        el.textContent = el.getAttribute('data-hi');
+      }
+    } else if (lang === 'en') {
+      if (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA') {
+        el.placeholder = el.getAttribute('data-en');
+      } else {
+        el.textContent = el.getAttribute('data-en');
+      }
+    }
+  });
+  
+  const btn = document.querySelector('.lang-toggle-btn');
+  if (btn) {
+    btn.textContent = lang === 'en' ? 'अ | Hindi' : 'A | English';
+  }
+}
+
+function toggleMobileMenu() {
+  const navLinks = document.querySelector('.nav-links');
+  const menuToggle = document.querySelector('.menu-toggle');
+  if (navLinks && menuToggle) {
+    navLinks.classList.toggle('active');
+    menuToggle.classList.toggle('active');
+  }
+}
+
+window.addEventListener('resize', () => {
+  if (window.innerWidth > 768) {
+    const navLinks = document.querySelector('.nav-links');
+    const menuToggle = document.querySelector('.menu-toggle');
+    if (navLinks) navLinks.classList.remove('active');
+    if (menuToggle) menuToggle.classList.remove('active');
+  }
+});
+
+window.addEventListener('DOMContentLoaded', () => {
+  const savedLang = localStorage.getItem('kaamkaazLang') || 'en';
+  applyLanguage(savedLang);
+
+  const dropbtn = document.querySelector('.dropbtn');
+  if (dropbtn) {
+    dropbtn.addEventListener('click', function(e) {
+      if (window.innerWidth <= 768) {
+        e.preventDefault();
+        this.parentElement.classList.toggle('active');
+      }
+    });
+  }
+});
+</script>
+</body>
+</html>

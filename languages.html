@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Kaamkaaz Supported Languages - Currently available in Hindi and English with more languages coming soon">
+  <meta name="author" content="Ankit">
+  
+  <title>Supported Languages - Kaamkaaz</title>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheet -->
+  <link rel="icon" type="image/png" href="assets/logo.png">
+  <link rel="stylesheet" href="styles.css">
+  
+  <style>
+    .language-badge {
+      display: inline-block;
+      padding: 0.5rem 1rem;
+      border-radius: 8px;
+      font-size: 0.9rem;
+      font-weight: 600;
+      margin-top: 1rem;
+    }
+    
+    .badge-active {
+      background-color: #10b981;
+      color: white;
+    }
+    
+    .badge-coming {
+      background-color: #9ca3af;
+      color: white;
+    }
+    
+    .language-card {
+      background: white;
+      border: 2px solid #e5e7eb;
+      border-radius: 12px;
+      padding: 2rem;
+      text-align: center;
+      transition: all 0.3s ease;
+    }
+    
+    .language-card.active {
+      border-color: #10b981;
+      background: linear-gradient(135deg, #f0fdf4 0%, #ecfdf5 100%);
+      box-shadow: 0 4px 12px rgba(16, 185, 129, 0.15);
+    }
+    
+    .language-card.coming-soon {
+      opacity: 0.6;
+      background-color: #f9fafb;
+      border-color: #d1d5db;
+    }
+    
+    .language-card h3 {
+      font-size: 1.5rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+      color: var(--dark-gray);
+    }
+    
+    .language-card.coming-soon h3 {
+      color: #9ca3af;
+    }
+    
+    .language-native {
+      font-size: 2rem;
+      font-weight: 700;
+      color: var(--primary-blue);
+      margin: 1rem 0;
+    }
+    
+    .language-card.coming-soon .language-native {
+      color: #d1d5db;
+    }
+    
+    .language-region {
+      font-size: 0.95rem;
+      color: #6b7280;
+      margin-bottom: 1rem;
+    }
+    
+    .language-card.coming-soon .language-region {
+      color: #9ca3af;
+    }
+    
+    .grid-4 {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+      margin-bottom: 3rem;
+    }
+    
+    .section-title {
+      font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+      color: var(--dark-gray);
+    }
+    
+    .section-subtitle {
+      font-size: 1.1rem;
+      color: #6b7280;
+      margin-bottom: 2rem;
+    }
+    
+    .coming-soon-note {
+      background-color: #EBF5FF;
+      border-left: 4px solid #00A8FF;
+      padding: 1.5rem;
+      border-radius: 8px;
+      margin-bottom: 3rem;
+    }
+    
+    .coming-soon-note p {
+      margin: 0;
+      color: #0E0099;
+      font-size: 1rem;
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAVIGATION -->
+<nav>
+  <div class="container">
+    <div class="logo">
+      <img src="assets/logo.png" alt="Kaamkaaz Logo" class="logo-img">
+      Kaamkaaz
+      <span class="logo-hindi">कामकाज</span>
+    </div>
+    <div class="menu-toggle" onclick="toggleMobileMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html" data-en="Home" data-hi="होम">Home</a></li>
+      <li><a href="about.html" data-en="About" data-hi="हमारे बारे में">About</a></li>
+      <li><a href="faq.html" data-en="FAQ" data-hi="पूछे जाने वाले प्रश्न">FAQ</a></li>
+      <li><a href="community-guidelines.html" data-en="Community Guidelines" data-hi="सामुदायिक दिशानिर्देश">Community Guidelines</a></li>
+      <li class="dropdown">
+        <a href="#" class="dropbtn" data-en="Legal ▾" data-hi="कानूनी ▾">Legal ▾</a>
+        <div class="dropdown-content">
+          <a href="privacy-policy.html" data-en="Privacy Policy" data-hi="गोपनीयता नीति">Privacy Policy</a>
+          <a href="terms-of-service.html" data-en="Terms of Service" data-hi="सेवा की शर्तें">Terms of Service</a>
+          <a href="cookie-policy.html" data-en="Cookie Policy" data-hi="कुकी नीति">Cookie Policy</a>
+          <a href="data-deletion.html" data-en="Data Deletion" data-hi="डेटा हटाना">Data Deletion</a>
+          <a href="refund-policy.html" data-en="Refund Policy" data-hi="धनवापसी नीति">Refund Policy</a>
+        </div>
+      </li>
+      <li><a href="languages.html" class="active" data-en="Languages" data-hi="भाषाएँ">Languages</a></li>
+      <li><a href="press.html" data-en="Press" data-hi="प्रेस">Press</a></li>
+      <li><a href="contact.html" data-en="Contact" data-hi="संपर्क">Contact</a></li>
+      <li><button onclick="toggleLanguage()" class="lang-toggle-btn" aria-label="Toggle language">अ | A</button></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- ═══════════════════════════════════════════════════════════════
+     LANGUAGES HEADER
+     ═══════════════════════════════════════════════════════════════ -->
+<div class="legal-header">
+  <div class="container">
+    <h1>🌏 Supported Languages</h1>
+    <p class="last-updated">Expanding Kaamkaaz to Indian Languages</p>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════════════
+     LANGUAGES CONTENT
+     ═══════════════════════════════════════════════════════════════ -->
+<section style="padding: 2rem 0; padding-bottom: 4rem;">
+  <div class="legal-content">
+    
+    <!-- Active Languages Section -->
+    <div>
+      <h2 class="section-title">✅ Currently Supported Languages</h2>
+      <p class="section-subtitle">Available now on Kaamkaaz</p>
+      
+      <div class="grid-4">
+        <!-- Hindi -->
+        <div class="language-card active">
+          <h3>Hindi</h3>
+          <div class="language-native">हिंदी</div>
+          <p class="language-region">North India</p>
+          <span class="language-badge badge-active">✓ Available Now</span>
+        </div>
+        
+        <!-- English -->
+        <div class="language-card active">
+          <h3>English</h3>
+          <div class="language-native">English</div>
+          <p class="language-region">Default</p>
+          <span class="language-badge badge-active">✓ Available Now</span>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Coming Soon Note -->
+    <div class="coming-soon-note">
+      <p><strong>📢 Expansion Update:</strong> We are actively working to bring Kaamkaaz to more Indian languages. Stay tuned for updates!</p>
+    </div>
+    
+    <!-- Coming Soon Languages Section -->
+    <div>
+      <h2 class="section-title">🕐 Coming Soon</h2>
+      <p class="section-subtitle">We're expanding our language support. These languages will be available soon:</p>
+      
+      <div class="grid-4">
+        <!-- Punjabi -->
+        <div class="language-card coming-soon">
+          <h3>Punjabi</h3>
+          <div class="language-native">ਪੰਜਾਬੀ</div>
+          <p class="language-region">Punjab</p>
+          <span class="language-badge badge-coming">🕐 Coming Soon</span>
+        </div>
+        
+        <!-- Bengali -->
+        <div class="language-card coming-soon">
+          <h3>Bengali</h3>
+          <div class="language-native">বাংলা</div>
+          <p class="language-region">West Bengal</p>
+          <span class="language-badge badge-coming">🕐 Coming Soon</span>
+        </div>
+        
+        <!-- Telugu -->
+        <div class="language-card coming-soon">
+          <h3>Telugu</h3>
+          <div class="language-native">తెలుగు</div>
+          <p class="language-region">Andhra Pradesh, Telangana</p>
+          <span class="language-badge badge-coming">🕐 Coming Soon</span>
+        </div>
+        
+        <!-- Marathi -->
+        <div class="language-card coming-soon">
+          <h3>Marathi</h3>
+          <div class="language-native">मराठी</div>
+          <p class="language-region">Maharashtra</p>
+          <span class="language-badge badge-coming">🕐 Coming Soon</span>
+        </div>
+        
+        <!-- Tamil -->
+        <div class="language-card coming-soon">
+          <h3>Tamil</h3>
+          <div class="language-native">தமிழ்</div>
+          <p class="language-region">Tamil Nadu</p>
+          <span class="language-badge badge-coming">🕐 Coming Soon</span>
+        </div>
+        
+        <!-- Gujarati -->
+        <div class="language-card coming-soon">
+          <h3>Gujarati</h3>
+          <div class="language-native">ગુજરાતી</div>
+          <p class="language-region">Gujarat</p>
+          <span class="language-badge badge-coming">🕐 Coming Soon</span>
+        </div>
+        
+        <!-- Kannada -->
+        <div class="language-card coming-soon">
+          <h3>Kannada</h3>
+          <div class="language-native">ಕನ್ನಡ</div>
+          <p class="language-region">Karnataka</p>
+          <span class="language-badge badge-coming">🕐 Coming Soon</span>
+        </div>
+        
+        <!-- Odia -->
+        <div class="language-card coming-soon">
+          <h3>Odia</h3>
+          <div class="language-native">ଓଡ଼ିଆ</div>
+          <p class="language-region">Odisha</p>
+          <span class="language-badge badge-coming">🕐 Coming Soon</span>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Info Section -->
+    <div style="background-color: #f3f4f6; padding: 2rem; border-radius: 12px; margin-top: 3rem;">
+      <h3 style="margin-bottom: 1rem;">Why Language Support Matters</h3>
+      <p>Kaamkaaz is built for India's daily wage workers. Many workers are more comfortable in their native language rather than English. By expanding to regional languages, we ensure:</p>
+      <ul style="margin-top: 1rem;">
+        <li>Better accessibility for workers in rural and semi-urban areas</li>
+        <li>Clearer communication between workers and recruiters</li>
+        <li>Faster job applications and hiring process</li>
+        <li>Inclusive platform for all Indian workers regardless of language preference</li>
+      </ul>
+    </div>
+    
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-content-3col">
+      <div class="footer-col">
+        <h3>Kaamkaaz <span class="logo-hindi">कामकाज</span></h3>
+        <p data-en="Connecting daily wage workers with hyperlocal jobs in rural and semi-urban India." data-hi="ग्रामीण और अर्ध-शहरी भारत में दैनिक वेतन भोगी श्रमिकों को स्थानीय नौकरियों से जोड़ना।">
+          Connecting daily wage workers with hyperlocal jobs in rural and semi-urban India.
+        </p>
+        <p style="margin-top: 1rem; font-size: 0.85rem;" data-en="© 2025 Kaamkaaz. All rights reserved." data-hi="© 2025 कामकाज। सर्वाधिकार सुरक्षित।">
+          © 2025 Kaamkaaz. All rights reserved.
+        </p>
+        <p style="font-size: 0.85rem;" data-en="Made with ❤️ for India's workforce" data-hi="भारत के कार्यबल के लिए ❤️ के साथ बनाया गया">
+          Made with ❤️ for India's workforce
+        </p>
+      </div>
+      <div class="footer-col">
+        <h4 data-en="Quick Links" data-hi="त्वरित लिंक" style="margin-bottom: 1rem;">Quick Links</h4>
+        <ul>
+          <li><a href="index.html" data-en="Home" data-hi="होम">Home</a></li>
+          <li><a href="about.html" data-en="About Us" data-hi="हमारे बारे में">About Us</a></li>
+          <li><a href="faq.html" data-en="FAQ" data-hi="पूछे जाने वाले प्रश्न">FAQ</a></li>
+          <li><a href="community-guidelines.html" data-en="Community Guidelines" data-hi="सामुदायिक दिशानिर्देश">Community Guidelines</a></li>
+          <li><a href="languages.html" data-en="Languages" data-hi="भाषाएँ">Languages</a></li>
+          <li><a href="press.html" data-en="Press" data-hi="प्रेस">Press</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4 data-en="Legal & Contact" data-hi="कानूनी और संपर्क" style="margin-bottom: 1rem;">Legal & Contact</h4>
+        <ul>
+          <li><a href="privacy-policy.html" data-en="Privacy Policy" data-hi="गोपनीयता नीति">Privacy Policy</a></li>
+          <li><a href="terms-of-service.html" data-en="Terms of Service" data-hi="सेवा की शर्तें">Terms of Service</a></li>
+          <li><a href="cookie-policy.html" data-en="Cookie Policy" data-hi="कुकी नीति">Cookie Policy</a></li>
+          <li><a href="data-deletion.html" data-en="Data Deletion" data-hi="डेटा हटाना">Data Deletion</a></li>
+          <li><a href="refund-policy.html" data-en="Refund Policy" data-hi="धनवापसी नीति">Refund Policy</a></li>
+          <li><a href="contact.html" data-en="Contact Us" data-hi="संपर्क करें">Contact Us</a></li>
+        </ul>
+        <p style="margin-top: 1rem; font-size: 0.85rem;" data-en="Grievance Officer: Ankit" data-hi="शिकायत अधिकारी: अंकित">
+          Grievance Officer: Ankit
+        </p>
+        <p style="font-size: 0.85rem;">
+          Email: <a href="mailto:ankityo9079@gmail.com">ankityo9079@gmail.com</a>
+        </p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p data-en="Governed by Information Technology Act 2000 & Digital Personal Data Protection Act 2023 | India" data-hi="सूचना प्रौद्योगिकी अधिनियम 2000 और डिजिटल व्यक्तिगत डेटा संरक्षण अधिनियम 2023 द्वारा संचालित | भारत">
+        Governed by Information Technology Act 2000 & Digital Personal Data Protection Act 2023 | India
+      </p>
+    </div>
+  </div>
+</footer>
+
+<!-- Floating Language Toggle Button -->
+<button onclick="toggleLanguage()" class="floating-lang-toggle" data-en="हिन्दी" data-hi="English" aria-label="Toggle language">हिन्दी</button>
+
+<!-- TRANSLATION & MOBILE INTERACTION SCRIPTS -->
+<script>
+function toggleLanguage() {
+  const currentLang = localStorage.getItem('kaamkaazLang') || 'en';
+  const newLang = currentLang === 'en' ? 'hi' : 'en';
+  localStorage.setItem('kaamkaazLang', newLang);
+  applyLanguage(newLang);
+}
+
+function applyLanguage(lang) {
+  document.querySelectorAll('[data-en]').forEach(el => {
+    if (lang === 'hi' && el.hasAttribute('data-hi')) {
+      if (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA') {
+        el.placeholder = el.getAttribute('data-hi');
+      } else {
+        el.textContent = el.getAttribute('data-hi');
+      }
+    } else if (lang === 'en') {
+      if (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA') {
+        el.placeholder = el.getAttribute('data-en');
+      } else {
+        el.textContent = el.getAttribute('data-en');
+      }
+    }
+  });
+  
+  const btn = document.querySelector('.lang-toggle-btn');
+  if (btn) {
+    btn.textContent = lang === 'en' ? 'अ | Hindi' : 'A | English';
+  }
+}
+
+function toggleMobileMenu() {
+  const navLinks = document.querySelector('.nav-links');
+  const menuToggle = document.querySelector('.menu-toggle');
+  if (navLinks && menuToggle) {
+    navLinks.classList.toggle('active');
+    menuToggle.classList.toggle('active');
+  }
+}
+
+window.addEventListener('resize', () => {
+  if (window.innerWidth > 768) {
+    const navLinks = document.querySelector('.nav-links');
+    const menuToggle = document.querySelector('.menu-toggle');
+    if (navLinks) navLinks.classList.remove('active');
+    if (menuToggle) menuToggle.classList.remove('active');
+  }
+});
+
+window.addEventListener('DOMContentLoaded', () => {
+  const savedLang = localStorage.getItem('kaamkaazLang') || 'en';
+  applyLanguage(savedLang);
+
+  const dropbtn = document.querySelector('.dropbtn');
+  if (dropbtn) {
+    dropbtn.addEventListener('click', function(e) {
+      if (window.innerWidth <= 768) {
+        e.preventDefault();
+        this.parentElement.classList.toggle('active');
+      }
+    });
+  }
+});
+</script>
+</body>
+</html>
