@@ -201,7 +201,8 @@
         data-hi="नीचे दिया गया फॉर्म भरें और हम 2-3 व्यावसायिक दिनों में आपसे संपर्क करेंगे।">Fill out the form below
         and we'll get back to you within 2-3 business days.</p>
 
-      <form class="form-container" action="mailto:ankityo9079@gmail.com" method="POST" enctype="text/plain">
+      <form class="form-container" id="contactForm">
+        <input type="hidden" name="_captcha" value="false">
         <div class="form-group">
           <label for="name" data-en="Full Name" data-hi="पूरा नाम">Full Name</label>
           <input type="text" id="name" name="Name" required>
@@ -243,7 +244,7 @@
       <div class="contact-grid">
         <div class="contact-card">
           <h3>📧 Email</h3>
-          <p><a href="mailto:ankityo9079@gmail.com" style="font-weight: 600;">ankityo9079@gmail.com</a></p>
+          <p><a href="mailto:kaamkaaz0018@gmail.com" style="font-weight: 600;">kaamkaaz0018@gmail.com</a></p>
           <p data-en="We typically respond within 2-3 business days."
             data-hi="हम आमतौर पर 2-3 व्यावसायिक दिनों में जवाब देते हैं।">We typically respond within 2-3 business days.
           </p>
@@ -270,7 +271,7 @@
   <section style="padding: 4rem 2rem;">
     <div class="container" style="max-width: 800px;">
       <div class="grievance-section">
-        <h3 data-en="Grievance Officer" data-hi="शिकायत अधिकारी">Grievance Officer</h3>
+        <h3 data-en="Developer" data-hi="डेवलपर">Developer</h3>
         <p data-en="As required under the Information Technology (Intermediary Guidelines and Digital Media Ethics Code) Rules, 2021 and the Digital Personal Data Protection Act, 2023:"
           data-hi="सूचना प्रौद्योगिकी (मध्यस्थ दिशानिर्देश और डिजिटल मीडिया नैतिकता संहिता) नियम, 2021 और डिजिटल व्यक्तिगत डेटा संरक्षण अधिनियम, 2023 के तहत आवश्यक है:">
           As required under the Information Technology (Intermediary Guidelines and Digital Media Ethics Code) Rules,
@@ -278,7 +279,7 @@
 
         <div style="margin-top: 2rem;">
           <div class="grievance-item">
-            <strong data-en="Grievance Officer" data-hi="शिकायत अधिकारी">Grievance Officer</strong>
+            <strong data-en="Developer" data-hi="डेवलपर">Developer</strong>
             <p>Ankit</p>
           </div>
 
@@ -289,7 +290,7 @@
 
           <div class="grievance-item">
             <strong data-en="Email" data-hi="ईमेल">Email</strong>
-            <p><a href="mailto:ankityo9079@gmail.com">ankityo9079@gmail.com</a></p>
+            <p><a href="mailto:kaamkaaz0018@gmail.com">kaamkaaz0018@gmail.com</a></p>
           </div>
 
           <div class="grievance-item">
@@ -310,9 +311,9 @@
         </div>
 
         <p style="margin-top: 2rem; font-size: 0.95rem; color: var(--text-muted);"
-          data-en="For any grievances, violations, or complaints regarding Kaamkaaz, please contact the Grievance Officer with details."
-          data-hi="किसी भी शिकायत, उल्लंघन या अभिनिंदन के लिए, कृपया विवरण के साथ शिकायत अधिकारी से संपर्क करें।">For
-          any grievances, violations, or complaints regarding Kaamkaaz, please contact the Grievance Officer with
+          data-en="For any grievances, violations, or complaints regarding Kaamkaaz, please contact the Developer with details."
+          data-hi="किसी भी शिकायत, उल्लंघन या अभिनिंदन के लिए, कृपया विवरण के साथ डेवलपर से संपर्क करें।">For
+          any grievances, violations, or complaints regarding Kaamkaaz, please contact the Developer with
           details.</p>
       </div>
     </div>
@@ -360,12 +361,12 @@
             <li><a href="refund-policy.html" data-en="Refund Policy" data-hi="धनवापसी नीति">Refund Policy</a></li>
             <li><a href="contact.html" data-en="Contact Us" data-hi="संपर्क करें">Contact Us</a></li>
           </ul>
-          <p style="margin-top: 1rem; font-size: 0.85rem;" data-en="Grievance Officer: Ankit"
-            data-hi="शिकायत अधिकारी: अंकित">
-            Grievance Officer: Ankit
+          <p style="margin-top: 1rem; font-size: 0.85rem;" data-en="Developer: Ankit"
+            data-hi="डेवलपर: अंकित">
+            Developer: Ankit
           </p>
           <p style="font-size: 0.85rem;">
-            Email: <a href="mailto:ankityo9079@gmail.com">ankityo9079@gmail.com</a>
+            Email: <a href="mailto:kaamkaaz0018@gmail.com">kaamkaaz0018@gmail.com</a>
           </p>
         </div>
       </div>
@@ -443,6 +444,52 @@
             e.preventDefault();
             this.parentElement.classList.toggle('active');
           }
+        });
+      }
+
+      const contactForm = document.getElementById('contactForm');
+      if (contactForm) {
+        contactForm.addEventListener('submit', function(e) {
+          e.preventDefault();
+          const btn = this.querySelector('button[type="submit"]');
+          const originalText = btn.textContent;
+          btn.textContent = 'Sending...';
+          btn.disabled = true;
+          
+          const formData = new FormData(this);
+          
+          fetch("https://formsubmit.co/ajax/kaamkaaz0018@gmail.com", {
+            method: "POST",
+            headers: { 
+              'Accept': 'application/json'
+            },
+            body: formData
+          })
+          .then(response => response.json())
+          .then(data => {
+            if (data.success || data.success === "true") {
+              btn.textContent = 'Message Sent Successfully!';
+              btn.style.backgroundColor = '#10B981';
+              contactForm.reset();
+            } else {
+              btn.textContent = 'Please check email to activate form first!';
+              btn.style.backgroundColor = '#d97706';
+            }
+            setTimeout(() => {
+              btn.textContent = originalText;
+              btn.style.backgroundColor = '';
+              btn.disabled = false;
+            }, 4000);
+          })
+          .catch(error => {
+            btn.textContent = 'Something went wrong. Please email us directly.';
+            btn.style.backgroundColor = '#EF4444';
+            setTimeout(() => {
+              btn.textContent = originalText;
+              btn.style.backgroundColor = '';
+              btn.disabled = false;
+            }, 4000);
+          });
         });
       }
     });
