@@ -81,26 +81,25 @@ designed with a "High-Trust, Low-Friction" philosophy.
 > Coming Soon
 
 ---
+## 🏗️ Project Structure
 
-## 🏗️ Architecture
-
+```
 kaamkaaz/
-├── app/                  # Flutter Mobile Application
+├── app/                        # Flutter Mobile Application
 │   ├── lib/
-│   │   ├── l10n/         # 13 Language Translations
-│   │   ├── models/       # Data Models
-│   │   ├── providers/    # Riverpod State Management
-│   │   ├── screens/      # Worker, Recruiter, Admin UI
-│   │   ├── services/     # API & Socket Services
-│   │   └── widgets/      # Reusable Components
-│   └── assets/           # Icons, Images, Translations
-└── backend/              # Node.js Express API
-├── controllers/      # Business Logic
-├── models/           # Mongoose Schemas
-├── routes/           # API Endpoints
-└── server.js         # Entry Point
----
-
+│   │   ├── l10n/               # 13 Language Translations
+│   │   ├── models/             # Data Models
+│   │   ├── providers/          # Riverpod State Management
+│   │   ├── screens/            # Worker, Recruiter, Admin UI
+│   │   ├── services/           # API & Socket Services
+│   │   └── widgets/            # Reusable Components
+│   └── assets/                 # Icons, Images, Translations
+└── backend/                    # Node.js Express API
+    ├── controllers/             # Business Logic
+    ├── models/                  # Mongoose Schemas
+    ├── routes/                  # API Endpoints
+    └── server.js                # Entry Point
+```
 ## 🚀 Getting Started
 
 ### Backend
