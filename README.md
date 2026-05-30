@@ -72,10 +72,10 @@ designed with a "High-Trust, Low-Friction" philosophy.
 
 ## 📱 Screenshots
 
-<img width="1440" height="2560" alt="kaamkaaz_screenshot_8" src="https://github.com/user-attachments/assets/f495411d-d23d-4e26-83cf-335b065e948d" />
-<img width="1440" height="2560" alt="kaamkaaz_screenshot_6" src="https://github.com/user-attachments/assets/3889b289-5b84-4f3d-b52d-413899ee3511" />
-<img width="1440" height="2560" alt="kaamkaaz_screenshot_5" src="https://github.com/user-attachments/assets/6b03d539-2218-4847-b8be-9c3b11af0670" />
-<img width="1440" height="2560" alt="kaamkaaz_screenshot_3" src="https://github.com/user-attachments/assets/c29840eb-94da-4f31-9229-a2df1616582f" />
+<img width="250" height="560" alt="kaamkaaz_screenshot_8" src="https://github.com/user-attachments/assets/f495411d-d23d-4e26-83cf-335b065e948d" />
+<img width="250" height="560" alt="kaamkaaz_screenshot_6" src="https://github.com/user-attachments/assets/3889b289-5b84-4f3d-b52d-413899ee3511" />
+<img width="250" height="560" alt="kaamkaaz_screenshot_5" src="https://github.com/user-attachments/assets/6b03d539-2218-4847-b8be-9c3b11af0670" />
+<img width="250" height="560" alt="kaamkaaz_screenshot_3" src="https://github.com/user-attachments/assets/c29840eb-94da-4f31-9229-a2df1616582f" />
 
 <img width="1440" height="2560" alt="kaamkaaz_screenshot_1" src="https://github.com/user-attachments/assets/6efa122e-a18b-4f4f-82fc-02ff3a9f586c" />
 
