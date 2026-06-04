@@ -98,24 +98,29 @@
       <span></span>
     </div>
     <ul class="nav-links">
-      <li><a href="index.html" data-en="Home" data-hi="होम">Home</a></li>
-      <li><a href="about.html" data-en="About" data-hi="हमारे बारे में">About</a></li>
-      <li><a href="faq.html" data-en="FAQ" data-hi="पूछे जाने वाले प्रश्न">FAQ</a></li>
-      <li><a href="community-guidelines.html" data-en="Community Guidelines" data-hi="सामुदायिक दिशानिर्देश">Community Guidelines</a></li>
+      <li><a href="index.html" data-i18n="home">Home</a></li>
+      <li><a href="about.html" data-i18n="about">About</a></li>
+      <li><a href="faq.html" data-i18n="faq">FAQ</a></li>
+      <li><a href="community-guidelines.html" data-i18n="community_guidelines">Community Guidelines</a></li>
       <li class="dropdown">
-        <a href="#" class="dropbtn" data-en="Legal ▾" data-hi="कानूनी ▾">Legal ▾</a>
+        <a href="#" class="dropbtn" data-i18n="legal">Legal ▾</a>
         <div class="dropdown-content">
-          <a href="privacy-policy.html" data-en="Privacy Policy" data-hi="गोपनीयता नीति">Privacy Policy</a>
-          <a href="terms-of-service.html" data-en="Terms of Service" data-hi="सेवा की शर्तें">Terms of Service</a>
-          <a href="cookie-policy.html" class="active" data-en="Cookie Policy" data-hi="कुकी नीति">Cookie Policy</a>
-          <a href="data-deletion.html" data-en="Data Deletion" data-hi="डेटा हटाना">Data Deletion</a>
-          <a href="refund-policy.html" data-en="Refund Policy" data-hi="धनवापसी नीति">Refund Policy</a>
+          <a href="privacy-policy.html" data-i18n="privacy_policy">Privacy Policy</a>
+          <a href="terms-of-service.html" data-i18n="terms_of_service">Terms of Service</a>
+          <a href="cookie-policy.html" class="active" data-i18n="cookie_policy">Cookie Policy</a>
+          <a href="data-deletion.html" data-i18n="data_deletion">Data Deletion</a>
+          <a href="refund-policy.html" data-i18n="refund_policy">Refund Policy</a>
         </div>
       </li>
-      <li><a href="languages.html" data-en="Languages" data-hi="भाषाएँ">Languages</a></li>
-      <li><a href="press.html" data-en="Press" data-hi="प्रेस">Press</a></li>
-      <li><a href="contact.html" data-en="Contact" data-hi="संपर्क">Contact</a></li>
-      <li><button onclick="toggleLanguage()" class="lang-toggle-btn" aria-label="Toggle language">अ | A</button></li>
+      <li><a href="languages.html" data-i18n="languages">Languages</a></li>
+      <li><a href="press.html" data-i18n="press">Press</a></li>
+      <li><a href="contact.html" data-i18n="contact">Contact</a></li>
+      <li class="lang-picker-item">
+        <select onchange="switchLanguage(this.value)" class="lang-picker" id="langPicker" aria-label="Select Language">
+          <option value="en">English</option>
+          <option value="hi">हिन्दी</option>
+        </select>
+      </li>
     </ul>
   </div>
 </nav>
@@ -125,8 +130,8 @@
      ═══════════════════════════════════════════════════════════════ -->
 <div class="legal-header">
   <div class="container">
-    <h1 data-en="Cookie Policy" data-hi="कुकी नीति">Cookie Policy</h1>
-    <p class="last-updated" data-en="Last Updated: May 2026" data-hi="अंतिम अपडेट: मई 2026">Last Updated: May 2026</p>
+    <h1 data-i18n="cookie_policy">Cookie Policy</h1>
+    <p class="last-updated" data-i18n="last_updated_may_2026">Last Updated: May 2026</p>
   </div>
 </div>
 
@@ -140,166 +145,166 @@
     <div class="toc">
       <h3>📑 Table of Contents</h3>
       <ul>
-        <li><a href="#overview" data-en="1. Overview" data-hi="1. अवलोकन">1. Overview</a></li>
-        <li><a href="#what-are" data-en="2. What Are Cookies?" data-hi="2. कुकीज़ क्या हैं?">2. What Are Cookies?</a></li>
-        <li><a href="#cookies-we-use" data-en="3. Cookies We Use" data-hi="3. हम जो कुकीज़ का उपयोग करते हैं">3. Cookies We Use</a></li>
-        <li><a href="#local-storage" data-en="4. Local Storage" data-hi="4. स्थानीय संग्रहण">4. Local Storage</a></li>
-        <li><a href="#third-party" data-en="5. Third-Party Services" data-hi="5. तीसरे पक्ष की सेवाएं">5. Third-Party Services</a></li>
-        <li><a href="#how-to-manage" data-en="6. How to Manage Cookies" data-hi="6. कुकीज़ को कैसे प्रबंधित करें">6. How to Manage Cookies</a></li>
-        <li><a href="#no-ads" data-en="7. No Advertising Cookies" data-hi="7. कोई विज्ञापन कुकीज़ नहीं">7. No Advertising Cookies</a></li>
-        <li><a href="#contact" data-en="8. Questions?" data-hi="8. सवाल हैं?">8. Questions?</a></li>
+        <li><a href="#overview" data-i18n="1_overview">1. Overview</a></li>
+        <li><a href="#what-are" data-i18n="2_what_are_cookies">2. What Are Cookies?</a></li>
+        <li><a href="#cookies-we-use" data-i18n="3_cookies_we_use">3. Cookies We Use</a></li>
+        <li><a href="#local-storage" data-i18n="4_local_storage">4. Local Storage</a></li>
+        <li><a href="#third-party" data-i18n="5_thirdparty_services">5. Third-Party Services</a></li>
+        <li><a href="#how-to-manage" data-i18n="6_how_to_manage_cookies">6. How to Manage Cookies</a></li>
+        <li><a href="#no-ads" data-i18n="7_no_advertising_cookies">7. No Advertising Cookies</a></li>
+        <li><a href="#contact" data-i18n="8_questions">8. Questions?</a></li>
       </ul>
     </div>
 
     <!-- Content Sections -->
     <div class="legal-section" id="overview">
-      <h2 data-en="1. Overview" data-hi="1. अवलोकन">1. Overview</h2>
-      <p data-en="Kaamkaaz uses cookies and similar technologies (like local storage) to enhance your experience, remember your preferences, and improve our app. This policy explains what cookies we use and how you can control them." data-hi="कामकाज आपके अनुभव को बेहतर बनाने, आपकी प्राथमिकताओं को याद रखने और हमारे ऐप्लिकेशन को सुधारने के लिए कुकीज़ और समान तकनीकें (जैसे स्थानीय संग्रहण) का उपयोग करता है।">Kaamkaaz uses cookies and similar technologies (like local storage) to enhance your experience, remember your preferences, and improve our app. This policy explains what cookies we use and how you can control them.</p>
-      <p data-en="We DO NOT use cookies for advertising, tracking, or selling your data." data-hi="हम विज्ञापन, ट्रैकिंग, या आपके डेटा को बेचने के लिए कुकीज़ का उपयोग नहीं करते हैं।"><span class="highlight" data-en="We DO NOT use cookies for advertising, tracking, or selling your data." data-hi="हम विज्ञापन, ट्रैकिंग, या आपके डेटा को बेचने के लिए कुकीज़ का उपयोग नहीं करते हैं।">We DO NOT use cookies for advertising, tracking, or selling your data.</span></p>
+      <h2 data-i18n="1_overview">1. Overview</h2>
+      <p data-i18n="kaamkaaz_uses_cookies_and_similar">Kaamkaaz uses cookies and similar technologies (like local storage) to enhance your experience, remember your preferences, and improve our app. This policy explains what cookies we use and how you can control them.</p>
+      <p data-i18n="we_do_not_use_cookies"><span class="highlight" data-i18n="we_do_not_use_cookies">We DO NOT use cookies for advertising, tracking, or selling your data.</span></p>
     </div>
 
     <div class="legal-section" id="what-are">
-      <h2 data-en="2. What Are Cookies?" data-hi="2. कुकीज़ क्या हैं?">2. What Are Cookies?</h2>
-      <p data-en="Cookies are small files stored on your device that contain information about your interactions with Kaamkaaz. They help:" data-hi="कुकीज़ आपके डिवाइस पर संग्रहीत छोटी फाइलें हैं जिनमें कामकाज के साथ आपकी बातचीत की जानकारी होती है।">Cookies are small files stored on your device that contain information about your interactions with Kaamkaaz. They help:</p>
+      <h2 data-i18n="2_what_are_cookies">2. What Are Cookies?</h2>
+      <p data-i18n="cookies_are_small_files_stored">Cookies are small files stored on your device that contain information about your interactions with Kaamkaaz. They help:</p>
       <ul>
-        <li data-en="Keep you logged in securely" data-hi="आपको सुरक्षित रूप से लॉगिन रखें">Keep you logged in securely</li>
-        <li data-en="Remember your language preference" data-hi="आपकी भाषा की प्राथमिकता याद रखें">Remember your language preference</li>
-        <li data-en="Cache job listings for offline access" data-hi="ऑफ़लाइन पहुंच के लिए नौकरी की सूची को कैश करें">Cache job listings for offline access</li>
-        <li data-en="Improve app performance and stability" data-hi="ऐप्लिकेशन प्रदर्शन और स्थिरता में सुधार करें">Improve app performance and stability</li>
-        <li data-en="Understand how users interact with the app" data-hi="समझें कि उपयोगकर्ता ऐप्लिकेशन के साथ कैसे इंटरैक्ट करते हैं">Understand how users interact with the app</li>
+        <li data-i18n="keep_you_logged_in_securely">Keep you logged in securely</li>
+        <li data-i18n="remember_your_language_preference">Remember your language preference</li>
+        <li data-i18n="cache_job_listings_for_offline">Cache job listings for offline access</li>
+        <li data-i18n="improve_app_performance_and_stability">Improve app performance and stability</li>
+        <li data-i18n="understand_how_users_interact_with">Understand how users interact with the app</li>
       </ul>
     </div>
 
     <div class="legal-section" id="cookies-we-use">
-      <h2 data-en="3. Cookies We Use" data-hi="3. हम जो कुकीज़ का उपयोग करते हैं">3. Cookies We Use</h2>
+      <h2 data-i18n="3_cookies_we_use">3. Cookies We Use</h2>
       
       <table class="cookie-table">
         <thead>
           <tr>
-            <th data-en="Cookie Type" data-hi="कुकी प्रकार">Cookie Type</th>
-            <th data-en="Purpose" data-hi="उद्देश्य">Purpose</th>
-            <th data-en="Duration" data-hi="अवधि">Duration</th>
+            <th data-i18n="cookie_type">Cookie Type</th>
+            <th data-i18n="purpose">Purpose</th>
+            <th data-i18n="duration">Duration</th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td><strong data-en="Session Token" data-hi="सत्र टोकन">Session Token</strong></td>
-            <td data-en="Keep you logged in securely. Validates your authentication." data-hi="आपको सुरक्षित रूप से लॉगिन रखें। आपके प्रमाणीकरण को सत्यापित करता है।">Keep you logged in securely. Validates your authentication.</td>
-            <td data-en="Until logout or 30 days" data-hi="लॉगआउट या 30 दिनों तक">Until logout or 30 days</td>
+            <td><strong data-i18n="session_token">Session Token</strong></td>
+            <td data-i18n="keep_you_logged_in_securely_2">Keep you logged in securely. Validates your authentication.</td>
+            <td data-i18n="until_logout_or_30_days">Until logout or 30 days</td>
           </tr>
           <tr>
-            <td><strong data-en="Language Preference" data-hi="भाषा प्राथमिकता">Language Preference</strong></td>
-            <td data-en="Remember your chosen language (Hindi/English)." data-hi="आपकी चुनी हुई भाषा (हिंदी/अंग्रेजी) को याद रखें।">Remember your chosen language (Hindi/English).</td>
-            <td data-en="1 year" data-hi="1 साल">1 year</td>
+            <td><strong data-i18n="language_preference">Language Preference</strong></td>
+            <td data-i18n="remember_your_chosen_language_hindienglish">Remember your chosen language (Hindi/English).</td>
+            <td data-i18n="1_year">1 year</td>
           </tr>
           <tr>
-            <td><strong data-en="Location Preference" data-hi="स्थान प्राथमिकता">Location Preference</strong></td>
-            <td data-en="Cache your location settings for faster job matching." data-hi="तेजी से नौकरी मिलान के लिए आपकी स्थान सेटिंग्स को कैश करें।">Cache your location settings for faster job matching.</td>
-            <td data-en="30 days" data-hi="30 दिन">30 days</td>
+            <td><strong data-i18n="location_preference">Location Preference</strong></td>
+            <td data-i18n="cache_your_location_settings_for">Cache your location settings for faster job matching.</td>
+            <td data-i18n="30_days">30 days</td>
           </tr>
           <tr>
-            <td><strong data-en="Job Cache" data-hi="नौकरी कैश">Job Cache</strong></td>
-            <td data-en="Store downloaded job listings for offline access." data-hi="ऑफ़लाइन पहुंच के लिए डाउनलोड की गई नौकरी की सूची को स्टोर करें।">Store downloaded job listings for offline access.</td>
-            <td data-en="Until cleared" data-hi="जब तक हटाया न जाए">Until cleared</td>
+            <td><strong data-i18n="job_cache">Job Cache</strong></td>
+            <td data-i18n="store_downloaded_job_listings_for">Store downloaded job listings for offline access.</td>
+            <td data-i18n="until_cleared">Until cleared</td>
           </tr>
           <tr>
-            <td><strong data-en="App Version" data-hi="ऐप संस्करण">App Version</strong></td>
-            <td data-en="Track which app version you're using for compatibility." data-hi="संगतता के लिए आप कौन सा ऐप संस्करण उपयोग कर रहे हैं यह ट्रैक करें।">Track which app version you're using for compatibility.</td>
-            <td data-en="Until app update" data-hi="ऐप अपडेट तक">Until app update</td>
+            <td><strong data-i18n="app_version">App Version</strong></td>
+            <td data-i18n="track_which_app_version_youre">Track which app version you're using for compatibility.</td>
+            <td data-i18n="until_app_update">Until app update</td>
           </tr>
         </tbody>
       </table>
     </div>
 
     <div class="legal-section" id="local-storage">
-      <h2 data-en="4. Local Storage" data-hi="4. स्थानीय संग्रहण">4. Local Storage</h2>
-      <p data-en="In addition to cookies, Kaamkaaz uses browser/app local storage to:" data-hi="कुकीज़ के अलावा, कामकाज स्थानीय संग्रहण का उपयोग करता है:">In addition to cookies, Kaamkaaz uses browser/app local storage to:</p>
+      <h2 data-i18n="4_local_storage">4. Local Storage</h2>
+      <p data-i18n="in_addition_to_cookies_kaamkaaz">In addition to cookies, Kaamkaaz uses browser/app local storage to:</p>
       
-      <h3 data-en="What's Stored Locally?" data-hi="स्थानीय रूप से क्या संग्रहीत है?">What's Stored Locally?</h3>
+      <h3 data-i18n="whats_stored_locally">What's Stored Locally?</h3>
       <ul>
-        <li><strong data-en="User Preferences:" data-hi="उपयोगकर्ता प्राथमिकताएं:">User Preferences:</strong> <span data-en="Language choice, theme, notifications settings" data-hi="भाषा की पसंद, थीम, सूचना सेटिंग्स">Language choice, theme, notifications settings</span></li>
-        <li><strong data-en="Offline Job Cache:" data-hi="ऑफ़लाइन नौकरी कैश:">Offline Job Cache:</strong> <span data-en="Job listings downloaded for offline viewing" data-hi="ऑफ़लाइन देखने के लिए डाउनलोड की गई नौकरी की सूची">Job listings downloaded for offline viewing</span></li>
-        <li><strong data-en="Search History:" data-hi="खोज इतिहास:">Search History:</strong> <span data-en="Recent job searches (optional, can be cleared)" data-hi="हाल की नौकरी की खोज (वैकल्पिक, साफ किया जा सकता है)">Recent job searches (optional, can be cleared)</span></li>
-        <li><strong data-en="Form Drafts:" data-hi="फॉर्म ड्राफ्ट:">Form Drafts:</strong> <span data-en="Unsaved job applications to prevent loss" data-hi="नुकसान से बचने के लिए अनसेव किए गए नौकरी आवेदन">Unsaved job applications to prevent loss</span></li>
+        <li><strong data-i18n="user_preferences">User Preferences:</strong> <span data-i18n="language_choice_theme_notifications_settings">Language choice, theme, notifications settings</span></li>
+        <li><strong data-i18n="offline_job_cache">Offline Job Cache:</strong> <span data-i18n="job_listings_downloaded_for_offline">Job listings downloaded for offline viewing</span></li>
+        <li><strong data-i18n="search_history">Search History:</strong> <span data-i18n="recent_job_searches_optional_can">Recent job searches (optional, can be cleared)</span></li>
+        <li><strong data-i18n="form_drafts">Form Drafts:</strong> <span data-i18n="unsaved_job_applications_to_prevent">Unsaved job applications to prevent loss</span></li>
       </ul>
 
-      <h3 data-en="Privacy:" data-hi="गोपनीयता:">Privacy:</h3>
-      <p data-en="All local storage is stored ON YOUR DEVICE ONLY. We cannot access it, and it is never sent to our servers unless you explicitly perform an action (like uploading an application)." data-hi="सभी स्थानीय संग्रहण केवल आपके डिवाइस पर संग्रहीत है। हम इसे एक्सेस नहीं कर सकते, और जब तक आप स्पष्ट रूप से कोई कार्रवाई नहीं करते (जैसे आवेदन अपलोड करना), यह कभी हमारे सर्वर को नहीं भेजा जाता।">All local storage is stored ON YOUR DEVICE ONLY. We cannot access it, and it is never sent to our servers unless you explicitly perform an action (like uploading an application).</p>
+      <h3 data-i18n="privacy">Privacy:</h3>
+      <p data-i18n="all_local_storage_is_stored">All local storage is stored ON YOUR DEVICE ONLY. We cannot access it, and it is never sent to our servers unless you explicitly perform an action (like uploading an application).</p>
     </div>
 
     <div class="legal-section" id="third-party">
-      <h2 data-en="5. Third-Party Services" data-hi="5. तीसरे पक्ष की सेवाएं">5. Third-Party Services</h2>
-      <p data-en="Kaamkaaz uses the following third-party services that may set their own cookies:" data-hi="कामकाज निम्नलिखित तीसरे पक्ष की सेवाओं का उपयोग करता है जो अपनी स्वयं की कुकीज़ सेट कर सकते हैं:">Kaamkaaz uses the following third-party services that may set their own cookies:</p>
+      <h2 data-i18n="5_thirdparty_services">5. Third-Party Services</h2>
+      <p data-i18n="kaamkaaz_uses_the_following_thirdparty">Kaamkaaz uses the following third-party services that may set their own cookies:</p>
       
       <h3><strong>🔐 Firebase (Google)</strong></h3>
       <ul>
-        <li data-en="Used for: Push notifications, analytics" data-hi="उपयोग किया गया: पुश सूचनाएं, विश्लेषण">Used for: Push notifications, analytics</li>
-        <li data-en="Cookies set: Firebase tokens and session IDs" data-hi="कुकीज़ सेट: Firebase टोकन और सेशन ID">Cookies set: Firebase tokens and session IDs</li>
-        <li data-en="Privacy Policy: https://firebase.google.com/support/privacy" data-hi="गोपनीयता नीति: https://firebase.google.com/support/privacy">Privacy Policy: https://firebase.google.com/support/privacy</li>
+        <li data-i18n="used_for_push_notifications_analytics">Used for: Push notifications, analytics</li>
+        <li data-i18n="cookies_set_firebase_tokens_and">Cookies set: Firebase tokens and session IDs</li>
+        <li data-i18n="privacy_policy_httpsfirebasegooglecomsupportprivacy">Privacy Policy: https://firebase.google.com/support/privacy</li>
       </ul>
 
       <h3><strong>🔑 Supabase (Authentication)</strong></h3>
       <ul>
-        <li data-en="Used for: User login, authentication" data-hi="उपयोग किया गया: उपयोगकर्ता लॉगिन, प्रमाणीकरण">Used for: User login, authentication</li>
-        <li data-en="Cookies set: Auth tokens" data-hi="कुकीज़ सेट: प्रमाणीकरण टोकन">Cookies set: Auth tokens</li>
-        <li data-en="Privacy Policy: https://supabase.com/privacy" data-hi="गोपनीयता नीति: https://supabase.com/privacy">Privacy Policy: https://supabase.com/privacy</li>
+        <li data-i18n="used_for_user_login_authentication">Used for: User login, authentication</li>
+        <li data-i18n="cookies_set_auth_tokens">Cookies set: Auth tokens</li>
+        <li data-i18n="privacy_policy_httpssupabasecomprivacy">Privacy Policy: https://supabase.com/privacy</li>
       </ul>
 
-      <h3 style="margin-top: 1.5rem;" data-en="No Advertising or Tracking Cookies" data-hi="कोई विज्ञापन या ट्रैकिंग कुकीज़ नहीं">No Advertising or Tracking Cookies</h3>
-      <p data-en="We DO NOT use Google Analytics, Facebook Pixel, or any advertising/tracking cookies. We DO NOT sell your data to advertisers." data-hi="हम Google Analytics, Facebook Pixel, या किसी विज्ञापन/ट्रैकिंग कुकीज़ का उपयोग नहीं करते हैं। हम आपके डेटा को विज्ञापनदाताओं को नहीं बेचते हैं।">We DO NOT use Google Analytics, Facebook Pixel, or any advertising/tracking cookies. We DO NOT sell your data to advertisers.</p>
+      <h3 style="margin-top: 1.5rem;" data-i18n="no_advertising_or_tracking_cookies">No Advertising or Tracking Cookies</h3>
+      <p data-i18n="we_do_not_use_google">We DO NOT use Google Analytics, Facebook Pixel, or any advertising/tracking cookies. We DO NOT sell your data to advertisers.</p>
     </div>
 
     <div class="legal-section" id="how-to-manage">
-      <h2 data-en="6. How to Manage Cookies" data-hi="6. कुकीज़ को कैसे प्रबंधित करें">6. How to Manage Cookies</h2>
+      <h2 data-i18n="6_how_to_manage_cookies">6. How to Manage Cookies</h2>
       
-      <h3 data-en="Clear App Data / Cookies" data-hi="ऐप डेटा / कुकीज़ साफ करें">Clear App Data / Cookies</h3>
-      <p data-en="You can clear cookies and app data anytime:" data-hi="आप किसी भी समय कुकीज़ और ऐप डेटा को साफ कर सकते हैं:">You can clear cookies and app data anytime:</p>
+      <h3 data-i18n="clear_app_data_cookies">Clear App Data / Cookies</h3>
+      <p data-i18n="you_can_clear_cookies_and">You can clear cookies and app data anytime:</p>
       
-      <h4 data-en="On Android:" data-hi="Android पर:">On Android:</h4>
+      <h4 data-i18n="on_android">On Android:</h4>
       <ol>
-        <li data-en="Go to Settings → Apps → Kaamkaaz" data-hi="सेटिंग्स → ऐप्स → कामकाज पर जाएं">Go to Settings → Apps → Kaamkaaz</li>
-        <li data-en="Tap 'Storage'" data-hi="'संग्रहण' पर टैप करें">Tap 'Storage'</li>
-        <li data-en="Tap 'Clear Cache' or 'Clear Data'" data-hi="'कैश साफ करें' या 'डेटा साफ करें' पर टैप करें">Tap 'Clear Cache' or 'Clear Data'</li>
+        <li data-i18n="go_to_settings_apps_kaamkaaz">Go to Settings → Apps → Kaamkaaz</li>
+        <li data-i18n="tap_storage">Tap 'Storage'</li>
+        <li data-i18n="tap_clear_cache_or_clear">Tap 'Clear Cache' or 'Clear Data'</li>
       </ol>
 
-      <h4 data-en="On Web Browser:" data-hi="वेब ब्राउज़र पर:">On Web Browser:</h4>
+      <h4 data-i18n="on_web_browser">On Web Browser:</h4>
       <ol>
-        <li data-en="Chrome: Settings → Privacy and security → Clear browsing data" data-hi="Chrome: सेटिंग्स → गोपनीयता और सुरक्षा → ब्राउज़िंग डेटा साफ करें">Chrome: Settings → Privacy and security → Clear browsing data</li>
-        <li data-en="Firefox: Preferences → Privacy & Security → Clear Data" data-hi="Firefox: प्राथमिकताएं → गोपनीयता और सुरक्षा → डेटा साफ करें">Firefox: Preferences → Privacy & Security → Clear Data</li>
-        <li data-en="Safari: Develop → Empty Caches" data-hi="Safari: विकास → कैश खाली करें">Safari: Develop → Empty Caches</li>
+        <li data-i18n="chrome_settings_privacy_and_security">Chrome: Settings → Privacy and security → Clear browsing data</li>
+        <li data-i18n="firefox_preferences_privacy_security_clear">Firefox: Preferences → Privacy & Security → Clear Data</li>
+        <li data-i18n="safari_develop_empty_caches">Safari: Develop → Empty Caches</li>
       </ol>
 
-      <h3 style="margin-top: 2rem;" data-en="Disable Cookies in Browser" data-hi="ब्राउज़र में कुकीज़ को अक्षम करें">Disable Cookies in Browser</h3>
-      <p data-en="Most browsers allow you to disable cookies, but this may affect app functionality. You may not be able to stay logged in or access some features." data-hi="अधिकांश ब्राउज़र आपको कुकीज़ को अक्षम करने की अनुमति देते हैं, लेकिन इससे ऐप्लिकेशन की कार्यक्षमता प्रभावित हो सकती है।">Most browsers allow you to disable cookies, but this may affect app functionality. You may not be able to stay logged in or access some features.</p>
+      <h3 style="margin-top: 2rem;" data-i18n="disable_cookies_in_browser">Disable Cookies in Browser</h3>
+      <p data-i18n="most_browsers_allow_you_to">Most browsers allow you to disable cookies, but this may affect app functionality. You may not be able to stay logged in or access some features.</p>
     </div>
 
     <div class="legal-section" id="no-ads">
-      <h2 data-en="7. No Advertising Cookies" data-hi="7. कोई विज्ञापन कुकीज़ नहीं">7. No Advertising Cookies</h2>
-      <p><span class="highlight" data-en="Kaamkaaz does NOT use advertising cookies or tracking pixels for marketing purposes." data-hi="कामकाज विपणन उद्देश्यों के लिए विज्ञापन कुकीज़ या ट्रैकिंग पिक्सेल का उपयोग नहीं करता है।">Kaamkaaz does NOT use advertising cookies or tracking pixels for marketing purposes.</span></p>
+      <h2 data-i18n="7_no_advertising_cookies">7. No Advertising Cookies</h2>
+      <p><span class="highlight" data-i18n="kaamkaaz_does_not_use_advertising">Kaamkaaz does NOT use advertising cookies or tracking pixels for marketing purposes.</span></p>
       
-      <p data-en="We do NOT:" data-hi="हम नहीं करते हैं:">We do NOT:</p>
+      <p data-i18n="we_do_not">We do NOT:</p>
       <ul>
-        <li data-en="Use Google Analytics or similar tracking services" data-hi="Google Analytics या समान ट्रैकिंग सेवाओं का उपयोग करें">Use Google Analytics or similar tracking services</li>
-        <li data-en="Track you across other websites" data-hi="आपको अन्य वेबसाइटों पर ट्रैक करें">Track you across other websites</li>
-        <li data-en="Sell your browsing data or behavior to advertisers" data-hi="आपके ब्राउज़िंग डेटा या व्यवहार को विज्ञापनदाताओं को बेचें">Sell your browsing data or behavior to advertisers</li>
-        <li data-en="Use cookies for targeted advertising" data-hi="लक्षित विज्ञापन के लिए कुकीज़ का उपयोग करें">Use cookies for targeted advertising</li>
-        <li data-en="Share your data with ad networks" data-hi="विज्ञापन नेटवर्क के साथ अपना डेटा साझा करें">Share your data with ad networks</li>
+        <li data-i18n="use_google_analytics_or_similar">Use Google Analytics or similar tracking services</li>
+        <li data-i18n="track_you_across_other_websites">Track you across other websites</li>
+        <li data-i18n="sell_your_browsing_data_or">Sell your browsing data or behavior to advertisers</li>
+        <li data-i18n="use_cookies_for_targeted_advertising">Use cookies for targeted advertising</li>
+        <li data-i18n="share_your_data_with_ad">Share your data with ad networks</li>
       </ul>
 
-      <p data-en="Your privacy is important to us." data-hi="आपकी गोपनीयता हमारे लिए महत्वपूर्ण है।">Your privacy is important to us.</p>
+      <p data-i18n="your_privacy_is_important_to">Your privacy is important to us.</p>
     </div>
 
     <div class="legal-section" id="contact">
-      <h2 data-en="8. Questions About Cookies?" data-hi="8. कुकीज़ के बारे में सवाल?">8. Questions About Cookies?</h2>
-      <p data-en="If you have questions about how Kaamkaaz uses cookies, contact:" data-hi="यदि आपके पास कामकाज कुकीज़ का उपयोग कैसे करते हैं इसके बारे में सवाल हैं, तो संपर्क करें:">If you have questions about how Kaamkaaz uses cookies, contact:</p>
+      <h2 data-i18n="8_questions_about_cookies">8. Questions About Cookies?</h2>
+      <p data-i18n="if_you_have_questions_about">If you have questions about how Kaamkaaz uses cookies, contact:</p>
       
       <div style="background-color: #f3f4f6; padding: 1.5rem; border-radius: 8px; margin-top: 1.5rem;">
         <p><strong>📧 Email:</strong> <a href="mailto:kaamkaaz0018@gmail.com">kaamkaaz0018@gmail.com</a></p>
-        <p><strong data-en="Subject:" data-hi="विषय:">Subject:</strong> <span data-en="'Cookie Query' or 'Privacy Question'" data-hi="'कुकी प्रश्न' या 'गोपनीयता प्रश्न'">"Cookie Query" or "Privacy Question"</span></p>
-        <p><strong data-en="Response Time:" data-hi="प्रतिक्रिया समय:">Response Time:</strong> <span data-en="Within 5-7 business days" data-hi="5-7 व्यावसायिक दिनों के भीतर">Within 5-7 business days</span></p>
+        <p><strong data-i18n="subject_2">Subject:</strong> <span data-i18n="cookie_query_or_privacy_question">"Cookie Query" or "Privacy Question"</span></p>
+        <p><strong data-i18n="response_time_2">Response Time:</strong> <span data-i18n="within_57_business_days">Within 5-7 business days</span></p>
       </div>
 
-      <p style="margin-top: 2rem; text-align: center; font-size: 0.9rem; color: var(--text-muted);" data-en="Last Updated: May 2026 | Effective Date: May 2026" data-hi="अंतिम अपडेट: मई 2026 | प्रभावी तारीख: मई 2026">Last Updated: May 2026 | Effective Date: May 2026</p>
+      <p style="margin-top: 2rem; text-align: center; font-size: 0.9rem; color: var(--text-muted);" data-i18n="last_updated_may_2026_effective">Last Updated: May 2026 | Effective Date: May 2026</p>
     </div>
 
   </div>
@@ -311,38 +316,38 @@
     <div class="footer-content-3col">
       <div class="footer-col">
         <h3>Kaamkaaz <span class="logo-hindi">कामकाज</span></h3>
-        <p data-en="Connecting daily wage workers with hyperlocal jobs in rural and semi-urban India." data-hi="ग्रामीण और अर्ध-शहरी भारत में दैनिक वेतन भोगी श्रमिकों को स्थानीय नौकरियों से जोड़ना।">
+        <p data-i18n="connecting_daily_wage_workers_with_2">
           Connecting daily wage workers with hyperlocal jobs in rural and semi-urban India.
         </p>
-        <p style="margin-top: 1rem; font-size: 0.85rem;" data-en="© 2025 Kaamkaaz. All rights reserved." data-hi="© 2025 कामकाज। सर्वाधिकार सुरक्षित।">
-          © 2025 Kaamkaaz. All rights reserved.
+        <p style="margin-top: 1rem; font-size: 0.85rem;" data-i18n="2026_kaamkaaz_all_rights_reserved">
+          © 2026 Kaamkaaz. All rights reserved.
         </p>
-        <p style="font-size: 0.85rem;" data-en="Made with ❤️ for India's workforce" data-hi="भारत के कार्यबल के लिए ❤️ के साथ बनाया गया">
+        <p style="font-size: 0.85rem;" data-i18n="made_with_for_indias_workforce">
           Made with ❤️ for India's workforce
         </p>
       </div>
       <div class="footer-col">
-        <h4 data-en="Quick Links" data-hi="त्वरित लिंक" style="margin-bottom: 1rem;">Quick Links</h4>
+        <h4 data-i18n="quick_links" style="margin-bottom: 1rem;">Quick Links</h4>
         <ul>
-          <li><a href="index.html" data-en="Home" data-hi="होम">Home</a></li>
-          <li><a href="about.html" data-en="About Us" data-hi="हमारे बारे में">About Us</a></li>
-          <li><a href="faq.html" data-en="FAQ" data-hi="पूछे जाने वाले प्रश्न">FAQ</a></li>
-          <li><a href="community-guidelines.html" data-en="Community Guidelines" data-hi="सामुदायिक दिशानिर्देश">Community Guidelines</a></li>
-          <li><a href="languages.html" data-en="Languages" data-hi="भाषाएँ">Languages</a></li>
-          <li><a href="press.html" data-en="Press" data-hi="प्रेस">Press</a></li>
+          <li><a href="index.html" data-i18n="home">Home</a></li>
+          <li><a href="about.html" data-i18n="about_us">About Us</a></li>
+          <li><a href="faq.html" data-i18n="faq">FAQ</a></li>
+          <li><a href="community-guidelines.html" data-i18n="community_guidelines">Community Guidelines</a></li>
+          <li><a href="languages.html" data-i18n="languages">Languages</a></li>
+          <li><a href="press.html" data-i18n="press">Press</a></li>
         </ul>
       </div>
       <div class="footer-col">
-        <h4 data-en="Legal & Contact" data-hi="कानूनी और संपर्क" style="margin-bottom: 1rem;">Legal & Contact</h4>
+        <h4 data-i18n="legal_contact" style="margin-bottom: 1rem;">Legal & Contact</h4>
         <ul>
-          <li><a href="privacy-policy.html" data-en="Privacy Policy" data-hi="गोपनीयता नीति">Privacy Policy</a></li>
-          <li><a href="terms-of-service.html" data-en="Terms of Service" data-hi="सेवा की शर्तें">Terms of Service</a></li>
-          <li><a href="cookie-policy.html" data-en="Cookie Policy" data-hi="कुकी नीति">Cookie Policy</a></li>
-          <li><a href="data-deletion.html" data-en="Data Deletion" data-hi="डेटा हटाना">Data Deletion</a></li>
-          <li><a href="refund-policy.html" data-en="Refund Policy" data-hi="धनवापसी नीति">Refund Policy</a></li>
-          <li><a href="contact.html" data-en="Contact Us" data-hi="संपर्क करें">Contact Us</a></li>
+          <li><a href="privacy-policy.html" data-i18n="privacy_policy">Privacy Policy</a></li>
+          <li><a href="terms-of-service.html" data-i18n="terms_of_service">Terms of Service</a></li>
+          <li><a href="cookie-policy.html" data-i18n="cookie_policy">Cookie Policy</a></li>
+          <li><a href="data-deletion.html" data-i18n="data_deletion">Data Deletion</a></li>
+          <li><a href="refund-policy.html" data-i18n="refund_policy">Refund Policy</a></li>
+          <li><a href="contact.html" data-i18n="contact_us">Contact Us</a></li>
         </ul>
-        <p style="margin-top: 1rem; font-size: 0.85rem;" data-en="Developer: Ankit Yadav" data-hi="डेवलपर: अंकित यादव">
+        <p style="margin-top: 1rem; font-size: 0.85rem;" data-i18n="developer_ankit_yadav">
           Developer: Ankit Yadav
         </p>
         <p style="font-size: 0.85rem;">
@@ -351,46 +356,55 @@
       </div>
     </div>
     <div class="footer-bottom">
-      <p data-en="Governed by Information Technology Act 2000 & Digital Personal Data Protection Act 2023 | India" data-hi="सूचना प्रौद्योगिकी अधिनियम 2000 और डिजिटल व्यक्तिगत डेटा संरक्षण अधिनियम 2023 द्वारा संचालित | भारत">
+      <p data-i18n="governed_by_information_technology_act">
         Governed by Information Technology Act 2000 & Digital Personal Data Protection Act 2023 | India
       </p>
     </div>
   </div>
 </footer>
 
-<!-- Floating Language Toggle Button -->
-<button onclick="toggleLanguage()" class="floating-lang-toggle" data-en="हिन्दी" data-hi="English" aria-label="Toggle language">हिन्दी</button>
-
-<!-- TRANSLATION & MOBILE INTERACTION SCRIPTS -->
+<script src="translations.js"></script>
 <script>
-function toggleLanguage() {
-  const currentLang = localStorage.getItem('kaamkaazLang') || 'en';
-  const newLang = currentLang === 'en' ? 'hi' : 'en';
-  localStorage.setItem('kaamkaazLang', newLang);
-  applyLanguage(newLang);
+function switchLanguage(lang) {
+  localStorage.setItem('kaamkaazLang', lang);
+  applyLanguage(lang);
 }
 
 function applyLanguage(lang) {
-  document.querySelectorAll('[data-en]').forEach(el => {
-    if (lang === 'hi' && el.hasAttribute('data-hi')) {
+  const dict = (typeof translations !== 'undefined' && translations[lang]) ? translations[lang] : null;
+  const fallback = (typeof translations !== 'undefined') ? translations['en'] : null;
+
+  // Handle data-i18n elements
+  document.querySelectorAll('[data-i18n]').forEach(el => {
+    const key = el.getAttribute('data-i18n');
+    const text = (dict && dict[key]) ? dict[key] : (fallback ? fallback[key] : null);
+    if (text !== null && text !== undefined) {
       if (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA') {
-        el.placeholder = el.getAttribute('data-hi');
+        el.placeholder = text;
       } else {
-        el.textContent = el.getAttribute('data-hi');
-      }
-    } else if (lang === 'en') {
-      if (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA') {
-        el.placeholder = el.getAttribute('data-en');
-      } else {
-        el.textContent = el.getAttribute('data-en');
+        el.textContent = text;
       }
     }
   });
-  
-  const btn = document.querySelector('.lang-toggle-btn');
-  if (btn) {
-    btn.textContent = lang === 'en' ? 'अ | Hindi' : 'A | English';
-  }
+
+  // Handle legacy data-en / data-hi elements (safety net)
+  document.querySelectorAll('[data-en]').forEach(el => {
+    const text = lang === 'hi' && el.hasAttribute('data-hi')
+      ? el.getAttribute('data-hi')
+      : el.getAttribute('data-en');
+    if (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA') {
+      el.placeholder = text;
+    } else {
+      el.textContent = text;
+    }
+  });
+
+  // Update all language pickers on page
+  document.querySelectorAll('.lang-picker').forEach(sel => { sel.value = lang; });
+
+  // RTL for Urdu
+  document.documentElement.dir = (lang === 'ur') ? 'rtl' : 'ltr';
+  document.documentElement.lang = lang;
 }
 
 function toggleMobileMenu() {

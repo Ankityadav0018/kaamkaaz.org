@@ -33,24 +33,29 @@
       <span></span>
     </div>
     <ul class="nav-links">
-      <li><a href="index.html" data-en="Home" data-hi="होम">Home</a></li>
-      <li><a href="about.html" data-en="About" data-hi="हमारे बारे में">About</a></li>
-      <li><a href="faq.html" data-en="FAQ" data-hi="पूछे जाने वाले प्रश्न">FAQ</a></li>
-      <li><a href="community-guidelines.html" data-en="Community Guidelines" data-hi="सामुदायिक दिशानिर्देश">Community Guidelines</a></li>
+      <li><a href="index.html" data-i18n="home">Home</a></li>
+      <li><a href="about.html" data-i18n="about">About</a></li>
+      <li><a href="faq.html" data-i18n="faq">FAQ</a></li>
+      <li><a href="community-guidelines.html" data-i18n="community_guidelines">Community Guidelines</a></li>
       <li class="dropdown">
-        <a href="#" class="dropbtn" data-en="Legal ▾" data-hi="कानूनी ▾">Legal ▾</a>
+        <a href="#" class="dropbtn" data-i18n="legal">Legal ▾</a>
         <div class="dropdown-content">
-          <a href="privacy-policy.html" data-en="Privacy Policy" data-hi="गोपनीयता नीति">Privacy Policy</a>
-          <a href="terms-of-service.html" data-en="Terms of Service" data-hi="सेवा की शर्तें">Terms of Service</a>
-          <a href="cookie-policy.html" data-en="Cookie Policy" data-hi="कुकी नीति">Cookie Policy</a>
-          <a href="data-deletion.html" class="active" data-en="Data Deletion" data-hi="डेटा हटाना">Data Deletion</a>
-          <a href="refund-policy.html" data-en="Refund Policy" data-hi="धनवापसी नीति">Refund Policy</a>
+          <a href="privacy-policy.html" data-i18n="privacy_policy">Privacy Policy</a>
+          <a href="terms-of-service.html" data-i18n="terms_of_service">Terms of Service</a>
+          <a href="cookie-policy.html" data-i18n="cookie_policy">Cookie Policy</a>
+          <a href="data-deletion.html" class="active" data-i18n="data_deletion">Data Deletion</a>
+          <a href="refund-policy.html" data-i18n="refund_policy">Refund Policy</a>
         </div>
       </li>
-      <li><a href="languages.html" data-en="Languages" data-hi="भाषाएँ">Languages</a></li>
-      <li><a href="press.html" data-en="Press" data-hi="प्रेस">Press</a></li>
-      <li><a href="contact.html" data-en="Contact" data-hi="संपर्क">Contact</a></li>
-      <li><button onclick="toggleLanguage()" class="lang-toggle-btn" aria-label="Toggle language">अ | A</button></li>
+      <li><a href="languages.html" data-i18n="languages">Languages</a></li>
+      <li><a href="press.html" data-i18n="press">Press</a></li>
+      <li><a href="contact.html" data-i18n="contact">Contact</a></li>
+      <li class="lang-picker-item">
+        <select onchange="switchLanguage(this.value)" class="lang-picker" id="langPicker" aria-label="Select Language">
+          <option value="en">English</option>
+          <option value="hi">हिन्दी</option>
+        </select>
+      </li>
     </ul>
   </div>
 </nav>
@@ -484,38 +489,38 @@
     <div class="footer-content-3col">
       <div class="footer-col">
         <h3>Kaamkaaz <span class="logo-hindi">कामकाज</span></h3>
-        <p data-en="Connecting daily wage workers with hyperlocal jobs in rural and semi-urban India." data-hi="ग्रामीण और अर्ध-शहरी भारत में दैनिक वेतन भोगी श्रमिकों को स्थानीय नौकरियों से जोड़ना।">
+        <p data-i18n="connecting_daily_wage_workers_with_2">
           Connecting daily wage workers with hyperlocal jobs in rural and semi-urban India.
         </p>
-        <p style="margin-top: 1rem; font-size: 0.85rem;" data-en="© 2025 Kaamkaaz. All rights reserved." data-hi="© 2025 कामकाज। सर्वाधिकार सुरक्षित।">
-          © 2025 Kaamkaaz. All rights reserved.
+        <p style="margin-top: 1rem; font-size: 0.85rem;" data-i18n="2026_kaamkaaz_all_rights_reserved">
+          © 2026 Kaamkaaz. All rights reserved.
         </p>
-        <p style="font-size: 0.85rem;" data-en="Made with ❤️ for India's workforce" data-hi="भारत के कार्यबल के लिए ❤️ के साथ बनाया गया">
+        <p style="font-size: 0.85rem;" data-i18n="made_with_for_indias_workforce">
           Made with ❤️ for India's workforce
         </p>
       </div>
       <div class="footer-col">
-        <h4 data-en="Quick Links" data-hi="त्वरित लिंक" style="margin-bottom: 1rem;">Quick Links</h4>
+        <h4 data-i18n="quick_links" style="margin-bottom: 1rem;">Quick Links</h4>
         <ul>
-          <li><a href="index.html" data-en="Home" data-hi="होम">Home</a></li>
-          <li><a href="about.html" data-en="About Us" data-hi="हमारे बारे में">About Us</a></li>
-          <li><a href="faq.html" data-en="FAQ" data-hi="पूछे जाने वाले प्रश्न">FAQ</a></li>
-          <li><a href="community-guidelines.html" data-en="Community Guidelines" data-hi="सामुदायिक दिशानिर्देश">Community Guidelines</a></li>
-          <li><a href="languages.html" data-en="Languages" data-hi="भाषाएँ">Languages</a></li>
-          <li><a href="press.html" data-en="Press" data-hi="प्रेस">Press</a></li>
+          <li><a href="index.html" data-i18n="home">Home</a></li>
+          <li><a href="about.html" data-i18n="about_us">About Us</a></li>
+          <li><a href="faq.html" data-i18n="faq">FAQ</a></li>
+          <li><a href="community-guidelines.html" data-i18n="community_guidelines">Community Guidelines</a></li>
+          <li><a href="languages.html" data-i18n="languages">Languages</a></li>
+          <li><a href="press.html" data-i18n="press">Press</a></li>
         </ul>
       </div>
       <div class="footer-col">
-        <h4 data-en="Legal & Contact" data-hi="कानूनी और संपर्क" style="margin-bottom: 1rem;">Legal & Contact</h4>
+        <h4 data-i18n="legal_contact" style="margin-bottom: 1rem;">Legal & Contact</h4>
         <ul>
-          <li><a href="privacy-policy.html" data-en="Privacy Policy" data-hi="गोपनीयता नीति">Privacy Policy</a></li>
-          <li><a href="terms-of-service.html" data-en="Terms of Service" data-hi="सेवा की शर्तें">Terms of Service</a></li>
-          <li><a href="cookie-policy.html" data-en="Cookie Policy" data-hi="कुकी नीति">Cookie Policy</a></li>
-          <li><a href="data-deletion.html" data-en="Data Deletion" data-hi="डेटा हटाना">Data Deletion</a></li>
-          <li><a href="refund-policy.html" data-en="Refund Policy" data-hi="धनवापसी नीति">Refund Policy</a></li>
-          <li><a href="contact.html" data-en="Contact Us" data-hi="संपर्क करें">Contact Us</a></li>
+          <li><a href="privacy-policy.html" data-i18n="privacy_policy">Privacy Policy</a></li>
+          <li><a href="terms-of-service.html" data-i18n="terms_of_service">Terms of Service</a></li>
+          <li><a href="cookie-policy.html" data-i18n="cookie_policy">Cookie Policy</a></li>
+          <li><a href="data-deletion.html" data-i18n="data_deletion">Data Deletion</a></li>
+          <li><a href="refund-policy.html" data-i18n="refund_policy">Refund Policy</a></li>
+          <li><a href="contact.html" data-i18n="contact_us">Contact Us</a></li>
         </ul>
-        <p style="margin-top: 1rem; font-size: 0.85rem;" data-en="Developer: Ankit Yadav" data-hi="डेवलपर: अंकित यादव">
+        <p style="margin-top: 1rem; font-size: 0.85rem;" data-i18n="developer_ankit_yadav">
           Developer: Ankit Yadav
         </p>
         <p style="font-size: 0.85rem;">
@@ -524,46 +529,55 @@
       </div>
     </div>
     <div class="footer-bottom">
-      <p data-en="Governed by Information Technology Act 2000 & Digital Personal Data Protection Act 2023 | India" data-hi="सूचना प्रौद्योगिकी अधिनियम 2000 और डिजिटल व्यक्तिगत डेटा संरक्षण अधिनियम 2023 द्वारा संचालित | भारत">
+      <p data-i18n="governed_by_information_technology_act">
         Governed by Information Technology Act 2000 & Digital Personal Data Protection Act 2023 | India
       </p>
     </div>
   </div>
 </footer>
 
-<!-- Floating Language Toggle Button -->
-<button onclick="toggleLanguage()" class="floating-lang-toggle" data-en="हिन्दी" data-hi="English" aria-label="Toggle language">हिन्दी</button>
-
-<!-- TRANSLATION & MOBILE INTERACTION SCRIPTS -->
+<script src="translations.js"></script>
 <script>
-function toggleLanguage() {
-  const currentLang = localStorage.getItem('kaamkaazLang') || 'en';
-  const newLang = currentLang === 'en' ? 'hi' : 'en';
-  localStorage.setItem('kaamkaazLang', newLang);
-  applyLanguage(newLang);
+function switchLanguage(lang) {
+  localStorage.setItem('kaamkaazLang', lang);
+  applyLanguage(lang);
 }
 
 function applyLanguage(lang) {
-  document.querySelectorAll('[data-en]').forEach(el => {
-    if (lang === 'hi' && el.hasAttribute('data-hi')) {
+  const dict = (typeof translations !== 'undefined' && translations[lang]) ? translations[lang] : null;
+  const fallback = (typeof translations !== 'undefined') ? translations['en'] : null;
+
+  // Handle data-i18n elements
+  document.querySelectorAll('[data-i18n]').forEach(el => {
+    const key = el.getAttribute('data-i18n');
+    const text = (dict && dict[key]) ? dict[key] : (fallback ? fallback[key] : null);
+    if (text !== null && text !== undefined) {
       if (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA') {
-        el.placeholder = el.getAttribute('data-hi');
+        el.placeholder = text;
       } else {
-        el.textContent = el.getAttribute('data-hi');
-      }
-    } else if (lang === 'en') {
-      if (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA') {
-        el.placeholder = el.getAttribute('data-en');
-      } else {
-        el.textContent = el.getAttribute('data-en');
+        el.textContent = text;
       }
     }
   });
-  
-  const btn = document.querySelector('.lang-toggle-btn');
-  if (btn) {
-    btn.textContent = lang === 'en' ? 'अ | Hindi' : 'A | English';
-  }
+
+  // Handle legacy data-en / data-hi elements (safety net)
+  document.querySelectorAll('[data-en]').forEach(el => {
+    const text = lang === 'hi' && el.hasAttribute('data-hi')
+      ? el.getAttribute('data-hi')
+      : el.getAttribute('data-en');
+    if (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA') {
+      el.placeholder = text;
+    } else {
+      el.textContent = text;
+    }
+  });
+
+  // Update all language pickers on page
+  document.querySelectorAll('.lang-picker').forEach(sel => { sel.value = lang; });
+
+  // RTL for Urdu
+  document.documentElement.dir = (lang === 'ur') ? 'rtl' : 'ltr';
+  document.documentElement.lang = lang;
 }
 
 function toggleMobileMenu() {

@@ -26,25 +26,30 @@
         <span></span>
       </div>
       <ul class="nav-links">
-        <li><a href="index.html" data-en="Home" data-hi="होम">Home</a></li>
-        <li><a href="about.html" class="active" data-en="About" data-hi="हमारे बारे में">About</a></li>
-        <li><a href="faq.html" data-en="FAQ" data-hi="पूछे जाने वाले प्रश्न">FAQ</a></li>
-        <li><a href="community-guidelines.html" data-en="Community Guidelines" data-hi="सामुदायिक दिशानिर्देश">Community
+        <li><a href="index.html" data-i18n="home">Home</a></li>
+        <li><a href="about.html" class="active" data-i18n="about">About</a></li>
+        <li><a href="faq.html" data-i18n="faq">FAQ</a></li>
+        <li><a href="community-guidelines.html" data-i18n="community_guidelines">Community
             Guidelines</a></li>
         <li class="dropdown">
-          <a href="#" class="dropbtn" data-en="Legal ▾" data-hi="कानूनी ▾">Legal ▾</a>
+          <a href="#" class="dropbtn" data-i18n="legal">Legal ▾</a>
           <div class="dropdown-content">
-            <a href="privacy-policy.html" data-en="Privacy Policy" data-hi="गोपनीयता नीति">Privacy Policy</a>
-            <a href="terms-of-service.html" data-en="Terms of Service" data-hi="सेवा की शर्तें">Terms of Service</a>
-            <a href="cookie-policy.html" data-en="Cookie Policy" data-hi="कुकी नीति">Cookie Policy</a>
-            <a href="data-deletion.html" data-en="Data Deletion" data-hi="डेटा हटाना">Data Deletion</a>
-            <a href="refund-policy.html" data-en="Refund Policy" data-hi="धनवापसी नीति">Refund Policy</a>
+            <a href="privacy-policy.html" data-i18n="privacy_policy">Privacy Policy</a>
+            <a href="terms-of-service.html" data-i18n="terms_of_service">Terms of Service</a>
+            <a href="cookie-policy.html" data-i18n="cookie_policy">Cookie Policy</a>
+            <a href="data-deletion.html" data-i18n="data_deletion">Data Deletion</a>
+            <a href="refund-policy.html" data-i18n="refund_policy">Refund Policy</a>
           </div>
         </li>
-        <li><a href="languages.html" data-en="Languages" data-hi="भाषाएँ">Languages</a></li>
-        <li><a href="press.html" data-en="Press" data-hi="प्रेस">Press</a></li>
-        <li><a href="contact.html" data-en="Contact" data-hi="संपर्क">Contact</a></li>
-        <li><button onclick="toggleLanguage()" class="lang-toggle-btn" aria-label="Toggle language">अ | A</button></li>
+        <li><a href="languages.html" data-i18n="languages">Languages</a></li>
+        <li><a href="press.html" data-i18n="press">Press</a></li>
+        <li><a href="contact.html" data-i18n="contact">Contact</a></li>
+        <li class="lang-picker-item">
+        <select onchange="switchLanguage(this.value)" class="lang-picker" id="langPicker" aria-label="Select Language">
+          <option value="en">English</option>
+          <option value="hi">हिन्दी</option>
+        </select>
+      </li>
       </ul>
     </div>
   </nav>
@@ -52,9 +57,8 @@
   <!-- HERO HEADER -->
   <div class="legal-header">
     <div class="container">
-      <h1 data-en="About Kaamkaaz" data-hi="कामकाज के बारे में">About Kaamkaaz</h1>
-      <p data-en="Empowering daily wage workers and local recruiters through digital connectivity"
-        data-hi="डिजिटल कनेक्टिविटी के माध्यम से दैनिक वेतन भोगी श्रमिकों और स्थानीय नियोक्ताओं को सशक्त बनाना">
+      <h1 data-i18n="about_kaamkaaz">About Kaamkaaz</h1>
+      <p data-i18n="empowering_daily_wage_workers_and">
         Empowering daily wage workers and local recruiters through digital connectivity</p>
     </div>
   </div>
@@ -65,10 +69,9 @@
 
       <!-- Mission Statement -->
       <div style="text-align: center; margin-bottom: 4rem;">
-        <h2 data-en="Our Mission" data-hi="हमारा उद्देश्य"
+        <h2 data-i18n="our_mission"
           style="color: var(--primary-blue); font-size: 2rem; margin-bottom: 1.5rem;">Our Mission</h2>
-        <p data-en="To bridge the gap between daily wage workers and hyperlocal job opportunities in rural and semi-urban India, ensuring dignity, transparency, and safety for everyone involved."
-          data-hi="ग्रामीण और अर्ध-शहरी भारत में दैनिक वेतन भोगी श्रमिकों और स्थानीय नौकरी के अवसरों के बीच की खाई को पाटना, जिससे सभी के लिए गरिमा, पारदर्शिता और सुरक्षा सुनिश्चित हो सके।"
+        <p data-i18n="to_bridge_the_gap_between"
           style="font-size: 1.2rem; line-height: 1.8; color: var(--text-dark); max-width: 800px; margin: 0 auto; font-style: italic;">
           "To bridge the gap between daily wage workers and hyperlocal job opportunities in rural and semi-urban India,
           ensuring dignity, transparency, and safety for everyone involved."
@@ -77,17 +80,15 @@
 
       <!-- Our Story -->
       <div style="margin-bottom: 4rem;">
-        <h2 data-en="Our Story" data-hi="हमारी कहानी" style="color: var(--primary-blue); margin-bottom: 1.5rem;">Our
+        <h2 data-i18n="our_story" style="color: var(--primary-blue); margin-bottom: 1.5rem;">Our
           Story</h2>
-        <p data-en="Kaamkaaz was conceived out of a simple observation: millions of skilled daily wage earners (painters, plumbers, construction workers, agricultural laborers) in India waste hours every morning standing at local labor stands (labor chowks) hoping to find work. Simultaneously, local businesses and households struggle to find reliable workers on short notice."
-          data-hi="कामकाज की कल्पना एक साधारण अवलोकन से हुई थी: भारत में लाखों कुशल दैनिक वेतन भोगी (चित्रकार, प्लंबर, निर्माण श्रमिक, कृषि मजदूर) हर सुबह स्थानीय श्रम चौकों पर काम मिलने की उम्मीद में घंटों बर्बाद करते हैं। साथ ही, स्थानीय व्यवसायों और घरों को कम समय में विश्वसनीय श्रमिक खोजने में संघर्ष करना पड़ता है।">
+        <p data-i18n="kaamkaaz_was_conceived_out_of">
           Kaamkaaz was conceived out of a simple observation: millions of skilled daily wage earners (painters,
           plumbers, construction workers, agricultural laborers) in India waste hours every morning standing at local
           labor stands (labor chowks) hoping to find work. Simultaneously, local businesses and households struggle to
           find reliable workers on short notice.
         </p>
-        <p data-en="Recognizing this massive inefficiency, we built Kaamkaaz to digitize the labor chowk. By leveraging GPS technology and simple mobile interfaces in local languages, we enable workers to apply for jobs from their homes and recruiters to hire verified workers instantly."
-          data-hi="इस भारी अक्षमता को पहचानते हुए, हमने लेबर चौक को डिजिटल बनाने के लिए कामकाज का निर्माण किया। जीपीएस तकनीक और स्थानीय भाषाओं में सरल मोबाइल इंटरफेस का लाभ उठाकर, हम श्रमिकों को उनके घरों से नौकरियों के लिए आवेदन करने और नियोक्ताओं को तुरंत सत्यापित श्रमिकों को नियुक्त करने में सक्षम बनाते हैं।">
+        <p data-i18n="recognizing_this_massive_inefficiency_we">
           Recognizing this massive inefficiency, we built Kaamkaaz to digitize the labor chowk. By leveraging GPS
           technology and simple mobile interfaces in local languages, we enable workers to apply for jobs from their
           homes and recruiters to hire verified workers instantly.
@@ -100,56 +101,51 @@
         <div
           style="background-color: var(--background); padding: 1.5rem; border-radius: var(--radius-lg); border: 1px solid var(--border-light);">
           <h3 style="color: var(--primary-blue); font-size: 2.5rem; margin-bottom: 0.5rem;">15+</h3>
-          <p data-en="Job Categories" data-hi="नौकरी श्रेणियाँ">Job Categories</p>
+          <p data-i18n="job_categories">Job Categories</p>
         </div>
         <div
           style="background-color: var(--background); padding: 1.5rem; border-radius: var(--radius-lg); border: 1px solid var(--border-light);">
           <h3 style="color: var(--primary-blue); font-size: 2.5rem; margin-bottom: 0.5rem;">30km</h3>
-          <p data-en="Hyperlocal Radius" data-hi="हाइपरलोकल रेडियस">Hyperlocal Radius</p>
+          <p data-i18n="hyperlocal_radius">Hyperlocal Radius</p>
         </div>
         <div
           style="background-color: var(--background); padding: 1.5rem; border-radius: var(--radius-lg); border: 1px solid var(--border-light);">
           <h3 style="color: var(--primary-blue); font-size: 2.5rem; margin-bottom: 0.5rem;">100%</h3>
-          <p data-en="Free to Use" data-hi="उपयोग करने के लिए मुफ्त">Free to Use</p>
+          <p data-i18n="free_to_use">Free to Use</p>
         </div>
         <div
           style="background-color: var(--background); padding: 1.5rem; border-radius: var(--radius-lg); border: 1px solid var(--border-light);">
           <h3 style="color: var(--primary-blue); font-size: 2.5rem; margin-bottom: 0.5rem;">2</h3>
-          <p data-en="Languages Active" data-hi="सक्रिय भाषाएँ">Languages Active</p>
+          <p data-i18n="languages_active">Languages Active</p>
         </div>
       </div>
 
       <!-- What Makes Us Different (5 points) -->
       <div style="margin-bottom: 4rem;">
-        <h2 data-en="What Makes Us Different" data-hi="क्या हमें अलग बनाता है"
+        <h2 data-i18n="what_makes_us_different"
           style="color: var(--primary-blue); margin-bottom: 1.5rem;">What Makes Us Different</h2>
         <ol style="margin-left: 1.5rem; line-height: 1.8;">
-          <li><strong data-en="Hyperlocal Matching:" data-hi="स्थानीय मिलान:">Hyperlocal Matching:</strong> <span
-              data-en="Our GPS-enabled algorithm searches for jobs strictly within a 15-30km radius, minimizing travel time and cost."
-              data-hi="हमारा जीपीएस-सक्षम एल्गोरिदम केवल 15-30 किमी के दायरे में नौकरियां खोजता है, जिससे यात्रा के समय और लागत में कमी आती है।">Our
+          <li><strong data-i18n="hyperlocal_matching">Hyperlocal Matching:</strong> <span
+              data-i18n="our_gpsenabled_algorithm_searches_for">Our
               GPS-enabled algorithm searches for jobs strictly within a 15-30km radius, minimizing travel time and
               cost.</span></li>
-          <li><strong data-en="Aadhaar KYC Verification:" data-hi="आधार केवाईसी सत्यापन:">Aadhaar KYC
+          <li><strong data-i18n="aadhaar_kyc_verification">Aadhaar KYC
               Verification:</strong> <span
-              data-en="Every worker undergoes secure Aadhaar and selfie verification to build trust and safety for recruiters and households."
-              data-hi="प्रत्येक श्रमिक नियोक्ताओं और परिवारों के लिए विश्वास और सुरक्षा बनाने के लिए आधार और सेल्फी सत्यापन से गुजरता है।">Every
+              data-i18n="every_worker_undergoes_secure_aadhaar">Every
               worker undergoes secure Aadhaar and selfie verification to build trust and safety for recruiters and
               households.</span></li>
-          <li><strong data-en="Direct Communication:" data-hi="सीधा संवाद:">Direct Communication:</strong> <span
-              data-en="No middlemen. Workers and recruiters can call, chat, or connect via WhatsApp directly through our interface."
-              data-hi="कोई बिचौलिया नहीं। श्रमिक और नियोक्ता सीधे हमारे इंटरफ़ेस के माध्यम से कॉल, चैट या व्हाट्सएप द्वारा जुड़ सकते हैं।">No
+          <li><strong data-i18n="direct_communication_2">Direct Communication:</strong> <span
+              data-i18n="no_middlemen_workers_and_recruiters">No
               middlemen. Workers and recruiters can call, chat, or connect via WhatsApp directly through our
               interface.</span></li>
-          <li><strong data-en="Completely Free Service:" data-hi="पूरी तरह से मुफ्त सेवा:">Completely Free
+          <li><strong data-i18n="completely_free_service">Completely Free
               Service:</strong> <span
-              data-en="No registration or job posting charges. We believe in keeping core job search features free for all Indians."
-              data-hi="कोई पंजीकरण या नौकरी पोस्टिंग शुल्क नहीं। हम सभी भारतीयों के लिए कोर नौकरी खोज सुविधाओं को मुफ्त रखने में विश्वास करते हैं।">Completely
+              data-i18n="no_registration_or_job_posting">Completely
               Free Service: No registration or job posting charges. We believe in keeping core job search features free
               for all Indians.</span></li>
-          <li><strong data-en="Local Language Support:" data-hi="स्थानीय भाषा समर्थन:">Local Language Support:</strong>
+          <li><strong data-i18n="local_language_support">Local Language Support:</strong>
             <span
-              data-en="Full Hindi and English local translation switcher, making the platform accessible to everyone regardless of literacy barriers."
-              data-hi="पूर्ण हिंदी और अंग्रेजी अनुवाद स्विचर, साक्षरता बाधाओं की परवाह किए बिना सभी के लिए मंच को सुलभ बनाता है।">Local
+              data-i18n="full_hindi_and_english_local">Local
               Language Support: Full Hindi and English local translation switcher, making the platform accessible to
               everyone regardless of literacy barriers.</span>
           </li>
@@ -158,42 +154,38 @@
 
       <!-- Our Values (4 cards) -->
       <div style="margin-bottom: 4rem;">
-        <h2 data-en="Our Core Values" data-hi="हमारे मुख्य मूल्य"
+        <h2 data-i18n="our_core_values"
           style="color: var(--primary-blue); margin-bottom: 1.5rem; text-align: center;">Our Core Values</h2>
         <div
           style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem; margin-top: 2rem;">
           <div
             style="background-color: #eff6ff; padding: 1.5rem; border-radius: var(--radius-md); border-left: 4px solid var(--primary-blue);">
-            <h4 data-en="Dignity & Respect" data-hi="गरिमा और सम्मान"
+            <h4 data-i18n="dignity_respect"
               style="color: var(--primary-blue); margin-bottom: 0.5rem;">Dignity & Respect</h4>
-            <p data-en="Treating every worker and labor seeker with the utmost respect and dignity they deserve."
-              data-hi="प्रत्येक श्रमिक और नौकरी चाहने वाले के साथ अत्यंत सम्मान और गरिमा से व्यवहार करना।"
+            <p data-i18n="treating_every_worker_and_labor"
               style="font-size: 0.9rem;">Treating every worker and labor seeker with the utmost respect and dignity they
               deserve.</p>
           </div>
           <div
             style="background-color: #ecfdf5; padding: 1.5rem; border-radius: var(--radius-md); border-left: 4px solid var(--success-green);">
-            <h4 data-en="Transparency" data-hi="पारदर्शिता" style="color: var(--success-green); margin-bottom: 0.5rem;">
+            <h4 data-i18n="transparency" style="color: var(--success-green); margin-bottom: 0.5rem;">
               Transparency</h4>
-            <p data-en="Fair wages, verified accounts, and clear communication guidelines across the board."
-              data-hi="उचित मजदूरी, सत्यापित खाते और सभी के लिए स्पष्ट संचार दिशानिर्देश।" style="font-size: 0.9rem;">
+            <p data-i18n="fair_wages_verified_accounts_and" style="font-size: 0.9rem;">
               Fair wages, verified accounts, and clear communication guidelines across the board.</p>
           </div>
           <div
             style="background-color: #fffbeb; padding: 1.5rem; border-radius: var(--radius-md); border-left: 4px solid var(--secondary-amber);">
-            <h4 data-en="Safety First" data-hi="सुरक्षा सर्वोपरि"
+            <h4 data-i18n="safety_first"
               style="color: var(--secondary-amber); margin-bottom: 0.5rem;">Safety First</h4>
-            <p data-en="Providing secure government identity checks to protect and secure our platform user community."
-              data-hi="हमारे प्लेटफॉर्म उपयोगकर्ता समुदाय की सुरक्षा के लिए सुरक्षित सरकारी पहचान पत्र जांच प्रदान करना।"
+            <p data-i18n="providing_secure_government_identity_checks"
               style="font-size: 0.9rem;">Providing secure government identity checks to protect and secure our platform
               user community.</p>
           </div>
           <div
             style="background-color: #fef2f2; padding: 1.5rem; border-radius: var(--radius-md); border-left: 4px solid var(--error-red);">
-            <h4 data-en="Accessibility" data-hi="सुलभता" style="color: var(--error-red); margin-bottom: 0.5rem;">
+            <h4 data-i18n="accessibility" style="color: var(--error-red); margin-bottom: 0.5rem;">
               Accessibility</h4>
-            <p data-en="Building technologies that are simple, lightweight, offline-resilient, and multilingual."
-              data-hi="सरल, हल्के, ऑफलाइन-सहिष्णु और बहुभाषी तकनीकों का निर्माण।" style="font-size: 0.9rem;">Building
+            <p data-i18n="building_technologies_that_are_simple" style="font-size: 0.9rem;">Building
               technologies that are simple, lightweight, offline-resilient, and multilingual.</p>
           </div>
         </div>
@@ -202,16 +194,15 @@
       <!-- Developer Section -->
       <div
         style="background-color: var(--background); padding: 2rem; border-radius: var(--radius-lg); border: 1px solid var(--border-light); text-align: center;">
-        <h2 data-en="About the Developer" data-hi="डेवलपर के बारे में"
+        <h2 data-i18n="about_the_developer"
           style="color: var(--primary-blue); margin-bottom: 1rem;">About the Developer</h2>
-        <p data-en="Kaamkaaz is designed and developed by Ankit Yadav, an independent software developer based in Rajasthan, India. Devoted to creating digital tools that solve real-world problems for rural and semi-urban populations."
-          data-hi="कामकाज को राजस्थान, भारत के एक स्वतंत्र सॉफ्टवेयर डेवलपर अंकित यादव द्वारा डिजाइन और विकसित किया गया है। ग्रामीण और अर्ध-शहरी आबादी के लिए वास्तविक दुनिया की समस्याओं को हल करने वाले डिजिटल उपकरण बनाने के लिए समर्पित।">
+        <p data-i18n="kaamkaaz_is_designed_and_developed">
           Kaamkaaz is designed and developed by Ankit Yadav, an independent software developer based in Rajasthan, India.
           Devoted to creating digital tools that solve real-world problems for rural and semi-urban populations.
         </p>
         <div style="margin-top: 1.5rem;">
-          <strong data-en="Location:" data-hi="स्थान:">Location:</strong> Rajasthan, India<br>
-          <strong data-en="Contact:" data-hi="संपर्क:">Contact:</strong> <a
+          <strong data-i18n="location">Location:</strong> Rajasthan, India<br>
+          <strong data-i18n="contact_2">Contact:</strong> <a
             href="mailto:kaamkaaz0018@gmail.com">kaamkaaz0018@gmail.com</a>
         </div>
       </div>
@@ -225,44 +216,39 @@
       <div class="footer-content-3col">
         <div class="footer-col">
           <h3>Kaamkaaz <span class="logo-hindi">कामकाज</span></h3>
-          <p data-en="Connecting daily wage workers with hyperlocal jobs in rural and semi-urban India."
-            data-hi="ग्रामीण और अर्ध-शहरी भारत में दैनिक वेतन भोगी श्रमिकों को स्थानीय नौकरियों से जोड़ना।">
+          <p data-i18n="connecting_daily_wage_workers_with_2">
             Connecting daily wage workers with hyperlocal jobs in rural and semi-urban India.
           </p>
-          <p style="margin-top: 1rem; font-size: 0.85rem;" data-en="© 2025 Kaamkaaz. All rights reserved."
-            data-hi="© 2025 कामकाज। सर्वाधिकार सुरक्षित।">
-            © 2025 Kaamkaaz. All rights reserved.
+          <p style="margin-top: 1rem; font-size: 0.85rem;" data-i18n="2026_kaamkaaz_all_rights_reserved">
+            © 2026 Kaamkaaz. All rights reserved.
           </p>
-          <p style="font-size: 0.85rem;" data-en="Made with ❤️ for India's workforce"
-            data-hi="भारत के कार्यबल के लिए ❤️ के साथ बनाया गया">
+          <p style="font-size: 0.85rem;" data-i18n="made_with_for_indias_workforce">
             Made with ❤️ for India's workforce
           </p>
         </div>
         <div class="footer-col">
-          <h4 data-en="Quick Links" data-hi="त्वरित लिंक" style="margin-bottom: 1rem;">Quick Links</h4>
+          <h4 data-i18n="quick_links" style="margin-bottom: 1rem;">Quick Links</h4>
           <ul>
-            <li><a href="index.html" data-en="Home" data-hi="होम">Home</a></li>
-            <li><a href="about.html" data-en="About Us" data-hi="हमारे बारे में">About Us</a></li>
-            <li><a href="faq.html" data-en="FAQ" data-hi="पूछे जाने वाले प्रश्न">FAQ</a></li>
-            <li><a href="community-guidelines.html" data-en="Community Guidelines"
-                data-hi="सामुदायिक दिशानिर्देश">Community Guidelines</a></li>
-            <li><a href="languages.html" data-en="Languages" data-hi="भाषाएँ">Languages</a></li>
-            <li><a href="press.html" data-en="Press" data-hi="प्रेस">Press</a></li>
+            <li><a href="index.html" data-i18n="home">Home</a></li>
+            <li><a href="about.html" data-i18n="about_us">About Us</a></li>
+            <li><a href="faq.html" data-i18n="faq">FAQ</a></li>
+            <li><a href="community-guidelines.html" data-i18n="community_guidelines">Community Guidelines</a></li>
+            <li><a href="languages.html" data-i18n="languages">Languages</a></li>
+            <li><a href="press.html" data-i18n="press">Press</a></li>
           </ul>
         </div>
         <div class="footer-col">
-          <h4 data-en="Legal & Contact" data-hi="कानूनी और संपर्क" style="margin-bottom: 1rem;">Legal & Contact</h4>
+          <h4 data-i18n="legal_contact" style="margin-bottom: 1rem;">Legal & Contact</h4>
           <ul>
-            <li><a href="privacy-policy.html" data-en="Privacy Policy" data-hi="गोपनीयता नीति">Privacy Policy</a></li>
-            <li><a href="terms-of-service.html" data-en="Terms of Service" data-hi="सेवा की शर्तें">Terms of Service</a>
+            <li><a href="privacy-policy.html" data-i18n="privacy_policy">Privacy Policy</a></li>
+            <li><a href="terms-of-service.html" data-i18n="terms_of_service">Terms of Service</a>
             </li>
-            <li><a href="cookie-policy.html" data-en="Cookie Policy" data-hi="कुकी नीति">Cookie Policy</a></li>
-            <li><a href="data-deletion.html" data-en="Data Deletion" data-hi="डेटा हटाना">Data Deletion</a></li>
-            <li><a href="refund-policy.html" data-en="Refund Policy" data-hi="धनवापसी नीति">Refund Policy</a></li>
-            <li><a href="contact.html" data-en="Contact Us" data-hi="संपर्क करें">Contact Us</a></li>
+            <li><a href="cookie-policy.html" data-i18n="cookie_policy">Cookie Policy</a></li>
+            <li><a href="data-deletion.html" data-i18n="data_deletion">Data Deletion</a></li>
+            <li><a href="refund-policy.html" data-i18n="refund_policy">Refund Policy</a></li>
+            <li><a href="contact.html" data-i18n="contact_us">Contact Us</a></li>
           </ul>
-          <p style="margin-top: 1rem; font-size: 0.85rem;" data-en="Developer: Ankit Yadav"
-            data-hi="डेवलपर: अंकित यादव">
+          <p style="margin-top: 1rem; font-size: 0.85rem;" data-i18n="developer_ankit_yadav">
             Developer: Ankit Yadav
           </p>
           <p style="font-size: 0.85rem;">
@@ -271,83 +257,90 @@
         </div>
       </div>
       <div class="footer-bottom">
-        <p data-en="Governed by Information Technology Act 2000 & Digital Personal Data Protection Act 2023 | India"
-          data-hi="सूचना प्रौद्योगिकी अधिनियम 2000 और डिजिटल व्यक्तिगत डेटा संरक्षण अधिनियम 2023 द्वारा संचालित | भारत">
+        <p data-i18n="governed_by_information_technology_act">
           Governed by Information Technology Act 2000 & Digital Personal Data Protection Act 2023 | India
         </p>
       </div>
     </div>
   </footer>
 
-  <!-- Floating Language Toggle Button -->
-  <button onclick="toggleLanguage()" class="floating-lang-toggle" data-en="हिन्दी" data-hi="English"
-    aria-label="Toggle language">हिन्दी</button>
+  <script src="translations.js"></script>
+<script>
+function switchLanguage(lang) {
+  localStorage.setItem('kaamkaazLang', lang);
+  applyLanguage(lang);
+}
 
-  <!-- TRANSLATION & MOBILE INTERACTION SCRIPTS -->
-  <script>
-    function toggleLanguage() {
-      const currentLang = localStorage.getItem('kaamkaazLang') || 'en';
-      const newLang = currentLang === 'en' ? 'hi' : 'en';
-      localStorage.setItem('kaamkaazLang', newLang);
-      applyLanguage(newLang);
-    }
+function applyLanguage(lang) {
+  const dict = (typeof translations !== 'undefined' && translations[lang]) ? translations[lang] : null;
+  const fallback = (typeof translations !== 'undefined') ? translations['en'] : null;
 
-    function applyLanguage(lang) {
-      document.querySelectorAll('[data-en]').forEach(el => {
-        if (lang === 'hi' && el.hasAttribute('data-hi')) {
-          if (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA') {
-            el.placeholder = el.getAttribute('data-hi');
-          } else {
-            el.textContent = el.getAttribute('data-hi');
-          }
-        } else if (lang === 'en') {
-          if (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA') {
-            el.placeholder = el.getAttribute('data-en');
-          } else {
-            el.textContent = el.getAttribute('data-en');
-          }
-        }
-      });
-
-      const btn = document.querySelector('.lang-toggle-btn');
-      if (btn) {
-        btn.textContent = lang === 'en' ? 'अ | Hindi' : 'A | English';
+  // Handle data-i18n elements
+  document.querySelectorAll('[data-i18n]').forEach(el => {
+    const key = el.getAttribute('data-i18n');
+    const text = (dict && dict[key]) ? dict[key] : (fallback ? fallback[key] : null);
+    if (text !== null && text !== undefined) {
+      if (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA') {
+        el.placeholder = text;
+      } else {
+        el.textContent = text;
       }
     }
+  });
 
-    function toggleMobileMenu() {
-      const navLinks = document.querySelector('.nav-links');
-      const menuToggle = document.querySelector('.menu-toggle');
-      if (navLinks && menuToggle) {
-        navLinks.classList.toggle('active');
-        menuToggle.classList.toggle('active');
-      }
+  // Handle legacy data-en / data-hi elements (safety net)
+  document.querySelectorAll('[data-en]').forEach(el => {
+    const text = lang === 'hi' && el.hasAttribute('data-hi')
+      ? el.getAttribute('data-hi')
+      : el.getAttribute('data-en');
+    if (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA') {
+      el.placeholder = text;
+    } else {
+      el.textContent = text;
     }
+  });
 
-    window.addEventListener('resize', () => {
-      if (window.innerWidth > 768) {
-        const navLinks = document.querySelector('.nav-links');
-        const menuToggle = document.querySelector('.menu-toggle');
-        if (navLinks) navLinks.classList.remove('active');
-        if (menuToggle) menuToggle.classList.remove('active');
+  // Update all language pickers on page
+  document.querySelectorAll('.lang-picker').forEach(sel => { sel.value = lang; });
+
+  // RTL for Urdu
+  document.documentElement.dir = (lang === 'ur') ? 'rtl' : 'ltr';
+  document.documentElement.lang = lang;
+}
+
+function toggleMobileMenu() {
+  const navLinks = document.querySelector('.nav-links');
+  const menuToggle = document.querySelector('.menu-toggle');
+  if (navLinks && menuToggle) {
+    navLinks.classList.toggle('active');
+    menuToggle.classList.toggle('active');
+  }
+}
+
+window.addEventListener('resize', () => {
+  if (window.innerWidth > 768) {
+    const navLinks = document.querySelector('.nav-links');
+    const menuToggle = document.querySelector('.menu-toggle');
+    if (navLinks) navLinks.classList.remove('active');
+    if (menuToggle) menuToggle.classList.remove('active');
+  }
+});
+
+window.addEventListener('DOMContentLoaded', () => {
+  const savedLang = localStorage.getItem('kaamkaazLang') || 'en';
+  applyLanguage(savedLang);
+
+  const dropbtn = document.querySelector('.dropbtn');
+  if (dropbtn) {
+    dropbtn.addEventListener('click', function(e) {
+      if (window.innerWidth <= 768) {
+        e.preventDefault();
+        this.parentElement.classList.toggle('active');
       }
     });
-
-    window.addEventListener('DOMContentLoaded', () => {
-      const savedLang = localStorage.getItem('kaamkaazLang') || 'en';
-      applyLanguage(savedLang);
-
-      const dropbtn = document.querySelector('.dropbtn');
-      if (dropbtn) {
-        dropbtn.addEventListener('click', function (e) {
-          if (window.innerWidth <= 768) {
-            e.preventDefault();
-            this.parentElement.classList.toggle('active');
-          }
-        });
-      }
-    });
-  </script>
+  }
+});
+</script>
 </body>
 
 </html>

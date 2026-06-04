@@ -137,24 +137,29 @@
       <span></span>
     </div>
     <ul class="nav-links">
-      <li><a href="index.html" data-en="Home" data-hi="होम">Home</a></li>
-      <li><a href="about.html" data-en="About" data-hi="हमारे बारे में">About</a></li>
-      <li><a href="faq.html" data-en="FAQ" data-hi="पूछे जाने वाले प्रश्न">FAQ</a></li>
-      <li><a href="community-guidelines.html" data-en="Community Guidelines" data-hi="सामुदायिक दिशानिर्देश">Community Guidelines</a></li>
+      <li><a href="index.html" data-i18n="home">Home</a></li>
+      <li><a href="about.html" data-i18n="about">About</a></li>
+      <li><a href="faq.html" data-i18n="faq">FAQ</a></li>
+      <li><a href="community-guidelines.html" data-i18n="community_guidelines">Community Guidelines</a></li>
       <li class="dropdown">
-        <a href="#" class="dropbtn" data-en="Legal ▾" data-hi="कानूनी ▾">Legal ▾</a>
+        <a href="#" class="dropbtn" data-i18n="legal">Legal ▾</a>
         <div class="dropdown-content">
-          <a href="privacy-policy.html" data-en="Privacy Policy" data-hi="गोपनीयता नीति">Privacy Policy</a>
-          <a href="terms-of-service.html" data-en="Terms of Service" data-hi="सेवा की शर्तें">Terms of Service</a>
-          <a href="cookie-policy.html" data-en="Cookie Policy" data-hi="कुकी नीति">Cookie Policy</a>
-          <a href="data-deletion.html" data-en="Data Deletion" data-hi="डेटा हटाना">Data Deletion</a>
-          <a href="refund-policy.html" data-en="Refund Policy" data-hi="धनवापसी नीति">Refund Policy</a>
+          <a href="privacy-policy.html" data-i18n="privacy_policy">Privacy Policy</a>
+          <a href="terms-of-service.html" data-i18n="terms_of_service">Terms of Service</a>
+          <a href="cookie-policy.html" data-i18n="cookie_policy">Cookie Policy</a>
+          <a href="data-deletion.html" data-i18n="data_deletion">Data Deletion</a>
+          <a href="refund-policy.html" data-i18n="refund_policy">Refund Policy</a>
         </div>
       </li>
-      <li><a href="languages.html" data-en="Languages" data-hi="भाषाएँ">Languages</a></li>
-      <li><a href="press.html" data-en="Press" data-hi="प्रेस">Press</a></li>
-      <li><a href="contact.html" data-en="Contact" data-hi="संपर्क">Contact</a></li>
-      <li><button onclick="toggleLanguage()" class="lang-toggle-btn" aria-label="Toggle language">अ | A</button></li>
+      <li><a href="languages.html" data-i18n="languages">Languages</a></li>
+      <li><a href="press.html" data-i18n="press">Press</a></li>
+      <li><a href="contact.html" data-i18n="contact">Contact</a></li>
+      <li class="lang-picker-item">
+        <select onchange="switchLanguage(this.value)" class="lang-picker" id="langPicker" aria-label="Select Language">
+          <option value="en">English</option>
+          <option value="hi">हिन्दी</option>
+        </select>
+      </li>
     </ul>
   </div>
 </nav>
@@ -167,80 +172,80 @@
     
     <div class="confirmation-box">
       <div class="confirmation-icon">✓</div>
-      <h2 data-en="Your Account Deletion Request Has Been Received" data-hi="आपकी खाता हटाने की अनुरोध प्राप्त हो गई है">Your Account Deletion Request Has Been Received</h2>
-      <p style="margin-top: 1rem; color: var(--text-dark);" data-en="Thank you for using Kaamkaaz. We have received your account deletion request and will process it shortly." data-hi="कामकाज का उपयोग करने के लिए धन्यवाद। हमने आपकी खाता हटाने की अनुरोध प्राप्त कर ली है और इसे जल्द ही संसाधित करेंगे।">Thank you for using Kaamkaaz. We have received your account deletion request and will process it shortly.</p>
+      <h2 data-i18n="your_account_deletion_request_has">Your Account Deletion Request Has Been Received</h2>
+      <p style="margin-top: 1rem; color: var(--text-dark);" data-i18n="thank_you_for_using_kaamkaaz">Thank you for using Kaamkaaz. We have received your account deletion request and will process it shortly.</p>
     </div>
 
     <!-- Timeline Box -->
     <div class="timeline-box">
-      <h3 data-en="What Happens Next?" data-hi="आगे क्या होगा?">What Happens Next?</h3>
-      <p style="margin-top: 1rem;" data-en="Your account and all associated data will be permanently deleted within 30 days. This is our standard processing timeline for data deletion requests." data-hi="आपके खाते और सभी संबंधित डेटा को 30 दिनों के भीतर स्थायी रूप से हटा दिया जाएगा।">Your account and all associated data will be permanently deleted within 30 days. This is our standard processing timeline for data deletion requests.</p>
+      <h3 data-i18n="what_happens_next">What Happens Next?</h3>
+      <p style="margin-top: 1rem;" data-i18n="your_account_and_all_associated">Your account and all associated data will be permanently deleted within 30 days. This is our standard processing timeline for data deletion requests.</p>
       
       <div style="margin-top: 1.5rem; padding: 1rem; background-color: rgba(26, 86, 219, 0.1); border-radius: 8px;">
-        <p><strong data-en="Timeline:" data-hi="समयसीमा:">Timeline:</strong> <span data-en="30 days from request date" data-hi="अनुरोध की तारीख से 30 दिन">30 days from request date</span></p>
-        <p style="margin-top: 0.5rem; font-size: 0.9rem; color: var(--text-muted);" data-en="The 30-day period allows us to ensure all data across all systems is deleted securely." data-hi="30 दिन की अवधि हमें सभी सिस्टमों में सभी डेटा को सुरक्षित रूप से हटाने की अनुमति देती है।">The 30-day period allows us to ensure all data across all systems is deleted securely.</p>
+        <p><strong data-i18n="timeline">Timeline:</strong> <span data-i18n="30_days_from_request_date">30 days from request date</span></p>
+        <p style="margin-top: 0.5rem; font-size: 0.9rem; color: var(--text-muted);" data-i18n="the_30day_period_allows_us">The 30-day period allows us to ensure all data across all systems is deleted securely.</p>
       </div>
     </div>
 
     <!-- What Gets Deleted -->
     <div class="deletion-list">
-      <h4 data-en="What Will Be Deleted" data-hi="क्या हटाया जाएगा">What Will Be Deleted</h4>
+      <h4 data-i18n="what_will_be_deleted">What Will Be Deleted</h4>
       <ul>
-        <li data-en="Profile information (name, phone, email)" data-hi="प्रोफाइल जानकारी (नाम, फोन, ईमेल)">Profile information (name, phone, email)</li>
-        <li data-en="KYC (Know Your Customer) documents (Aadhaar, photos, etc.)" data-hi="KYC दस्तावेज़ (आधार, फोटो, आदि)">KYC (Know Your Customer) documents (Aadhaar, photos, etc.)</li>
-        <li data-en="Complete job application history" data-hi="संपूर्ण नौकरी आवेदन इतिहास">Complete job application history</li>
-        <li data-en="All chat messages and communication records" data-hi="सभी चैट संदेश और संचार रिकॉर्ड">All chat messages and communication records</li>
-        <li data-en="Portfolio media (photos and videos)" data-hi="पोर्टफोलियो मीडिया (फोटो और वीडियो)">Portfolio media (photos and videos)</li>
-        <li data-en="Referral history and rewards" data-hi="रेफरल इतिहास और पुरस्कार">Referral history and rewards</li>
-        <li data-en="All personal settings and preferences" data-hi="सभी व्यक्तिगत सेटिंग्स और प्राथमिकताएं">All personal settings and preferences</li>
-        <li data-en="Account ratings and reviews you've given" data-hi="आपने दी गई खाता रेटिंग और समीक्षाएं">Account ratings and reviews you've given</li>
+        <li data-i18n="profile_information_name_phone_email">Profile information (name, phone, email)</li>
+        <li data-i18n="kyc_know_your_customer_documents">KYC (Know Your Customer) documents (Aadhaar, photos, etc.)</li>
+        <li data-i18n="complete_job_application_history">Complete job application history</li>
+        <li data-i18n="all_chat_messages_and_communication">All chat messages and communication records</li>
+        <li data-i18n="portfolio_media_photos_and_videos">Portfolio media (photos and videos)</li>
+        <li data-i18n="referral_history_and_rewards">Referral history and rewards</li>
+        <li data-i18n="all_personal_settings_and_preferences">All personal settings and preferences</li>
+        <li data-i18n="account_ratings_and_reviews_youve">Account ratings and reviews you've given</li>
       </ul>
     </div>
 
     <!-- What Is Retained -->
     <div style="background-color: #fee2e2; border-left: 4px solid var(--error-red); padding: 1.5rem; border-radius: var(--radius-lg); margin: 1.5rem 0;">
-      <h4 style="color: #dc2626; margin-bottom: 1rem;" data-en="Data Retained for Legal Compliance" data-hi="कानूनी अनुपालन के लिए डेटा बरकरार">Data Retained for Legal Compliance</h4>
-      <p data-en="Some limited data may be retained for legal and regulatory requirements:" data-hi="कानूनी और नियामक आवश्यकताओं के लिए कुछ सीमित डेटा बरकरार रखा जा सकता है:">Some limited data may be retained for legal and regulatory requirements:</p>
+      <h4 style="color: #dc2626; margin-bottom: 1rem;" data-i18n="data_retained_for_legal_compliance">Data Retained for Legal Compliance</h4>
+      <p data-i18n="some_limited_data_may_be">Some limited data may be retained for legal and regulatory requirements:</p>
       <ul style="margin-top: 1rem;">
-        <li data-en="Transaction records (for financial/tax compliance)" data-hi="लेनदेन रिकॉर्ड (वित्तीय/कर अनुपालन के लिए)">Transaction records (for financial/tax compliance)</li>
-        <li data-en="Anonymized usage data (for legal disputes)" data-hi="अनाम किए गए उपयोग डेटा (कानूनी विवादों के लिए)">Anonymized usage data (for legal disputes)</li>
-        <li data-en="IP logs (for security and abuse prevention)" data-hi="IP लॉग (सुरक्षा और दुरुपयोग रोकथाम के लिए)">IP logs (for security and abuse prevention)</li>
+        <li data-i18n="transaction_records_for_financialtax_compliance">Transaction records (for financial/tax compliance)</li>
+        <li data-i18n="anonymized_usage_data_for_legal">Anonymized usage data (for legal disputes)</li>
+        <li data-i18n="ip_logs_for_security_and">IP logs (for security and abuse prevention)</li>
       </ul>
-      <p style="margin-top: 1rem; font-size: 0.9rem; color: var(--text-muted);" data-en="This is in compliance with Indian laws including the IT Act 2000 and DPDP Act 2023." data-hi="यह IT अधिनियम 2000 और DPDP अधिनियम 2023 सहित भारतीय कानूनों के अनुसार है।">This is in compliance with Indian laws including the IT Act 2000 and DPDP Act 2023.</p>
+      <p style="margin-top: 1rem; font-size: 0.9rem; color: var(--text-muted);" data-i18n="this_is_in_compliance_with">This is in compliance with Indian laws including the IT Act 2000 and DPDP Act 2023.</p>
     </div>
 
     <!-- Change Your Mind -->
     <div class="change-mind-section">
-      <h3 data-en="Changed Your Mind?" data-hi="विचार बदल गया?">Changed Your Mind?</h3>
-      <p style="margin-bottom: 1.5rem;" data-en="If you'd like to undo this request or have questions, contact us immediately:" data-hi="यदि आप इस अनुरोध को पूर्ववत करना चाहते हैं या किसी प्रश्न के लिए, तुरंत हमसे संपर्क करें:">If you'd like to undo this request or have questions, contact us immediately:</p>
+      <h3 data-i18n="changed_your_mind">Changed Your Mind?</h3>
+      <p style="margin-bottom: 1.5rem;" data-i18n="if_youd_like_to_undo">If you'd like to undo this request or have questions, contact us immediately:</p>
       
       <p style="margin-bottom: 1rem;">
-        <strong data-en="Email:" data-hi="ईमेल:">Email:</strong> <a href="mailto:kaamkaaz0018@gmail.com" style="color: #d97706; font-weight: 600;">kaamkaaz0018@gmail.com</a>
+        <strong data-i18n="email_2">Email:</strong> <a href="mailto:kaamkaaz0018@gmail.com" style="color: #d97706; font-weight: 600;">kaamkaaz0018@gmail.com</a>
       </p>
       
-      <p style="font-size: 0.95rem; color: #0E0099;" data-en="Response within 48 hours" data-hi="48 घंटे के भीतर प्रतिक्रिया">Response within 48 hours</p>
+      <p style="font-size: 0.95rem; color: #0E0099;" data-i18n="response_within_48_hours">Response within 48 hours</p>
       
       <div style="margin-top: 1.5rem;">
-        <a href="index.html" class="btn btn-primary" data-en="Back to Home" data-hi="होम पर वापस जाएं">Back to Home</a>
-        <a href="contact.html" class="btn btn-secondary" style="margin-left: 1rem;" data-en="Contact Us" data-hi="हमसे संपर्क करें">Contact Us</a>
+        <a href="index.html" class="btn btn-primary" data-i18n="back_to_home">Back to Home</a>
+        <a href="contact.html" class="btn btn-secondary" style="margin-left: 1rem;" data-i18n="contact_us">Contact Us</a>
       </div>
     </div>
 
     <!-- Important Notes -->
     <div style="background-color: var(--white); padding: 1.5rem; border-radius: var(--radius-lg); border: 1px solid var(--border-light); margin-top: 2rem;">
-      <h4 data-en="Important Notes" data-hi="महत्वपूर्ण नोट">Important Notes</h4>
+      <h4 data-i18n="important_notes">Important Notes</h4>
       <ul style="margin-top: 1rem;">
-        <li data-en="This deletion is permanent and cannot be reversed" data-hi="यह हटाना स्थायी है और इसे उलटा नहीं किया जा सकता">This deletion is permanent and cannot be reversed</li>
-        <li data-en="You will not be able to log in to your account" data-hi="आप अपने खाते में लॉगिन नहीं कर सकेंगे">You will not be able to log in to your account</li>
-        <li data-en="If you download the app again later, you'll need to create a new account" data-hi="यदि आप बाद में ऐप्लिकेशन को फिर से डाउनलोड करते हैं, तो आपको नया खाता बनाने की आवश्यकता होगी">If you download the app again later, you'll need to create a new account</li>
-        <li data-en="You have 30 days to cancel this request" data-hi="आपके पास इस अनुरोध को रद्द करने के लिए 30 दिन हैं">You have 30 days to cancel this request</li>
+        <li data-i18n="this_deletion_is_permanent_and">This deletion is permanent and cannot be reversed</li>
+        <li data-i18n="you_will_not_be_able">You will not be able to log in to your account</li>
+        <li data-i18n="if_you_download_the_app">If you download the app again later, you'll need to create a new account</li>
+        <li data-i18n="you_have_30_days_to">You have 30 days to cancel this request</li>
       </ul>
     </div>
 
     <!-- Footer Info -->
     <div style="text-align: center; margin-top: 2rem; padding-top: 2rem; border-top: 1px solid var(--border-light);">
-      <p style="font-size: 0.9rem; color: var(--text-muted);" data-en="Effective Date: May 2026 | Request ID: AUTO-GENERATED" data-hi="प्रभावी तारीख: मई 2026">Effective Date: May 2026 | Request ID: AUTO-GENERATED</p>
-      <p style="font-size: 0.85rem; color: #9CA3AF; margin-top: 0.5rem;" data-en="Governed by Information Technology Act 2000 & Digital Personal Data Protection Act 2023" data-hi="सूचना प्रौद्योगिकी अधिनियम 2000 और डिजिटल व्यक्तिगत डेटा संरक्षण अधिनियम 2023 द्वारा संचालित">Governed by Information Technology Act 2000 & Digital Personal Data Protection Act 2023</p>
+      <p style="font-size: 0.9rem; color: var(--text-muted);" data-i18n="effective_date_may_2026_request">Effective Date: May 2026 | Request ID: AUTO-GENERATED</p>
+      <p style="font-size: 0.85rem; color: #9CA3AF; margin-top: 0.5rem;" data-i18n="governed_by_information_technology_act_2">Governed by Information Technology Act 2000 & Digital Personal Data Protection Act 2023</p>
     </div>
 
   </div>
@@ -252,38 +257,38 @@
     <div class="footer-content-3col">
       <div class="footer-col">
         <h3>Kaamkaaz <span class="logo-hindi">कामकाज</span></h3>
-        <p data-en="Connecting daily wage workers with hyperlocal jobs in rural and semi-urban India." data-hi="ग्रामीण और अर्ध-शहरी भारत में दैनिक वेतन भोगी श्रमिकों को स्थानीय नौकरियों से जोड़ना।">
+        <p data-i18n="connecting_daily_wage_workers_with_2">
           Connecting daily wage workers with hyperlocal jobs in rural and semi-urban India.
         </p>
-        <p style="margin-top: 1rem; font-size: 0.85rem;" data-en="© 2025 Kaamkaaz. All rights reserved." data-hi="© 2025 कामकाज। सर्वाधिकार सुरक्षित।">
-          © 2025 Kaamkaaz. All rights reserved.
+        <p style="margin-top: 1rem; font-size: 0.85rem;" data-i18n="2026_kaamkaaz_all_rights_reserved">
+          © 2026 Kaamkaaz. All rights reserved.
         </p>
-        <p style="font-size: 0.85rem;" data-en="Made with ❤️ for India's workforce" data-hi="भारत के कार्यबल के लिए ❤️ के साथ बनाया गया">
+        <p style="font-size: 0.85rem;" data-i18n="made_with_for_indias_workforce">
           Made with ❤️ for India's workforce
         </p>
       </div>
       <div class="footer-col">
-        <h4 data-en="Quick Links" data-hi="त्वरित लिंक" style="margin-bottom: 1rem;">Quick Links</h4>
+        <h4 data-i18n="quick_links" style="margin-bottom: 1rem;">Quick Links</h4>
         <ul>
-          <li><a href="index.html" data-en="Home" data-hi="होम">Home</a></li>
-          <li><a href="about.html" data-en="About Us" data-hi="हमारे बारे में">About Us</a></li>
-          <li><a href="faq.html" data-en="FAQ" data-hi="पूछे जाने वाले प्रश्न">FAQ</a></li>
-          <li><a href="community-guidelines.html" data-en="Community Guidelines" data-hi="सामुदायिक दिशानिर्देश">Community Guidelines</a></li>
-          <li><a href="languages.html" data-en="Languages" data-hi="भाषाएँ">Languages</a></li>
-          <li><a href="press.html" data-en="Press" data-hi="प्रेस">Press</a></li>
+          <li><a href="index.html" data-i18n="home">Home</a></li>
+          <li><a href="about.html" data-i18n="about_us">About Us</a></li>
+          <li><a href="faq.html" data-i18n="faq">FAQ</a></li>
+          <li><a href="community-guidelines.html" data-i18n="community_guidelines">Community Guidelines</a></li>
+          <li><a href="languages.html" data-i18n="languages">Languages</a></li>
+          <li><a href="press.html" data-i18n="press">Press</a></li>
         </ul>
       </div>
       <div class="footer-col">
-        <h4 data-en="Legal & Contact" data-hi="कानूनी और संपर्क" style="margin-bottom: 1rem;">Legal & Contact</h4>
+        <h4 data-i18n="legal_contact" style="margin-bottom: 1rem;">Legal & Contact</h4>
         <ul>
-          <li><a href="privacy-policy.html" data-en="Privacy Policy" data-hi="गोपनीयता नीति">Privacy Policy</a></li>
-          <li><a href="terms-of-service.html" data-en="Terms of Service" data-hi="सेवा की शर्तें">Terms of Service</a></li>
-          <li><a href="cookie-policy.html" data-en="Cookie Policy" data-hi="कुकी नीति">Cookie Policy</a></li>
-          <li><a href="data-deletion.html" data-en="Data Deletion" data-hi="डेटा हटाना">Data Deletion</a></li>
-          <li><a href="refund-policy.html" data-en="Refund Policy" data-hi="धनवापसी नीति">Refund Policy</a></li>
-          <li><a href="contact.html" data-en="Contact Us" data-hi="संपर्क करें">Contact Us</a></li>
+          <li><a href="privacy-policy.html" data-i18n="privacy_policy">Privacy Policy</a></li>
+          <li><a href="terms-of-service.html" data-i18n="terms_of_service">Terms of Service</a></li>
+          <li><a href="cookie-policy.html" data-i18n="cookie_policy">Cookie Policy</a></li>
+          <li><a href="data-deletion.html" data-i18n="data_deletion">Data Deletion</a></li>
+          <li><a href="refund-policy.html" data-i18n="refund_policy">Refund Policy</a></li>
+          <li><a href="contact.html" data-i18n="contact_us">Contact Us</a></li>
         </ul>
-        <p style="margin-top: 1rem; font-size: 0.85rem;" data-en="Developer: Ankit Yadav" data-hi="डेवलपर: अंकित यादव">
+        <p style="margin-top: 1rem; font-size: 0.85rem;" data-i18n="developer_ankit_yadav">
           Developer: Ankit Yadav
         </p>
         <p style="font-size: 0.85rem;">
@@ -292,46 +297,55 @@
       </div>
     </div>
     <div class="footer-bottom">
-      <p data-en="Governed by Information Technology Act 2000 & Digital Personal Data Protection Act 2023 | India" data-hi="सूचना प्रौद्योगिकी अधिनियम 2000 और डिजिटल व्यक्तिगत डेटा संरक्षण अधिनियम 2023 द्वारा संचालित | भारत">
+      <p data-i18n="governed_by_information_technology_act">
         Governed by Information Technology Act 2000 & Digital Personal Data Protection Act 2023 | India
       </p>
     </div>
   </div>
 </footer>
 
-<!-- Floating Language Toggle Button -->
-<button onclick="toggleLanguage()" class="floating-lang-toggle" data-en="हिन्दी" data-hi="English" aria-label="Toggle language">हिन्दी</button>
-
-<!-- TRANSLATION & MOBILE INTERACTION SCRIPTS -->
+<script src="translations.js"></script>
 <script>
-function toggleLanguage() {
-  const currentLang = localStorage.getItem('kaamkaazLang') || 'en';
-  const newLang = currentLang === 'en' ? 'hi' : 'en';
-  localStorage.setItem('kaamkaazLang', newLang);
-  applyLanguage(newLang);
+function switchLanguage(lang) {
+  localStorage.setItem('kaamkaazLang', lang);
+  applyLanguage(lang);
 }
 
 function applyLanguage(lang) {
-  document.querySelectorAll('[data-en]').forEach(el => {
-    if (lang === 'hi' && el.hasAttribute('data-hi')) {
+  const dict = (typeof translations !== 'undefined' && translations[lang]) ? translations[lang] : null;
+  const fallback = (typeof translations !== 'undefined') ? translations['en'] : null;
+
+  // Handle data-i18n elements
+  document.querySelectorAll('[data-i18n]').forEach(el => {
+    const key = el.getAttribute('data-i18n');
+    const text = (dict && dict[key]) ? dict[key] : (fallback ? fallback[key] : null);
+    if (text !== null && text !== undefined) {
       if (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA') {
-        el.placeholder = el.getAttribute('data-hi');
+        el.placeholder = text;
       } else {
-        el.textContent = el.getAttribute('data-hi');
-      }
-    } else if (lang === 'en') {
-      if (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA') {
-        el.placeholder = el.getAttribute('data-en');
-      } else {
-        el.textContent = el.getAttribute('data-en');
+        el.textContent = text;
       }
     }
   });
-  
-  const btn = document.querySelector('.lang-toggle-btn');
-  if (btn) {
-    btn.textContent = lang === 'en' ? 'अ | Hindi' : 'A | English';
-  }
+
+  // Handle legacy data-en / data-hi elements (safety net)
+  document.querySelectorAll('[data-en]').forEach(el => {
+    const text = lang === 'hi' && el.hasAttribute('data-hi')
+      ? el.getAttribute('data-hi')
+      : el.getAttribute('data-en');
+    if (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA') {
+      el.placeholder = text;
+    } else {
+      el.textContent = text;
+    }
+  });
+
+  // Update all language pickers on page
+  document.querySelectorAll('.lang-picker').forEach(sel => { sel.value = lang; });
+
+  // RTL for Urdu
+  document.documentElement.dir = (lang === 'ur') ? 'rtl' : 'ltr';
+  document.documentElement.lang = lang;
 }
 
 function toggleMobileMenu() {
