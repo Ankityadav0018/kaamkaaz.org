@@ -21,7 +21,7 @@ Hire verified, reliable workers for your home, farm, factory, or office in minut
 - **KYC Verified Workers:** View Aadhaar-verified profiles with real-time ratings and job history.
 - **In-App Chat:** Communicate directly with workers to discuss wages and timing.
 - **Secure Hiring:** Contact details are only revealed after you officially hire a worker, protecting your privacy.
-- **Small Posting Fee:** Publish a job for just ₹29—no hidden commissions or high agency costs.
+- **Small Posting Fee:** Publish a job for just ₹9—no hidden commissions or high agency costs.
 
 ### Key Features:
 - **Real-Time Notifications:** Get instant alerts for new jobs or applicant updates.
