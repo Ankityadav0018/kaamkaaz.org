@@ -486,6 +486,7 @@ section {
    ═════════════════════════════════════════════════════════════════ */
 
 .hero {
+  background-color: var(--white);
   padding: 6rem 2rem;
   text-align: center;
   min-height: 70vh;
@@ -528,9 +529,11 @@ section {
 
 .hero-buttons {
   display: flex;
-  gap: 1rem;
+  gap: 1.5rem;
   justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
+  margin-top: 2rem;
 }
 
 /* ═════════════════════════════════════════════════════════════════
