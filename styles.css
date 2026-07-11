@@ -486,8 +486,6 @@ section {
    ═════════════════════════════════════════════════════════════════ */
 
 .hero {
-  background: linear-gradient(135deg, var(--primary-blue) 0%, #0E0099 50%, #00A8FF 100%);
-  color: var(--white);
   padding: 6rem 2rem;
   text-align: center;
   min-height: 70vh;
@@ -511,7 +509,7 @@ section {
   margin-bottom: 2rem;
   font-weight: 500;
   opacity: 0.95;
-  color: var(--white);
+  color: var(--text-dark);
 }
 
 .hero .hindi-text {
@@ -525,7 +523,7 @@ section {
   font-size: 1.1rem;
   margin-bottom: 2.5rem;
   opacity: 0.9;
-  color: var(--white);
+  color: var(--text-muted);
 }
 
 .hero-buttons {
