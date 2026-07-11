@@ -464,6 +464,18 @@ section {
   text-decoration: none;
 }
 
+.btn-outline-white {
+  background-color: transparent;
+  color: var(--white);
+  border: 2px solid var(--white);
+}
+
+.btn-outline-white:hover {
+  background-color: var(--white);
+  color: var(--primary-blue);
+  text-decoration: none;
+}
+
 .btn-lg {
   padding: 1rem 2rem;
   font-size: 1.1rem;
@@ -499,6 +511,7 @@ section {
   margin-bottom: 2rem;
   font-weight: 500;
   opacity: 0.95;
+  color: var(--white);
 }
 
 .hero .hindi-text {
@@ -512,6 +525,7 @@ section {
   font-size: 1.1rem;
   margin-bottom: 2.5rem;
   opacity: 0.9;
+  color: var(--white);
 }
 
 .hero-buttons {
