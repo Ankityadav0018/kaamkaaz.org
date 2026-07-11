@@ -26,7 +26,11 @@
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 3px;
-  color: var(--ink);
+  color: var(--primary-blue);
+  background: linear-gradient(135deg, var(--primary-blue), var(--accent-cyan));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: floatLabel 3s ease-in-out infinite;
 }
 .countdown-blocks {
   display: flex;
@@ -35,30 +39,47 @@
   flex-wrap: wrap;
 }
 .countdown-block {
-  background: var(--paper);
-  border: 2px solid var(--ink);
-  border-radius: var(--radius-sm);
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  border-radius: var(--radius-lg);
   padding: 1.25rem 1rem;
   min-width: 90px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  box-shadow: 0 15px 35px rgba(20, 0, 198, 0.1);
+  transition: transform 0.3s ease;
+  animation: pulseGlow 3s infinite alternate;
+}
+.countdown-block:hover {
+  transform: translateY(-8px);
 }
 .countdown-value {
   font-family: var(--font-heading);
-  font-size: 3rem;
+  font-size: 3.5rem;
   font-weight: 700;
-  color: var(--ink);
+  color: var(--primary-blue);
   line-height: 1;
+  text-shadow: 0 4px 10px rgba(0,168,255,0.2);
 }
 .countdown-unit {
   font-family: var(--font-body);
-  font-size: 0.85rem;
+  font-size: 0.9rem;
   font-weight: 600;
-  color: var(--ink);
+  color: var(--text-muted);
   text-transform: uppercase;
   margin-top: 0.75rem;
   letter-spacing: 1px;
+}
+@keyframes pulseGlow {
+  0% { box-shadow: 0 10px 30px rgba(20, 0, 198, 0.08); }
+  100% { box-shadow: 0 15px 40px rgba(20, 0, 198, 0.15); }
+}
+@keyframes floatLabel {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-5px); }
 }
 </style>
 
@@ -137,7 +158,7 @@
   </div>
 </div>
 
-      <a href="#features" class="btn btn-primary btn-lg" style="display: inline-flex; align-items: center; gap: 0.5rem; text-transform: uppercase; font-family: var(--font-heading); font-size: 1.25rem;" data-i18n="learn_more">Learn More <span style="font-size: 1.2rem;">&rarr;</span></a>
+      <a href="#features" class="btn btn-primary btn-lg" data-i18n="learn_more">Learn More <span style="font-size: 1.2rem;">&rarr;</span></a>
     </div>
   </div>
 </section>
