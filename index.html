@@ -26,16 +26,7 @@
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 3px;
-  color: var(--primary-blue);
-  background: linear-gradient(135deg, var(--primary-blue), var(--accent-cyan));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  animation: floatLabel 3s ease-in-out infinite;
-}
-.creative-countdown-wrapper.dark-mode .countdown-label {
-  background: linear-gradient(135deg, #fff, var(--accent-cyan));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: var(--ink);
 }
 .countdown-blocks {
   display: flex;
@@ -44,59 +35,30 @@
   flex-wrap: wrap;
 }
 .countdown-block {
-  background: rgba(255, 255, 255, 0.4);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  border: 1px solid rgba(255, 255, 255, 0.6);
-  border-radius: var(--radius-lg);
+  background: var(--paper);
+  border: 2px solid var(--ink);
+  border-radius: var(--radius-sm);
   padding: 1.25rem 1rem;
   min-width: 90px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  box-shadow: 0 10px 30px rgba(20, 0, 198, 0.08);
-  transition: transform 0.3s ease;
-  animation: pulseGlow 2.5s infinite alternate;
-}
-.creative-countdown-wrapper.dark-mode .countdown-block {
-  background: rgba(255, 255, 255, 0.1);
-  border-color: rgba(255, 255, 255, 0.2);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-}
-.countdown-block:hover {
-  transform: translateY(-5px);
 }
 .countdown-value {
   font-family: var(--font-heading);
   font-size: 3rem;
   font-weight: 700;
-  color: var(--primary-blue);
+  color: var(--ink);
   line-height: 1;
-}
-.creative-countdown-wrapper.dark-mode .countdown-value {
-  color: #fff;
-  text-shadow: 0 0 15px rgba(255,255,255,0.4);
 }
 .countdown-unit {
   font-family: var(--font-body);
   font-size: 0.85rem;
   font-weight: 600;
-  color: var(--text-muted);
+  color: var(--ink);
   text-transform: uppercase;
   margin-top: 0.75rem;
   letter-spacing: 1px;
-}
-.creative-countdown-wrapper.dark-mode .countdown-unit {
-  color: rgba(255,255,255,0.7);
-}
-
-@keyframes pulseGlow {
-  0% { box-shadow: 0 10px 30px rgba(20, 0, 198, 0.08); }
-  100% { box-shadow: 0 10px 30px rgba(20, 0, 198, 0.18); }
-}
-@keyframes floatLabel {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-5px); }
 }
 </style>
 
@@ -175,13 +137,13 @@
   </div>
 </div>
 
-      <a href="#features" class="btn btn-primary btn-lg" style="box-shadow: 0 10px 25px -5px rgba(20, 0, 198, 0.4); display: flex; align-items: center; gap: 0.5rem;" data-i18n="learn_more">Learn More <span style="font-size: 1.2rem;">&rarr;</span></a>
+      <a href="#features" class="btn btn-primary btn-lg" style="display: inline-flex; align-items: center; gap: 0.5rem; text-transform: uppercase; font-family: var(--font-heading); font-size: 1.25rem;" data-i18n="learn_more">Learn More <span style="font-size: 1.2rem;">&rarr;</span></a>
     </div>
   </div>
 </section>
 
 <!-- WORKERS SECTION -->
-<section id="workers" class="features-section" style="background-color: var(--white);">
+<section id="workers" class="features-section">
   <div class="container">
     <div class="audience-section">
       <div class="audience-header">
@@ -192,44 +154,58 @@
       <div class="grid grid-3">
         <div class="card">
           <div class="card-icon">📍</div>
-          <h3 data-i18n="find_jobs_near_you">Find Jobs Near You</h3>
-          <p data-i18n="discover_daily_wage_jobs_within">Discover daily wage jobs within a 15-30km radius of your location using GPS. See job details, location, and pay before applying.</p>
+          <div class="card-content">
+            <h3 data-i18n="find_jobs_near_you">Find Jobs Near You</h3>
+            <p data-i18n="discover_daily_wage_jobs_within">Discover daily wage jobs within a 15-30km radius of your location using GPS. See job details, location, and pay before applying.</p>
+          </div>
         </div>
         
         <div class="card">
           <div class="card-icon">✋</div>
-          <h3 data-i18n="apply_with_one_tap">Apply with One Tap</h3>
-          <p data-i18n="apply_for_jobs_instantly_no">Apply for jobs instantly. No lengthy forms. Track your application status in real-time and receive job updates.</p>
+          <div class="card-content">
+            <h3 data-i18n="apply_with_one_tap">Apply with One Tap</h3>
+            <p data-i18n="apply_for_jobs_instantly_no">Apply for jobs instantly. No lengthy forms. Track your application status in real-time and receive job updates.</p>
+          </div>
         </div>
         
         <div class="card">
           <div class="card-icon">🆔</div>
-          <h3 data-i18n="kyc_verification">KYC Verification</h3>
-          <p data-i18n="complete_simple_kyc_verification_aadhaar">Complete simple KYC verification (Aadhaar, Selfie) to build trust with recruiters and get hired faster.</p>
+          <div class="card-content">
+            <h3 data-i18n="kyc_verification">KYC Verification</h3>
+            <p data-i18n="complete_simple_kyc_verification_aadhaar">Complete simple KYC verification (Aadhaar, Selfie) to build trust with recruiters and get hired faster.</p>
+          </div>
         </div>
         
         <div class="card">
           <div class="card-icon">📸</div>
-          <h3 data-i18n="portfolio_skills">Portfolio & Skills</h3>
-          <p data-i18n="upload_photos_of_your_work">Upload photos of your work. Showcase your skills and experience to recruiters. Get recognized for quality work.</p>
+          <div class="card-content">
+            <h3 data-i18n="portfolio_skills">Portfolio & Skills</h3>
+            <p data-i18n="upload_photos_of_your_work">Upload photos of your work. Showcase your skills and experience to recruiters. Get recognized for quality work.</p>
+          </div>
         </div>
         
         <div class="card">
           <div class="card-icon">💬</div>
-          <h3 data-i18n="direct_communication">Direct Communication</h3>
-          <p data-i18n="chat_call_or_whatsapp_directly">Chat, call, or WhatsApp directly with recruiters. Negotiate terms and confirm job details without middlemen.</p>
+          <div class="card-content">
+            <h3 data-i18n="direct_communication">Direct Communication</h3>
+            <p data-i18n="chat_call_or_whatsapp_directly">Chat, call, or WhatsApp directly with recruiters. Negotiate terms and confirm job details without middlemen.</p>
+          </div>
         </div>
         
         <div class="card">
           <div class="card-icon">🔋</div>
-          <h3 data-i18n="lightweight_app">Lightweight App</h3>
-          <p data-i18n="uses_minimal_internet_and_battery">Uses minimal internet and battery power. Designed to run smoothly even on entry-level smartphones.</p>
+          <div class="card-content">
+            <h3 data-i18n="lightweight_app">Lightweight App</h3>
+            <p data-i18n="uses_minimal_internet_and_battery">Uses minimal internet and battery power. Designed to run smoothly even on entry-level smartphones.</p>
+          </div>
         </div>
         
         <div class="card">
           <div class="card-icon">🎁</div>
-          <h3 data-i18n="referral_rewards">Referral Rewards</h3>
-          <p data-i18n="referral_rewards_description">Refer your friends and earn ₹20 for every successful registration.</p>
+          <div class="card-content">
+            <h3 data-i18n="referral_rewards">Referral Rewards</h3>
+            <p data-i18n="referral_rewards_description">Refer your friends and earn ₹20 for every successful registration.</p>
+          </div>
         </div>
       </div>
 
@@ -257,20 +233,26 @@
       <div class="grid grid-3">
         <div class="card">
           <div class="card-icon">📌</div>
-          <h3 data-i18n="post_jobs_with_gps">Post Jobs with GPS</h3>
-          <p data-i18n="post_jobs_with_exact_gps">Post jobs with exact GPS location and site photos. Reach daily wage workers within your area instantly.</p>
+          <div class="card-content">
+            <h3 data-i18n="post_jobs_with_gps">Post Jobs with GPS</h3>
+            <p data-i18n="post_jobs_with_exact_gps">Post jobs with exact GPS location and site photos. Reach daily wage workers within your area instantly.</p>
+          </div>
         </div>
         
         <div class="card">
           <div class="card-icon">👥</div>
-          <h3 data-i18n="manage_applicants">Manage Applicants</h3>
-          <p data-i18n="review_worker_profiles_kyc_verification">Review worker profiles, KYC verification status, and portfolios. Make informed hiring decisions quickly.</p>
+          <div class="card-content">
+            <h3 data-i18n="manage_applicants">Manage Applicants</h3>
+            <p data-i18n="review_worker_profiles_kyc_verification">Review worker profiles, KYC verification status, and portfolios. Make informed hiring decisions quickly.</p>
+          </div>
         </div>
         
         <div class="card">
           <div class="card-icon">⭐</div>
-          <h3 data-i18n="trusted_workers">Trusted Workers</h3>
-          <p data-i18n="see_ratings_and_reviews_from">See ratings and reviews from previous employers. Rehire your trusted workers with confidence. Build a reliable team.</p>
+          <div class="card-content">
+            <h3 data-i18n="trusted_workers">Trusted Workers</h3>
+            <p data-i18n="see_ratings_and_reviews_from">See ratings and reviews from previous employers. Rehire your trusted workers with confidence. Build a reliable team.</p>
+          </div>
         </div>
       </div>
     </div>
@@ -278,7 +260,7 @@
 </section>
 
 <!-- APP SCREENSHOTS SECTION -->
-<section id="screenshots" style="background-color: var(--white); padding: 4rem 2rem;">
+<section id="screenshots" style="padding: 4rem 2rem;">
   <div class="container">
     <h2 class="text-center" data-i18n="app_screenshots" style="color: var(--primary-blue); margin-bottom: 1rem;">App Screenshots</h2>
     <p class="text-center text-muted" data-i18n="explore_the_simple_powerful_interface" style="margin-bottom: 3rem;">Explore the simple, powerful interface designed for easy daily job matches.</p>
@@ -321,23 +303,31 @@
     <h2 class="text-center" data-i18n="app_architecture_stack" style="color: var(--primary-blue); margin-bottom: 3rem;">App Architecture & Stack</h2>
     <div class="grid grid-4">
       <div class="card">
-        <h4 data-i18n="cloud_storage">Cloud Storage</h4>
-        <p data-i18n="cloudinary_fast_and_secure_media">Cloudinary - Fast and secure media uploads for worker portfolios, photos, and KYC documents.</p>
+        <div class="card-content">
+          <h4 data-i18n="cloud_storage">Cloud Storage</h4>
+          <p data-i18n="cloudinary_fast_and_secure_media">Cloudinary - Fast and secure media uploads for worker portfolios, photos, and KYC documents.</p>
+        </div>
       </div>
 
       <div class="card">
-        <h4 data-i18n="push_notifications">Push Notifications</h4>
-        <p data-i18n="firebase_push_notifications_for_job">Firebase - Push notifications for job updates, recruiter messages, and real-time alerts.</p>
+        <div class="card-content">
+          <h4 data-i18n="push_notifications">Push Notifications</h4>
+          <p data-i18n="firebase_push_notifications_for_job">Firebase - Push notifications for job updates, recruiter messages, and real-time alerts.</p>
+        </div>
       </div>
 
       <div class="card">
-        <h4 data-i18n="realtime_chat">Real-Time Chat</h4>
-        <p data-i18n="socketio_instant_messaging_between_workers">Socket.io - Instant messaging between workers and recruiters without delays.</p>
+        <div class="card-content">
+          <h4 data-i18n="realtime_chat">Real-Time Chat</h4>
+          <p data-i18n="socketio_instant_messaging_between_workers">Socket.io - Instant messaging between workers and recruiters without delays.</p>
+        </div>
       </div>
 
       <div class="card">
-        <h4 data-i18n="maps_location">Maps & Location</h4>
-        <p data-i18n="google_play_services_gps_location">Google Play Services - GPS location tracking for hyperlocal job matching within a 15-30km radius.</p>
+        <div class="card-content">
+          <h4 data-i18n="maps_location">Maps & Location</h4>
+          <p data-i18n="google_play_services_gps_location">Google Play Services - GPS location tracking for hyperlocal job matching within a 15-30km radius.</p>
+        </div>
       </div>
     </div>
   </div>
