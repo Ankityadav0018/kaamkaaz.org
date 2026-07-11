@@ -3,7 +3,7 @@
    ═════════════════════════════════════════════════════════════════ */
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;600&family=Noto+Sans+Devanagari:wght@400;600&family=Noto+Sans+Bengali:wght@400;600&family=Noto+Sans+Telugu:wght@400;600&family=Noto+Sans+Tamil:wght@400;600&family=Noto+Sans+Gujarati:wght@400;600&family=Noto+Sans+Kannada:wght@400;600&family=Noto+Sans+Oriya:wght@400;600&family=Noto+Sans+Malayalam:wght@400;600&family=Noto+Nastaliq+Urdu:wght@400;600&display=swap&subset=devanagari,bengali,telugu,tamil,gujarati,kannada,oriya,malayalam');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;600&family=Noto+Sans+Devanagari:wght@400;600&family=Noto+Sans+Bengali:wght@400;600&family=Noto+Sans+Telugu:wght@400;600&family=Noto+Sans+Tamil:wght@400;600&family=Noto+Sans+Gujarati:wght@400;600&family=Noto+Sans+Kannada:wght@400;600&family=Noto+Sans+Oriya:wght@400;600&family=Noto+Sans+Malayalam:wght@400;600&display=swap&subset=devanagari,bengali,telugu,tamil,gujarati,kannada,oriya,malayalam');
 
 :root {
   --primary: #1400C6;
@@ -240,10 +240,6 @@ nav .container {
   font-size: 0.85rem;
 }
 
-/* RTL support for Urdu */
-[dir="rtl"] nav .nav-links {
-  flex-direction: row-reverse;
-}
 [dir="rtl"] .footer-content-3col {
   direction: rtl;
 }

@@ -796,9 +796,6 @@ function applyLanguage(lang) {
 
   // Update all language pickers on page
   document.querySelectorAll('.lang-picker').forEach(sel => { sel.value = lang; });
-
-  // RTL for Urdu
-  document.documentElement.dir = (lang === 'ur') ? 'rtl' : 'ltr';
   document.documentElement.lang = lang;
 }
 

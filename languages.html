@@ -293,9 +293,7 @@
             <p class="language-region" data-i18n="odisha">Odisha</p>
           </div>
 
-          <!-- Urdu -->
           <div class="language-card active">
-            <h3 data-i18n="urdu">Urdu</h3>
             <div class="language-native">اردو</div>
             <p class="language-region" data-i18n="india">India</p>
           </div>
@@ -424,9 +422,6 @@
 
       // Update all language pickers on page
       document.querySelectorAll('.lang-picker').forEach(sel => { sel.value = lang; });
-
-      // RTL for Urdu
-      document.documentElement.dir = (lang === 'ur') ? 'rtl' : 'ltr';
       document.documentElement.lang = lang;
     }
 

@@ -37,7 +37,6 @@ Kaamkaaz is proudly built for Bharat. To ensure zero friction for our users, the
 9. Kannada (ಕನ್ನಡ)
 10. Malayalam (മലയാളം)
 11. Odia (ଓଡ଼ିଆ)
-12. Urdu (اردو)
 13. Rajasthani/Bhojpuri (राजस्थानी/भोजपुरी)
 
 ---
@@ -51,12 +50,12 @@ When time is of the essence, Kaamkaaz provides a specialized **Urgent Jobs** flo
 - **Rapid Matching**: Workers receive an unmissable alert. The first available and qualified worker to accept the job is instantly connected with the recruiter, reducing hiring time from hours down to mere minutes.
 - **Premium Visibility UI**: Urgent jobs are highlighted with special badges and animations in the worker's job feed to guarantee maximum visibility.
 
-### 2. 💼 Wallet & Payments Ecosystem
-The Kaamkaaz platform includes a robust, secure built-in wallet system designed to handle recruiter top-ups and service charges transparently.
-- **Instant Top-Ups**: Recruiters can instantly add funds to their Kaamkaaz wallet using UPI, NetBanking, or Credit/Debit Cards via our secure payment gateway integration.
-- **Transaction History**: Transparent logging of all wallet deposits, job posting deductions, and refunds, accessible directly from the app.
+### 2. 💳 Credits System Ecosystem
+The Kaamkaaz platform includes a robust, secure built-in credits system designed to handle recruiter top-ups and service charges transparently.
+- **Instant Top-Ups**: Recruiters can instantly add funds to their Kaamkaaz credits using UPI, NetBanking, or Credit/Debit Cards via our secure payment gateway integration.
+- **Transaction History**: Transparent logging of all credit deposits, job posting deductions, and refunds, accessible directly from the app.
 - **Automated Deductions**: Seamless and automatic deduction of minor platform fees when a recruiter successfully posts a job or hires a worker.
-- **Secure Webhooks**: Real-time server-to-server synchronization with payment gateways ensures that your wallet balance is updated instantly, even if the app loses internet connection during a transaction.
+- **Secure Webhooks**: Real-time server-to-server synchronization with payment gateways ensures that your credits balance is updated instantly, even if the app loses internet connection during a transaction.
 
 ### 3. 💬 In-App Chat & Communication
 - **Real-Time Messaging**: Built on Socket.io, users can chat instantly without leaving the app to discuss wages, share locations, or clarify job requirements.
@@ -66,15 +65,13 @@ The Kaamkaaz platform includes a robust, secure built-in wallet system designed 
 - **Multi-Step KYC**: Workers must submit a live selfie and Aadhaar details to get verified. This creates a high-trust environment.
 - **Verified Skill Badges**: Once a worker completes their KYC and proves their expertise, admins grant them visual "Skill Badges" (e.g., Verified Plumber, Expert Electrician) that appear on their public profile, boosting their hiring rate.
 
-### 5. 🤖 AI Job Assistant
-- **Smart Drafting**: Recruiters who struggle to write job descriptions can use the built-in AI Assistant to automatically generate professional, detailed job postings based on a few keywords.
 
 ### 6. 🤝 Refer & Earn Program
 - **Viral Growth**: A fully integrated referral system where users can share their unique referral code with friends via social media or WhatsApp.
-- **Rewards**: Both the referrer and the referee receive automated wallet credits or rewards upon successful signup and first job completion.
+- **Rewards**: Both the referrer and the referee receive automated credits or rewards upon successful signup and first job completion.
 
 ### 7. 🛡️ Safety, Security & Offline Capabilities
-- **App Lock**: Users can enable Biometric (Fingerprint/FaceID) or PIN-based app locks to secure their wallet and personal chats.
+- **App Lock**: Users can enable Biometric (Fingerprint/FaceID) or PIN-based app locks to secure their account and personal chats.
 - **Emergency SOS**: A dedicated SOS button for workers to instantly alert emergency contacts and platform admins if they feel unsafe at a job site.
 - **Smart Offline Mode**: The app intelligently caches job feeds and active chats so workers can still view accepted jobs and employer addresses even in areas with poor internet connectivity.
 
@@ -118,7 +115,7 @@ The Kaamkaaz platform includes a robust, secure built-in wallet system designed 
 - **Camera & Storage Access**: Camera and storage permissions are strictly used for uploading profile pictures, KYC documents, and work portfolios.
 
 ### 3. Payment & Refund Policy
-- **Recruiter Wallet Top-Ups**: Wallet top-ups are generally non-refundable and must be utilized within the platform for posting jobs or accessing premium services.
+- **Recruiter Credits**: Credits are strictly non-refundable and non-transferable. They must be utilized within the platform for posting jobs or accessing premium services.
 - **Failed Transactions**: If a top-up transaction fails but money is deducted from the user's bank account, it will automatically be refunded by the payment gateway within 5-7 business days.
 - **Disputes**: In the event of a severe dispute regarding platform services, users may raise a ticket via the "Report Problem" screen for admin review. Refunds in such cases are at the sole discretion of Kaamkaaz administration.
 

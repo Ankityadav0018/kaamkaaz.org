@@ -10,6 +10,96 @@
   <title>Kaamkaaz - Hyperlocal Daily Wage Jobs in India</title>
   <link rel="icon" type="image/png" href="assets/logo.png">
   <link rel="stylesheet" href="styles.css">
+
+<style>
+/* Creative Countdown Timer Styles */
+.creative-countdown-wrapper {
+  margin: 2rem auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+.creative-countdown-wrapper .countdown-label {
+  font-family: var(--font-heading);
+  font-size: 1.25rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: var(--primary-blue);
+  background: linear-gradient(135deg, var(--primary-blue), var(--accent-cyan));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: floatLabel 3s ease-in-out infinite;
+}
+.creative-countdown-wrapper.dark-mode .countdown-label {
+  background: linear-gradient(135deg, #fff, var(--accent-cyan));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.countdown-blocks {
+  display: flex;
+  gap: 1.25rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.countdown-block {
+  background: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  border-radius: var(--radius-lg);
+  padding: 1.25rem 1rem;
+  min-width: 90px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 10px 30px rgba(20, 0, 198, 0.08);
+  transition: transform 0.3s ease;
+  animation: pulseGlow 2.5s infinite alternate;
+}
+.creative-countdown-wrapper.dark-mode .countdown-block {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+.countdown-block:hover {
+  transform: translateY(-5px);
+}
+.countdown-value {
+  font-family: var(--font-heading);
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--primary-blue);
+  line-height: 1;
+}
+.creative-countdown-wrapper.dark-mode .countdown-value {
+  color: #fff;
+  text-shadow: 0 0 15px rgba(255,255,255,0.4);
+}
+.countdown-unit {
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  margin-top: 0.75rem;
+  letter-spacing: 1px;
+}
+.creative-countdown-wrapper.dark-mode .countdown-unit {
+  color: rgba(255,255,255,0.7);
+}
+
+@keyframes pulseGlow {
+  0% { box-shadow: 0 10px 30px rgba(20, 0, 198, 0.08); }
+  100% { box-shadow: 0 10px 30px rgba(20, 0, 198, 0.18); }
+}
+@keyframes floatLabel {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-5px); }
+}
+</style>
+
 </head>
 <body>
 
@@ -66,7 +156,29 @@
     <p class="tagline" data-i18n="connecting_daily_wage_workers_with">Connecting Daily Wage Workers with Local Jobs</p>
     <p class="description" data-i18n="find_hyperlocal_jobs_within_1530km">Find hyperlocal jobs within 50km from your location. One tap to apply. Get paid fairly without middlemen.</p>
     <div class="hero-buttons">
-      <button class="btn btn-primary btn-lg" data-i18n="coming_soon_on_google_play">Coming Soon on Google Play</button>
+      
+<div class="creative-countdown-wrapper" id="timer-hero-container">
+  <div class="countdown-label">🚀 App Launching In</div>
+  <div class="countdown-blocks">
+    <div class="countdown-block">
+      <span class="countdown-value" id="cd-hero-days">00</span>
+      <span class="countdown-unit">Days</span>
+    </div>
+    <div class="countdown-block">
+      <span class="countdown-value" id="cd-hero-hours">00</span>
+      <span class="countdown-unit">Hours</span>
+    </div>
+    <div class="countdown-block">
+      <span class="countdown-value" id="cd-hero-mins">00</span>
+      <span class="countdown-unit">Mins</span>
+    </div>
+    <div class="countdown-block">
+      <span class="countdown-value" id="cd-hero-secs">00</span>
+      <span class="countdown-unit">Secs</span>
+    </div>
+  </div>
+</div>
+
       <a href="#features" class="btn btn-outline btn-lg" data-i18n="learn_more">Learn More</a>
     </div>
   </div>
@@ -122,12 +234,6 @@
           <div class="card-icon">🎁</div>
           <h3 data-i18n="referral_rewards">Referral Rewards</h3>
           <p data-i18n="referral_rewards_description">Refer your friends and earn ₹20 for every successful registration.</p>
-        </div>
-        
-        <div class="card">
-          <div class="card-icon">🤖</div>
-          <h3 data-i18n="ai_assistant">AI Assistant</h3>
-          <p data-i18n="ai_assistant_description">Smart AI helper to guide you on how to use the app effectively and answer your questions.</p>
         </div>
       </div>
 
@@ -246,7 +352,29 @@
   <div class="container">
     <h2 style="color: white; margin-bottom: 1rem;" data-i18n="ready_to_find_or_post">Ready to Find or Post Jobs?</h2>
     <p style="color: rgba(255, 255, 255, 0.95); font-size: 1.1rem; margin-bottom: 2rem;" data-i18n="download_kaamkaaz_today_and_connect">Download Kaamkaaz today and connect with opportunities or build your team.</p>
-    <button class="btn btn-secondary btn-lg" data-i18n="coming_soon_on_google_play">Coming Soon on Google Play</button>
+    
+<div class="creative-countdown-wrapper dark-mode" id="timer-cta-container">
+  <div class="countdown-label">🚀 App Launching In</div>
+  <div class="countdown-blocks">
+    <div class="countdown-block">
+      <span class="countdown-value" id="cd-cta-days">00</span>
+      <span class="countdown-unit">Days</span>
+    </div>
+    <div class="countdown-block">
+      <span class="countdown-value" id="cd-cta-hours">00</span>
+      <span class="countdown-unit">Hours</span>
+    </div>
+    <div class="countdown-block">
+      <span class="countdown-value" id="cd-cta-mins">00</span>
+      <span class="countdown-unit">Mins</span>
+    </div>
+    <div class="countdown-block">
+      <span class="countdown-value" id="cd-cta-secs">00</span>
+      <span class="countdown-unit">Secs</span>
+    </div>
+  </div>
+</div>
+
   </div>
 </section>
 
@@ -341,9 +469,6 @@ function applyLanguage(lang) {
 
   // Update all language pickers on page
   document.querySelectorAll('.lang-picker').forEach(sel => { sel.value = lang; });
-
-  // RTL for Urdu
-  document.documentElement.dir = (lang === 'ur') ? 'rtl' : 'ltr';
   document.documentElement.lang = lang;
 }
 
@@ -380,5 +505,54 @@ window.addEventListener('DOMContentLoaded', () => {
   }
 });
 </script>
+
+
+<script>
+  const launchDate = new Date();
+  launchDate.setDate(launchDate.getDate() + 2);
+
+  function pad(num) {
+    return num.toString().padStart(2, '0');
+  }
+
+  function updateCountdown() {
+    const now = new Date().getTime();
+    const distance = launchDate.getTime() - now;
+
+    const els = ['hero', 'cta'];
+
+    if (distance < 0) {
+      els.forEach(prefix => {
+        const container = document.getElementById('timer-' + prefix + '-container');
+        if (container) {
+          container.innerHTML = '<div class="countdown-label" style="font-size:2rem; animation:none;">🎉 App Launched! 🎉</div>';
+        }
+      });
+      return;
+    }
+
+    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    els.forEach(prefix => {
+      const dEl = document.getElementById('cd-' + prefix + '-days');
+      const hEl = document.getElementById('cd-' + prefix + '-hours');
+      const mEl = document.getElementById('cd-' + prefix + '-mins');
+      const sEl = document.getElementById('cd-' + prefix + '-secs');
+      
+      if(dEl) dEl.innerText = pad(days);
+      if(hEl) hEl.innerText = pad(hours);
+      if(mEl) mEl.innerText = pad(minutes);
+      if(sEl) sEl.innerText = pad(seconds);
+    });
+  }
+
+  setInterval(updateCountdown, 1000);
+  updateCountdown();
+</script>
+
+
 </body>
 </html>
